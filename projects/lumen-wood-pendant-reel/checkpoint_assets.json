@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "project_id": "lumen-wood-pendant-reel",
+  "pipeline_type": "cinematic",
+  "stage": "assets",
+  "status": "completed",
+  "timestamp": "2026-11-05T08:46:48.557733+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "asset_manifest": {
+      "version": "1.0",
+      "assets": [
+        {
+          "id": "v1",
+          "type": "video",
+          "path": "assets/video/s1_hook.mp4",
+          "source_tool": "ffmpeg+color_grade",
+          "scene_id": "s1"
+        },
+        {
+          "id": "v2",
+          "type": "video",
+          "path": "assets/video/s2_line.mp4",
+          "source_tool": "ffmpeg+color_grade",
+          "scene_id": "s2"
+        },
+        {
+          "id": "v3",
+          "type": "video",
+          "path": "assets/video/s3_grain.mp4",
+          "source_tool": "ffmpeg+color_grade",
+          "scene_id": "s3"
+        },
+        {
+          "id": "v4",
+          "type": "video",
+          "path": "assets/video/s4_reveal.mp4",
+          "source_tool": "ffmpeg+color_grade",
+          "scene_id": "s4"
+        },
+        {
+          "id": "v5a",
+          "type": "video",
+          "path": "assets/video/s5a.mp4",
+          "source_tool": "ffmpeg+color_grade",
+          "scene_id": "s5"
+        },
+        {
+          "id": "v5b",
+          "type": "video",
+          "path": "assets/video/s5b.mp4",
+          "source_tool": "ffmpeg+color_grade",
+          "scene_id": "s5"
+        },
+        {
+          "id": "v5c",
+          "type": "video",
+          "path": "assets/video/s5c.mp4",
+          "source_tool": "ffmpeg+color_grade",
+          "scene_id": "s5"
+        },
+        {
+          "id": "v5d",
+          "type": "video",
+          "path": "assets/video/s5d.mp4",
+          "source_tool": "ffmpeg+color_grade",
+          "scene_id": "s5"
+        },
+        {
+          "id": "hero",
+          "type": "image",
+          "path": "assets/images/hero_end.jpg",
+          "source_tool": "ffmpeg crop+grade",
+          "scene_id": "s6"
+        },
+        {
+          "id": "music",
+          "type": "music",
+          "path": "assets/music/score.wav",
+          "source_tool": "local numpy synth (scratch script) + ffmpeg loudnorm",
+          "scene_id": "s1"
+        },
+        {
+          "id": "font1",
+          "type": "font",
+          "path": "hyperframes/assets/cormorant-garamond-latin-400-italic.woff2",
+          "source_tool": "fontsource (OFL)",
+          "scene_id": "s1"
+        },
+        {
+          "id": "font2",
+          "type": "font",
+          "path": "hyperframes/assets/cormorant-garamond-latin-500-normal.woff2",
+          "source_tool": "fontsource (OFL)",
+          "scene_id": "s6"
+        }
+      ]
+    }
+  }
+}

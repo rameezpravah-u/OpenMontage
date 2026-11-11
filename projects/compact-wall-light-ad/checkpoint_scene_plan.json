@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "project_id": "compact-wall-light-ad",
+  "pipeline_type": "cinematic",
+  "stage": "scene_plan",
+  "status": "completed",
+  "timestamp": "2026-11-05T09:51:23.664715+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "scene_plan": {
+      "version": "1.0",
+      "scenes": [
+        {
+          "id": "b1",
+          "type": "broll",
+          "description": "Your wall art is sitting in the dark.",
+          "start_seconds": 0,
+          "end_seconds": 1
+        },
+        {
+          "id": "b2",
+          "type": "broll",
+          "description": "Give it a spotlight.",
+          "start_seconds": 1,
+          "end_seconds": 3
+        },
+        {
+          "id": "b3",
+          "type": "broll",
+          "description": "Twin warm-white LED tubes / Light up + down",
+          "start_seconds": 3,
+          "end_seconds": 5
+        },
+        {
+          "id": "b4",
+          "type": "broll",
+          "description": "Solid sheesham wood, made by hand in Khatauli, UP",
+          "start_seconds": 5,
+          "end_seconds": 7
+        },
+        {
+          "id": "b5",
+          "type": "broll",
+          "description": "OVER MIRRORS / OVER ART",
+          "start_seconds": 7,
+          "end_seconds": 9
+        },
+        {
+          "id": "b6",
+          "type": "broll",
+          "description": "Remote dimmable",
+          "start_seconds": 9,
+          "end_seconds": 10.5
+        },
+        {
+          "id": "b7",
+          "type": "broll",
+          "description": "Compact Wooden Wall Light \u20b94,999 (\u20b96,999) 28% OFF, SHOP NOW, FLY100",
+          "start_seconds": 10.5,
+          "end_seconds": 15
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "version": "1.0",
+  "concept_options": [
+    {
+      "id": "c1",
+      "title": "POV: Tube Light Swap",
+      "hook": "POV: you replaced the tube light with this",
+      "narrative_structure": "comparison",
+      "visual_approach": "real Aurora clips hook/close; store renders for 4 uses + glow options; price card",
+      "target_platform": "instagram",
+      "target_duration_seconds": 17,
+      "why_this_works": "relatable POV, uses, clear price ladder"
+    },
+    {
+      "id": "c2",
+      "title": "AI people lifestyle",
+      "hook": "Her evening routine",
+      "narrative_structure": "story",
+      "visual_approach": "Higgsfield Seedance human scenes",
+      "target_platform": "instagram",
+      "target_duration_seconds": 15,
+      "why_this_works": "human involvement"
+    },
+    {
+      "id": "c3",
+      "title": "User-filmed UGC",
+      "hook": "Watch me install this",
+      "narrative_structure": "tutorial",
+      "visual_approach": "real people",
+      "target_platform": "instagram",
+      "target_duration_seconds": 15,
+      "why_this_works": "most credible"
+    }
+  ],
+  "selected_concept": {
+    "concept_id": "c1",
+    "rationale": "User chose 'No AI, real footage only'"
+  },
+  "production_plan": {
+    "pipeline": "cinematic",
+    "render_runtime": "hyperframes",
+    "stages": [
+      {
+        "stage": "compose",
+        "tools": [
+          {
+            "tool_name": "hyperframes_compose",
+            "role": "render",
+            "available": true,
+            "estimated_cost_usd": 0
+          }
+        ],
+        "approach": "atelier"
+      }
+    ]
+  },
+  "cost_estimate": {
+    "total_estimated_usd": 0.0,
+    "line_items": [
+      {
+        "tool": "hyperframes_compose",
+        "operation": "local render",
+        "estimated_usd": 0.0
+      }
+    ],
+    "budget_verdict": "within_budget"
+  },
+  "approval": {
+    "status": "approved",
+    "user_notes": "No AI, real footage only"
+  }
+}

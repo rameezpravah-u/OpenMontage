@@ -1,0 +1,176 @@
+{
+  "version": "1.0",
+  "project_id": "compact-wall-light-ad",
+  "pipeline_type": "cinematic",
+  "stage": "proposal",
+  "status": "completed",
+  "timestamp": "2026-11-05T09:51:23.480354+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "proposal_packet": {
+      "version": "1.0",
+      "concept_options": [
+        {
+          "id": "c1",
+          "title": "Give It a Spotlight",
+          "hook": "Your wall art is sitting in the dark.",
+          "narrative_structure": "problem_solution",
+          "visual_approach": "dark\u2192lit reveal, feature cuts, placements, dim demo, price/CTA card; sound-off captions; 4:5-safe text",
+          "target_platform": "instagram",
+          "target_duration_seconds": 15,
+          "why_this_works": "problem/solution hook, price anchor, clear CTA"
+        },
+        {
+          "id": "c2",
+          "title": "Made by Hand",
+          "hook": "Made by hand in Khatauli",
+          "narrative_structure": "story",
+          "visual_approach": "craft story",
+          "target_platform": "instagram",
+          "target_duration_seconds": 15,
+          "why_this_works": "trust"
+        },
+        {
+          "id": "c3",
+          "title": "28% off",
+          "hook": "\u20b96,999 \u2192 \u20b94,999",
+          "narrative_structure": "comparison",
+          "visual_approach": "price-led",
+          "target_platform": "instagram",
+          "target_duration_seconds": 10,
+          "why_this_works": "direct response"
+        }
+      ],
+      "selected_concept": {
+        "concept_id": "c1",
+        "rationale": "user delegated"
+      },
+      "production_plan": {
+        "pipeline": "cinematic",
+        "render_runtime": "hyperframes",
+        "stages": [
+          {
+            "stage": "compose",
+            "tools": [
+              {
+                "tool_name": "hyperframes_compose",
+                "role": "render",
+                "available": true,
+                "estimated_cost_usd": 0
+              }
+            ],
+            "approach": "atelier"
+          }
+        ],
+        "decision_log_ref": "projects/compact-wall-light-ad/decision_log.json"
+      },
+      "cost_estimate": {
+        "total_estimated_usd": 0.0,
+        "line_items": [
+          {
+            "tool": "hyperframes_compose",
+            "operation": "local render",
+            "estimated_usd": 0.0
+          }
+        ],
+        "budget_verdict": "within_budget"
+      },
+      "approval": {
+        "status": "approved",
+        "user_notes": "delegated"
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "compact-wall-light-ad",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "proposal",
+          "category": "approval_policy",
+          "subject": "Run approval policy",
+          "options_considered": [
+            {
+              "option_id": "delegated",
+              "label": "Full-run delegation",
+              "score": 0.9,
+              "reason": "user preference"
+            }
+          ],
+          "selected": "delegated",
+          "reason": "proceed end-to-end"
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.9,
+              "reason": "text-heavy ad"
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.3,
+              "reason": "",
+              "rejected_because": "not installed"
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.2,
+              "reason": "weak type"
+            }
+          ],
+          "selected": "hyperframes",
+          "reason": "consistent"
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "assets",
+          "category": "downgrade_approval",
+          "subject": "Still-led treatment",
+          "options_considered": [
+            {
+              "option_id": "stills",
+              "label": "Real photos + 2s real pan, animated",
+              "score": 0.8,
+              "reason": "no raw compact video exists in Drive"
+            },
+            {
+              "option_id": "ai_video",
+              "label": "Generate video",
+              "score": 0.0,
+              "reason": "",
+              "rejected_because": "no video provider configured"
+            }
+          ],
+          "selected": "stills",
+          "reason": "only available footage; flagged to user"
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "assets",
+          "category": "music_source",
+          "subject": "Music source",
+          "options_considered": [
+            {
+              "option_id": "synth",
+              "label": "Original score",
+              "score": 0.85,
+              "reason": "owned"
+            }
+          ],
+          "selected": "synth",
+          "reason": "royalty-free"
+        }
+      ]
+    }
+  }
+}

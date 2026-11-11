@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "historyId": "2cfbfadd-af88-4644-b4bb-aa8397f670f6",
+  "currentRevision": "46223c34-fefa-4de1-ad1d-3de28f908605",
+  "pendingChanges": false,
+  "files": {
+    "art-direction.md": {
+      "hash": "870b01885fdcb7f97798bb473eb6d3be5606b5310b8ff96858963a4c891d60e3",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/87/870b01885fdcb7f97798bb473eb6d3be5606b5310b8ff96858963a4c891d60e3"
+    },
+    "assets/cormorant-garamond-latin-400-italic.woff2": {
+      "hash": "effe3ef07d4e0d249d837344e70bdf50fc94ccc44870b02103dad9a75d4e003f",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/ef/effe3ef07d4e0d249d837344e70bdf50fc94ccc44870b02103dad9a75d4e003f"
+    },
+    "assets/cormorant-garamond-latin-500-normal.woff2": {
+      "hash": "991c8aba7707066e8d0f351d53a4eedee3b5f00d1db335d9a2ee39903b4b0c8c",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/99/991c8aba7707066e8d0f351d53a4eedee3b5f00d1db335d9a2ee39903b4b0c8c"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/c1/c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/hero_end.jpg": {
+      "hash": "2d8667afed80f4568984d5a8c0a386f169213f8e6f6accd90e94552494cc1ff3",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/2d/2d8667afed80f4568984d5a8c0a386f169213f8e6f6accd90e94552494cc1ff3"
+    },
+    "assets/s5a.mp4": {
+      "hash": "31448165fa1f5784ba05971665b9848c093e1dfa637b00130ef5f86758a3e96c",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/31/31448165fa1f5784ba05971665b9848c093e1dfa637b00130ef5f86758a3e96c"
+    },
+    "assets/s5b.mp4": {
+      "hash": "92136b2c91c4f6d84ec1a69a7e67dc788b797f46631d25436ac58675282fa8c5",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/92/92136b2c91c4f6d84ec1a69a7e67dc788b797f46631d25436ac58675282fa8c5"
+    },
+    "assets/s5c.mp4": {
+      "hash": "97f3d7946756a819ea37b5b2cb34627813f553e86a996af415221499bdd42943",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/97/97f3d7946756a819ea37b5b2cb34627813f553e86a996af415221499bdd42943"
+    },
+    "assets/s5d.mp4": {
+      "hash": "6d1b5f76b56f032f1a63562e7f87981550824c5a38e1fab1325fc1dbc937033c",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/6d/6d1b5f76b56f032f1a63562e7f87981550824c5a38e1fab1325fc1dbc937033c"
+    },
+    "index.html": {
+      "hash": "115c53ee14fb1eadd6d2cbc774020e2646e822ed73d8fdc50d4edc3b27315c33",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/11/115c53ee14fb1eadd6d2cbc774020e2646e822ed73d8fdc50d4edc3b27315c33"
+    },
+    "assets/s1_hook.mp4": {
+      "hash": "d34960d408020c1e2c9c75dcbbca5dd73f1bbd49bf58048bf392e9359fdec23a",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/d3/d34960d408020c1e2c9c75dcbbca5dd73f1bbd49bf58048bf392e9359fdec23a"
+    },
+    "assets/s2_line.mp4": {
+      "hash": "5a2d0c70343a4d234c6f2563a9383ffa172b7cc598dd3aeebcc2fb15d9afde88",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/5a/5a2d0c70343a4d234c6f2563a9383ffa172b7cc598dd3aeebcc2fb15d9afde88"
+    },
+    "assets/s3_grain.mp4": {
+      "hash": "8d86aa06b2af1d67e3fda39069b48efa86e058dfcb171c3831ab2bc79501d3ef",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/8d/8d86aa06b2af1d67e3fda39069b48efa86e058dfcb171c3831ab2bc79501d3ef"
+    },
+    "assets/s4_reveal.mp4": {
+      "hash": "7e59b309d67cc4d127d34c5b91a574b0823555b185c7fe13476a696703520c5f",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/7e/7e59b309d67cc4d127d34c5b91a574b0823555b185c7fe13476a696703520c5f"
+    },
+    "assets/score.wav": {
+      "hash": "3f5273700205a796270555e3e478236acbbe61b4c0db3841816f325a640953ff",
+      "content": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/3f/3f5273700205a796270555e3e478236acbbe61b4c0db3841816f325a640953ff"
+    }
+  },
+  "revisions": {
+    "1a79b0dc-ae79-4dac-9949-f540aa3afb18": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793867438644,
+      "endedAt": 1793867438650,
+      "files": {
+        "assets/hero_end.jpg": {
+          "before": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/12/12f9fba77b7c1f5fdeb760c2b0711db6f9a90abd7c9106922acdaa552406814c",
+          "after": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/2d/2d8667afed80f4568984d5a8c0a386f169213f8e6f6accd90e94552494cc1ff3"
+        },
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/c4/c4e69d87f4cb9213a479c1a6eb1e7798c3a57438b1fe1c7b25fb20bf2d0a71e3",
+          "after": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/26/2672cc1dc4aa359534b6149a69e579330f611ba0e15770ee40b19f10e97df479"
+        }
+      }
+    },
+    "46223c34-fefa-4de1-ad1d-3de28f908605": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793867901720,
+      "endedAt": 1793867901725,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/26/2672cc1dc4aa359534b6149a69e579330f611ba0e15770ee40b19f10e97df479",
+          "after": "/root/.cache/hyperframes/history/2cfbfadd-af88-4644-b4bb-aa8397f670f6/blobs/11/115c53ee14fb1eadd6d2cbc774020e2646e822ed73d8fdc50d4edc3b27315c33"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "46223c34-fefa-4de1-ad1d-3de28f908605",
+      "id": "1f3af251-c4c7-4e82-9449-6bd5e55426b6"
+    },
+    "revisions": {
+      "1a79b0dc-ae79-4dac-9949-f540aa3afb18": [
+        {
+          "id": "e75d93d6-a29f-40c3-bdee-ba3002a7f80d",
+          "scope": "project",
+          "report": "/home/user/OpenMontage/projects/lumen-wood-pendant-reel/hyperframes/.hyperframes/artifacts/checks/e75d93d6-a29f-40c3-bdee-ba3002a7f80d.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793867446132,
+          "contentHash": "2764214ca021b1547e0c260451cbfec0ea3ed3f77d13ee19558214cfae25fa0f",
+          "revision": "1a79b0dc-ae79-4dac-9949-f540aa3afb18",
+          "inputFingerprint": "d9e2bdaa9e782b289213a588b1fe6430e1942199a7f571307f662de2e4c28472",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "46223c34-fefa-4de1-ad1d-3de28f908605": [
+        {
+          "id": "1f3af251-c4c7-4e82-9449-6bd5e55426b6",
+          "scope": "project",
+          "report": "/home/user/OpenMontage/projects/lumen-wood-pendant-reel/hyperframes/.hyperframes/artifacts/checks/1f3af251-c4c7-4e82-9449-6bd5e55426b6.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793867908962,
+          "contentHash": "c31a11956679086b3d25653856cfb3ee0a32b456fa4b4fc2e18eb0c4b3b69636",
+          "revision": "46223c34-fefa-4de1-ad1d-3de28f908605",
+          "inputFingerprint": "42f97b528c94734caf4061a471ebf9368968d37dd75ffabc65af8ee21ae4c9cf",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "6f749f2b-91d9-4194-bfc9-70b38c4506cf",
+        "scope": "project",
+        "report": "/home/user/OpenMontage/projects/lumen-wood-pendant-reel/hyperframes/.hyperframes/artifacts/checks/6f749f2b-91d9-4194-bfc9-70b38c4506cf.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793866912359,
+        "contentHash": "6ca55041b6ff6ee03b08ebeb8791af8eebd47caec29c77a9d598c7c12905c106",
+        "revision": null,
+        "inputFingerprint": "f6642576ee1db45338e5db30f6580d7a474f7f2abea58ee76bf2e3a40302c2af",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "879b40ff-f6e7-4213-b37c-14048c333886",
+        "scope": "project",
+        "report": "/home/user/OpenMontage/projects/lumen-wood-pendant-reel/hyperframes/.hyperframes/artifacts/checks/879b40ff-f6e7-4213-b37c-14048c333886.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793866928748,
+        "contentHash": "9c0773205bfa81330b4500b5a31f2dca0a0499740b09a66193fbaad0e694d642",
+        "revision": null,
+        "inputFingerprint": "f6642576ee1db45338e5db30f6580d7a474f7f2abea58ee76bf2e3a40302c2af",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "354b2f11-d3c2-482a-b1b0-94f4247225b5",
+      "completedAt": 1793868330256,
+      "output": "/home/user/OpenMontage/projects/lumen-wood-pendant-reel/renders/final.mp4",
+      "status": "completed",
+      "revision": "46223c34-fefa-4de1-ad1d-3de28f908605"
+    },
+    "retainedRevisions": [
+      "46223c34-fefa-4de1-ad1d-3de28f908605",
+      "1a79b0dc-ae79-4dac-9949-f540aa3afb18"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "historyId": "5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96",
+  "currentRevision": "c6414634-6a9e-495c-aa59-47bc6f352b81",
+  "pendingChanges": false,
+  "files": {
+    "assets/Inter-SemiBold.otf": {
+      "hash": "bd68706b7bf8b3c580ae57685a2116bb1704b3a9998309ccfec7cd486f8a593e",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/bd/bd68706b7bf8b3c580ae57685a2116bb1704b3a9998309ccfec7cd486f8a593e"
+    },
+    "assets/InterDisplay-Black.otf": {
+      "hash": "c0ebb676933a45d73d16fea70c875f9f2b711b585c69b15962b7f2a890b5f8e8",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/c0/c0ebb676933a45d73d16fea70c875f9f2b711b585c69b15962b7f2a890b5f8e8"
+    },
+    "assets/InterDisplay-Bold.otf": {
+      "hash": "4253eed76d9014a469d7449934e54250497ee007f4d58dab4ddefe9f759b1970",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/42/4253eed76d9014a469d7449934e54250497ee007f4d58dab4ddefe9f759b1970"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/c1/c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "assets/p1_aurora.mp4": {
+      "hash": "7373323fdb28bc3f3c8655021ac2225110e99b22a916c9de234d2106656635c3",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/73/7373323fdb28bc3f3c8655021ac2225110e99b22a916c9de234d2106656635c3"
+    },
+    "assets/p2_compact.mp4": {
+      "hash": "f7e4d2dc4594b7fc1dc11a2ba3d27860902bee2b93427485bf71205373830808",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/f7/f7e4d2dc4594b7fc1dc11a2ba3d27860902bee2b93427485bf71205373830808"
+    },
+    "assets/p3_nixline.mp4": {
+      "hash": "cea10c5b3d9fed8c705a32a154238dbb22b2eabecdb1030a960cf6e6117ccd63",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/ce/cea10c5b3d9fed8c705a32a154238dbb22b2eabecdb1030a960cf6e6117ccd63"
+    },
+    "assets/p4_vertical.mp4": {
+      "hash": "9d927d81788009aaa2cff24be895a4fd9383b59589a00f532b6a2316fe11f5e2",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/9d/9d927d81788009aaa2cff24be895a4fd9383b59589a00f532b6a2316fe11f5e2"
+    },
+    "assets/p5_shelf.mp4": {
+      "hash": "1f59bdfcf610a6874ff7ebd46e144436d4ca2a34c2ba2aa04459200635896690",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/1f/1f59bdfcf610a6874ff7ebd46e144436d4ca2a34c2ba2aa04459200635896690"
+    },
+    "assets/r_bedroom.mp4": {
+      "hash": "478c76325c25509dd3f0cdbdcbe6b36c003e9f4c4e8419f23a4c9038d3b91ca9",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/47/478c76325c25509dd3f0cdbdcbe6b36c003e9f4c4e8419f23a4c9038d3b91ca9"
+    },
+    "assets/r_dining.mp4": {
+      "hash": "4ddc8b92e8323b2c58451618fa0bc6d546d2142772ca0650fc9f18060df23a6f",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/4d/4ddc8b92e8323b2c58451618fa0bc6d546d2142772ca0650fc9f18060df23a6f"
+    },
+    "assets/r_hallway.mp4": {
+      "hash": "d18060dd12a6c0162188ea2fde348f634d0b36ccb16581db63dd59e6b6498917",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/d1/d18060dd12a6c0162188ea2fde348f634d0b36ccb16581db63dd59e6b6498917"
+    },
+    "assets/r_livingroom.mp4": {
+      "hash": "d796f6678e1cce172a1ee33e0057f21aca794402ed5a93de91f59668971105eb",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/d7/d796f6678e1cce172a1ee33e0057f21aca794402ed5a93de91f59668971105eb"
+    },
+    "index.html": {
+      "hash": "8f297620035ff0dd26c620ad046a154dc563e3c9dc4ea25ce2f63cb8f6fb5bb9",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/8f/8f297620035ff0dd26c620ad046a154dc563e3c9dc4ea25ce2f63cb8f6fb5bb9"
+    },
+    "assets/end_dining.mp4": {
+      "hash": "7a6e4cfdb603b51ea89072a28be22ae05ba4064753013680efd115b8891fb677",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/7a/7a6e4cfdb603b51ea89072a28be22ae05ba4064753013680efd115b8891fb677"
+    },
+    "assets/h_flip.mp4": {
+      "hash": "3a20f425dead6e2769d22d7eec1a804914f5c07e405e006ee4a2eac6d3c24379",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/3a/3a20f425dead6e2769d22d7eec1a804914f5c07e405e006ee4a2eac6d3c24379"
+    },
+    "assets/score.wav": {
+      "hash": "3aa4f6d91e56371e804a9fa65f35482e6ae0fbc6b6f99e7388d8e08eaf6539ba",
+      "content": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/3a/3aa4f6d91e56371e804a9fa65f35482e6ae0fbc6b6f99e7388d8e08eaf6539ba"
+    }
+  },
+  "revisions": {
+    "c6414634-6a9e-495c-aa59-47bc6f352b81": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793871652170,
+      "endedAt": 1793871652172,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/8e/8e616ee8db96bc36ec3211f1512c52f4b4f0cc5f66658c4e779609d99bbc8110",
+          "after": "/root/.cache/hyperframes/history/5f7ac0c8-3b8d-488c-8bdb-de5462d4ff96/blobs/8f/8f297620035ff0dd26c620ad046a154dc563e3c9dc4ea25ce2f63cb8f6fb5bb9"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "c6414634-6a9e-495c-aa59-47bc6f352b81",
+      "id": "926cbda7-6d12-4929-835d-e9a998c353b4"
+    },
+    "revisions": {
+      "c6414634-6a9e-495c-aa59-47bc6f352b81": [
+        {
+          "id": "926cbda7-6d12-4929-835d-e9a998c353b4",
+          "scope": "project",
+          "report": "/home/user/OpenMontage/projects/wall-lights-viral-reel/hyperframes/.hyperframes/artifacts/checks/926cbda7-6d12-4929-835d-e9a998c353b4.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793871662512,
+          "contentHash": "6f3dffcd94bc61486ef541995e78e0245ff7d1208f74303d6a35db0d27c3c5c7",
+          "revision": "c6414634-6a9e-495c-aa59-47bc6f352b81",
+          "inputFingerprint": "07b718fd5ab1716c242d8fa2d63ed1b6959a8204e6b1d1adb01ccc9a05529078",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "83c7ad1b-9218-40a1-82a8-958d26781cfd",
+        "scope": "project",
+        "report": "/home/user/OpenMontage/projects/wall-lights-viral-reel/hyperframes/.hyperframes/artifacts/checks/83c7ad1b-9218-40a1-82a8-958d26781cfd.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793871536391,
+        "contentHash": "b38e3f1df708dbb5de1989047ccbadd290f56a7161a9cec6443f9442f89bc863",
+        "revision": null,
+        "inputFingerprint": "06e34025f0f335e03d78f8919669c025eb442cf848d20cb34af9cc1567a47e3f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "cea396af-bac3-429b-8e6d-86d366abe33d",
+        "scope": "project",
+        "report": "/home/user/OpenMontage/projects/wall-lights-viral-reel/hyperframes/.hyperframes/artifacts/checks/cea396af-bac3-429b-8e6d-86d366abe33d.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793871550575,
+        "contentHash": "b38e3f1df708dbb5de1989047ccbadd290f56a7161a9cec6443f9442f89bc863",
+        "revision": null,
+        "inputFingerprint": "06e34025f0f335e03d78f8919669c025eb442cf848d20cb34af9cc1567a47e3f",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "43000d35-aeac-4879-859f-d78fb11eacc7",
+      "completedAt": 1793871739810,
+      "output": "/home/user/OpenMontage/projects/wall-lights-viral-reel/renders/final.mp4",
+      "status": "completed",
+      "revision": "c6414634-6a9e-495c-aa59-47bc6f352b81"
+    },
+    "retainedRevisions": [
+      "c6414634-6a9e-495c-aa59-47bc6f352b81"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "topic": "Compact Wooden Wall Light \u2014 Meta ad",
+  "research_date": "2026-11-05",
+  "landscape": {
+    "existing_content": [
+      {
+        "title": "Existing still reel",
+        "source": "user drive",
+        "angle": "slow pans + title",
+        "what_it_covers": "product on wall",
+        "what_it_misses": "hook, price, CTA"
+      },
+      {
+        "title": "Carousel",
+        "source": "user drive",
+        "angle": "materials story",
+        "what_it_covers": "sheesham, handmade in Khatauli",
+        "what_it_misses": "motion"
+      },
+      {
+        "title": "Product page",
+        "url": "https://nixwoods.com/products/compact-wooden-wall-light",
+        "source": "brand site",
+        "angle": "specs",
+        "what_it_covers": "sizes, dimmable",
+        "what_it_misses": "video"
+      }
+    ],
+    "saturated_angles": [
+      "static product hero"
+    ],
+    "underserved_gaps": [
+      "art-lighting problem/solution hook",
+      "price anchor in video"
+    ]
+  },
+  "data_points": [
+    {
+      "claim": "From Rs 4,999, compare Rs 6,999 (28% off)",
+      "source_url": "https://nixwoods.com/collections/wooden-wall-lights",
+      "credibility": "primary_source"
+    },
+    {
+      "claim": "Remote dimmable, twin warm white LED tubes",
+      "source_url": "https://nixwoods.com/products/compact-wooden-wall-light",
+      "credibility": "primary_source"
+    },
+    {
+      "claim": "Hook window 1-2s",
+      "source_url": "https://dev.to/fermainpariz/instagram-reels-strategy-2026-what-actually-works-data-backed-guide-11hn",
+      "credibility": "secondary_source"
+    }
+  ],
+  "audience_insights": {
+    "common_questions": [
+      "Size?",
+      "Price?",
+      "Dimmable?"
+    ],
+    "misconceptions": [
+      {
+        "myth": "Picture lights are expensive gallery fixtures",
+        "reality": "from Rs 4,999"
+      }
+    ],
+    "knowledge_level": "general consumer"
+  },
+  "angles_discovered": [
+    {
+      "name": "Art in the dark",
+      "hook": "Your wall art is sitting in the dark.",
+      "type": "narrative",
+      "why_now": "problem/solution"
+    },
+    {
+      "name": "Handmade",
+      "hook": "Made by hand in Khatauli",
+      "type": "evergreen",
+      "why_now": "craft"
+    },
+    {
+      "name": "Dimmable",
+      "hook": "Bright to low from the sofa",
+      "type": "evergreen",
+      "why_now": "convenience"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://nixwoods.com/products/compact-wooden-wall-light",
+      "title": "Product page",
+      "used_for": "24/40in, sheesham, twin warm LED tubes, remote dimmable, up/down option"
+    },
+    {
+      "url": "https://nixwoods.com/collections/wooden-wall-lights",
+      "title": "Collection page",
+      "used_for": "price from 4,999, compare 6,999, 28% off, FLY100"
+    },
+    {
+      "url": "https://dev.to/fermainpariz/instagram-reels-strategy-2026-what-actually-works-data-backed-guide-11hn",
+      "title": "Reels strategy",
+      "used_for": "1-2s hook"
+    },
+    {
+      "url": "https://invideo.io/faq/what-are-the-best-hook-formats-for-ugc-ads-on-instagram/",
+      "title": "Ad hooks",
+      "used_for": "feeling-first"
+    },
+    {
+      "url": "https://oakgen.ai/blog/ai-beat-drops-viral-reels",
+      "title": "Beat drops",
+      "used_for": "cut on beat"
+    }
+  ]
+}

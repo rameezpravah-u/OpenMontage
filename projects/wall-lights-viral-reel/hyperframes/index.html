@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Your Wall at 8 PM</title>
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "IDBlack"; src: url("assets/InterDisplay-Black.otf"); font-weight: 900; }
+      @font-face { font-family: "IDBold"; src: url("assets/InterDisplay-Bold.otf"); font-weight: 700; }
+      @font-face { font-family: "ISemi"; src: url("assets/Inter-SemiBold.otf"); font-weight: 600; }
+      :root { --ink: #0d0a08; --amber: #ffb547; --glow: #ffd28a; --cold: #bfe0ff; --cream: #fff4e3; }
+      html, body { margin: 0; background: var(--ink); }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--ink); }
+      .fill { position: absolute; inset: 0; background: var(--ink); }
+      video.shot { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; transform-origin: 50% 40%; }
+      .layer { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; box-sizing: border-box; }
+      .scrim { background: linear-gradient(180deg, rgba(13,10,8,0.7) 0%, rgba(13,10,8,0.3) 20%, rgba(13,10,8,0) 36%, rgba(13,10,8,0) 58%, rgba(13,10,8,0.55) 76%, rgba(13,10,8,0.75) 100%); }
+      .top { position: absolute; left: 60px; top: 230px; width: 960px; text-align: center; display: block; }
+      .big { display: block; font-family: "IDBlack"; font-weight: 900; font-size: 116px; line-height: 0.96; letter-spacing: -0.025em; color: #fff; text-shadow: 0 6px 34px rgba(0,0,0,0.55); }
+      .sub { display: block; margin-top: 22px; font-family: "IDBold"; font-weight: 700; font-size: 52px; color: rgba(255,255,255,0.92); text-shadow: 0 4px 22px rgba(0,0,0,0.6); }
+      .cold { color: var(--cold); }
+      .hot { color: var(--amber); text-shadow: 0 0 40px rgba(255,181,71,0.75), 0 6px 34px rgba(0,0,0,0.5); }
+      .chip { position: absolute; left: 90px; top: 1270px; padding: 20px 38px; border-radius: 999px; background: rgba(13,10,8,0.6); border: 2px solid rgba(255,210,138,0.55); font-family: "IDBlack"; font-weight: 900; font-size: 46px; letter-spacing: 0.08em; color: var(--cream); display: block; white-space: nowrap; }
+      .pcard { position: absolute; left: 80px; top: 1150px; width: 760px; display: block; }
+      .pnum { display: block; font-family: "IDBlack"; font-weight: 900; font-size: 190px; line-height: 0.85; color: var(--amber); text-shadow: 0 0 50px rgba(255,181,71,0.6), 0 6px 30px rgba(0,0,0,0.6); }
+      .pname { display: block; margin-top: 14px; font-family: "IDBlack"; font-weight: 900; font-size: 64px; line-height: 1.0; color: #fff; text-shadow: 0 4px 24px rgba(0,0,0,0.7); }
+      .pprice { display: inline-block; margin-top: 18px; padding: 10px 26px; border-radius: 14px; background: rgba(255,255,255,0.94); color: var(--ink); font-family: "IDBlack"; font-weight: 900; font-size: 44px; }
+      .e-kick { display: block; font-family: "ISemi"; font-weight: 600; font-size: 32px; letter-spacing: 0.45em; color: var(--glow); margin-bottom: 18px; }
+      .e-big { display: block; font-family: "IDBlack"; font-weight: 900; font-size: 112px; line-height: 0.95; color: #fff; letter-spacing: -0.025em; text-shadow: 0 6px 34px rgba(0,0,0,0.6); }
+      .e-sub { display: block; margin-top: 22px; font-family: "IDBold"; font-weight: 700; font-size: 48px; color: var(--glow); text-shadow: 0 4px 22px rgba(0,0,0,0.6); }
+      .e-cta { position: absolute; left: 190px; top: 1240px; width: 700px; height: 112px; border-radius: 999px; background: #fff; color: var(--ink); text-align: center; line-height: 112px; font-family: "IDBlack"; font-weight: 900; font-size: 46px; display: block; box-shadow: 0 0 60px rgba(255,181,71,0.6); }
+      .e-code { position: absolute; left: 140px; top: 1380px; width: 800px; text-align: center; font-family: "IDBold"; font-weight: 700; font-size: 36px; color: var(--amber); display: block; text-shadow: 0 3px 16px rgba(0,0,0,0.7); }
+      #flash { background: #fff3dc; opacity: 0; }
+      #glow { background: radial-gradient(ellipse at 50% 42%, rgba(255,190,90,0.55), rgba(255,190,90,0) 60%); opacity: 0; mix-blend-mode: screen; }
+      #fadeout { background: var(--ink); opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-width="1080" data-height="1920" data-duration="16" data-fps="30">
+      <div id="bg" class="clip fill" data-start="0" data-duration="16" data-track-index="0"></div>
+
+      <video id="vh"  class="shot" src="assets/h_flip.mp4"      data-start="0"    data-duration="3.5" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="vr1" class="shot" src="assets/r_bedroom.mp4"   data-start="3.5"  data-duration="1.0" data-media-start="0" data-track-index="2" muted playsinline></video>
+      <video id="vr2" class="shot" src="assets/r_livingroom.mp4" data-start="4.5" data-duration="1.0" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="vr3" class="shot" src="assets/r_hallway.mp4"   data-start="5.5"  data-duration="1.0" data-media-start="0" data-track-index="2" muted playsinline></video>
+      <video id="vr4" class="shot" src="assets/r_dining.mp4"    data-start="6.5"  data-duration="1.0" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="vp1" class="shot" src="assets/p1_aurora.mp4"   data-start="7.5"  data-duration="1.0" data-media-start="0" data-track-index="2" muted playsinline></video>
+      <video id="vp2" class="shot" src="assets/p2_compact.mp4"  data-start="8.5"  data-duration="1.0" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="vp3" class="shot" src="assets/p3_nixline.mp4"  data-start="9.5"  data-duration="1.0" data-media-start="0" data-track-index="2" muted playsinline></video>
+      <video id="vp4" class="shot" src="assets/p4_vertical.mp4" data-start="10.5" data-duration="1.0" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="vp5" class="shot" src="assets/p5_shelf.mp4"    data-start="11.5" data-duration="1.0" data-media-start="0" data-track-index="2" muted playsinline></video>
+      <video id="ve"  class="shot" src="assets/end_dining.mp4"  data-start="12.5" data-duration="3.5" data-media-start="0" data-track-index="1" muted playsinline></video>
+
+      <div id="scrim" class="clip layer scrim" data-start="0" data-duration="16" data-track-index="3"></div>
+      <div id="scrim4" class="clip layer" style="background: linear-gradient(180deg, rgba(13,10,8,0.6) 0%, rgba(13,10,8,0.25) 30%, rgba(13,10,8,0.1) 50%, rgba(13,10,8,0.6) 80%);" data-start="10.5" data-duration="1.0" data-track-index="16"></div>
+      <div id="glow" class="clip layer" data-start="2.0" data-duration="1.5" data-track-index="4"></div>
+      <div id="flash" class="clip layer" data-start="1.95" data-duration="10.6" data-track-index="5"></div>
+
+      <!-- hook -->
+      <div id="h1" class="clip top" data-start="0" data-duration="2.0" data-track-index="6">
+        <span class="big">Your wall at <span class="cold">4 PM</span></span>
+        <span class="sub">plain. flat. boring.</span>
+      </div>
+      <div id="h2" class="clip top" data-start="2.0" data-duration="1.5" data-track-index="7">
+        <span id="h2a" class="big">Your wall at <span class="hot">8 PM</span></span>
+        <span id="h2b" class="sub">one wooden light. that's it.</span>
+      </div>
+
+      <!-- rooms -->
+      <div id="rooms" class="clip top" data-start="3.5" data-duration="4.0" data-track-index="6"><span class="big">Works in every room</span></div>
+      <div id="c1" class="clip chip" data-start="3.5" data-duration="1.0" data-track-index="8">BEDROOM</div>
+      <div id="c2" class="clip chip" data-start="4.5" data-duration="1.0" data-track-index="9">LIVING ROOM</div>
+      <div id="c3" class="clip chip" data-start="5.5" data-duration="1.0" data-track-index="8">HALLWAY</div>
+      <div id="c4" class="clip chip" data-start="6.5" data-duration="1.0" data-track-index="9">DINING</div>
+
+      <!-- products -->
+      <div id="pick" class="clip top" data-start="7.5" data-duration="5.0" data-track-index="7">
+        <span class="big">Pick yours 👇</span>
+        <span class="sub">comment 1, 2, 3, 4 or 5</span>
+      </div>
+      <div id="q1" class="clip pcard" data-start="7.5"  data-duration="1.0" data-track-index="10"><span class="pnum">1</span><span class="pname">Aurora Linear</span><span class="pprice">from ₹1,999</span></div>
+      <div id="q2" class="clip pcard" data-start="8.5"  data-duration="1.0" data-track-index="11"><span class="pnum">2</span><span class="pname">Compact Sheesham</span><span class="pprice">from ₹4,999</span></div>
+      <div id="q3" class="clip pcard" data-start="9.5"  data-duration="1.0" data-track-index="10"><span class="pnum">3</span><span class="pname">Nix Line 30"</span><span class="pprice">from ₹1,799</span></div>
+      <div id="q4" class="clip pcard" data-start="10.5" data-duration="1.0" data-track-index="11"><span class="pnum">4</span><span class="pname">Vertical Curved</span><span class="pprice">₹6,999</span></div>
+      <div id="q5" class="clip pcard" data-start="11.5" data-duration="1.0" data-track-index="10"><span class="pnum">5</span><span class="pname">Floating Shelf Light</span><span class="pprice">from ₹2,999</span></div>
+
+      <!-- end card -->
+      <div id="endT" class="clip top" data-start="12.5" data-duration="3.5" data-track-index="6">
+        <span id="ek" class="e-kick">NIXWOODS</span>
+        <span id="eb" class="e-big">Solid-wood wall lights</span>
+        <span id="es" class="e-sub">13 designs · from ₹1,599</span>
+      </div>
+      <div id="cta" class="clip e-cta" data-start="12.5" data-duration="3.5" data-track-index="12">Shop · nixwoods.com</div>
+      <div id="code" class="clip e-code" data-start="12.5" data-duration="3.5" data-track-index="13">Code FLY100 · ₹100 off prepaid</div>
+      <div id="fadeout" class="clip layer" data-start="15.6" data-duration="0.4" data-track-index="14"></div>
+
+      <audio id="music" src="assets/score.wav" data-start="0" data-duration="16" data-track-index="15" data-volume="1"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const pop = "back.out(2.2)";
+      const snap = "power3.out";
+
+      // hook: slow creep on the cold wall, then punch when it glows
+      tl.fromTo("#vh", { scale: 1.0 }, { scale: 1.06, duration: 2.0, ease: "power1.in" }, 0);
+      tl.to("#vh", { scale: 1.14, duration: 1.5, ease: "power2.out" }, 2.0);
+      // rooms + products: punch-zoom on every cut
+      [["#vr1",3.5],["#vr2",4.5],["#vr3",5.5],["#vr4",6.5],["#vp1",7.5],["#vp2",8.5],["#vp3",9.5],["#vp4",10.5],["#vp5",11.5]].forEach(([id,t0]) => {
+        tl.fromTo(id, { scale: 1.15 }, { scale: 1.02, duration: 1.0, ease: "power3.out" }, t0);
+      });
+      tl.fromTo("#ve", { scale: 1.12 }, { scale: 1.0, duration: 3.5, ease: "power2.out" }, 12.5);
+
+      // drop: flash + warm glow bloom
+      tl.fromTo("#flash", { opacity: 0 }, { opacity: 0.85, duration: 0.05, ease: "none" }, 1.95);
+      tl.to("#flash", { opacity: 0, duration: 0.45, ease: "power2.out" }, 2.0);
+      [3.5,4.5,5.5,6.5,7.5,8.5,9.5,10.5,11.5].forEach((t0) => {
+        tl.fromTo("#flash", { opacity: 0.22 }, { opacity: 0, duration: 0.2, ease: "power2.out", immediateRender: false }, t0);
+      });
+      tl.fromTo("#glow", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power2.out" }, 2.0);
+
+      // hook text
+      tl.fromTo("#h1", { opacity: 0, y: 40, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.35, ease: pop }, 0.05);
+      tl.to("#h1", { opacity: 0, duration: 0.08 }, 1.92);
+      tl.fromTo("#h2a", { opacity: 0, scale: 1.25 }, { opacity: 1, scale: 1, duration: 0.3, ease: snap }, 2.0);
+      tl.fromTo("#h2b", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: snap }, 2.35);
+
+      // rooms
+      tl.fromTo("#rooms", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: pop }, 3.5);
+      ["#c1","#c2","#c3","#c4"].forEach((id, i) => tl.fromTo(id, { opacity: 0, x: -50, scale: 0.85 }, { opacity: 1, x: 0, scale: 1, duration: 0.25, ease: pop }, 3.5 + i));
+
+      // products
+      tl.fromTo("#pick", { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, duration: 0.3, ease: snap }, 7.5);
+      ["#q1","#q2","#q3","#q4","#q5"].forEach((id, i) => {
+        const t0 = 7.5 + i;
+        tl.fromTo(id + " .pnum", { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1, duration: 0.22, ease: snap }, t0);
+        tl.fromTo(id + " .pname", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.25, ease: snap }, t0 + 0.08);
+        tl.fromTo(id + " .pprice", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.25, ease: pop }, t0 + 0.16);
+      });
+
+      // end card
+      tl.fromTo("#ek", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.35, ease: snap }, 12.6);
+      tl.fromTo("#eb", { opacity: 0, y: 40, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: pop }, 12.7);
+      tl.fromTo("#es", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.35, ease: snap }, 13.0);
+      tl.fromTo("#cta", { opacity: 0, y: 40, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: pop }, 13.3);
+      tl.fromTo("#cta", { scale: 1 }, { scale: 1.05, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: 3, immediateRender: false }, 13.9);
+      tl.fromTo("#code", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 13.6);
+      tl.fromTo("#fadeout", { opacity: 0 }, { opacity: 0.6, duration: 0.4, ease: "power1.in" }, 15.6);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

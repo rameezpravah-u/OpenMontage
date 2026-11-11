@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Turn It. Change the Mood.</title>
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "IDBlack"; src: url("assets/InterDisplay-Black.otf"); font-weight: 900; }
+      @font-face { font-family: "IDBold"; src: url("assets/InterDisplay-Bold.otf"); font-weight: 700; }
+      @font-face { font-family: "ISemi"; src: url("assets/Inter-SemiBold.otf"); font-weight: 600; }
+      :root {
+        --ink: #0c0a09;
+        --green: #2dff8f;
+        --red: #ff3346;
+        --amber: #ffb21f;
+        --warm: #ffe7bf;
+        --wood: #7a4a2a;
+      }
+      html, body { margin: 0; background: var(--ink); }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--ink); }
+      .fill { position: absolute; inset: 0; background: var(--ink); }
+      video.shot { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; transform-origin: 50% 55%; }
+      .layer { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; box-sizing: border-box; }
+      .scrim-top { background: linear-gradient(180deg, rgba(12,10,9,0.78) 0%, rgba(12,10,9,0.45) 22%, rgba(12,10,9,0) 40%); }
+      .scrim-end { background: linear-gradient(180deg, rgba(12,10,9,0.88) 0%, rgba(12,10,9,0.55) 30%, rgba(12,10,9,0.05) 48%, rgba(12,10,9,0.1) 62%, rgba(12,10,9,0.82) 84%, rgba(12,10,9,0.9) 100%); }
+
+      /* hook */
+      .hook { position: absolute; left: 80px; top: 250px; width: 920px; text-align: center; display: block; }
+      .h-big { display: block; font-family: "IDBlack"; font-weight: 900; font-size: 104px; line-height: 0.98; letter-spacing: -0.02em; color: #fff; text-shadow: 0 6px 30px rgba(0,0,0,0.55); }
+      .rainbow { background: linear-gradient(90deg, var(--green) 0%, #9dff4a 22%, var(--amber) 48%, var(--red) 74%, #ff6fa8 100%); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: none; }
+      .h-small { display: block; margin-top: 26px; font-family: "IDBold"; font-weight: 700; font-size: 56px; color: #fff; text-shadow: 0 4px 22px rgba(0,0,0,0.6); }
+
+      /* mood chips */
+      .chip { position: absolute; left: 90px; top: 1250px; padding: 22px 36px 22px 30px; border-radius: 999px; background: rgba(12,10,9,0.62); border: 2px solid rgba(255,255,255,0.18); display: block; white-space: nowrap; }
+      .chip .dot { display: inline-block; width: 30px; height: 30px; border-radius: 50%; margin-right: 18px; vertical-align: -3px; }
+      .chip .name { font-family: "IDBlack"; font-weight: 900; font-size: 46px; letter-spacing: 0.04em; color: #fff; }
+      .chip .count { font-family: "ISemi"; font-weight: 600; font-size: 30px; color: rgba(255,255,255,0.65); margin-left: 18px; letter-spacing: 0.08em; }
+
+      .mid { position: absolute; left: 70px; top: 300px; width: 940px; text-align: center; display: block; font-family: "IDBlack"; font-weight: 900; font-size: 96px; line-height: 1.0; color: #fff; text-shadow: 0 6px 30px rgba(0,0,0,0.6); letter-spacing: -0.02em; }
+      .mid .sub { display: block; font-family: "IDBold"; font-weight: 700; font-size: 50px; margin-top: 18px; color: var(--warm); letter-spacing: 0; }
+      .punch { position: absolute; left: 60px; top: 330px; width: 960px; text-align: center; display: block; font-family: "IDBlack"; font-weight: 900; font-size: 150px; line-height: 0.95; color: #fff; text-shadow: 0 8px 40px rgba(0,0,0,0.6); letter-spacing: -0.03em; }
+
+      /* end card */
+      .end-title { position: absolute; left: 70px; top: 210px; width: 940px; text-align: center; display: block; }
+      .e-kick { display: block; font-family: "ISemi"; font-weight: 600; font-size: 32px; letter-spacing: 0.42em; color: var(--warm); margin-bottom: 18px; }
+      .e-big { display: block; font-family: "IDBlack"; font-weight: 900; font-size: 128px; line-height: 0.95; color: #fff; letter-spacing: -0.025em; }
+      .e-sub { display: block; margin-top: 22px; font-family: "IDBold"; font-weight: 700; font-size: 44px; color: rgba(255,255,255,0.85); }
+      .e-cta { position: absolute; left: 190px; top: 1270px; width: 700px; height: 112px; border-radius: 999px; background: #fff; color: var(--ink); text-align: center; line-height: 112px; font-family: "IDBlack"; font-weight: 900; font-size: 46px; letter-spacing: 0.01em; display: block; box-shadow: 0 0 60px rgba(255,178,31,0.55); }
+      .e-code { position: absolute; left: 140px; top: 1408px; width: 800px; text-align: center; font-family: "IDBold"; font-weight: 700; font-size: 36px; color: var(--amber); display: block; }
+
+      .tint { opacity: 0; mix-blend-mode: screen; }
+      #flash { background: #fff; opacity: 0; }
+      #fadeout { background: var(--ink); opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-width="1080" data-height="1920" data-duration="15" data-fps="30">
+      <div id="bg" class="clip fill" data-start="0" data-duration="15" data-track-index="0"></div>
+
+      <video id="v01" class="shot" src="assets/c01_place.mp4" data-start="0"    data-duration="1.5" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="v02" class="shot" src="assets/c02_green.mp4" data-start="1.5"  data-duration="1.0" data-media-start="0" data-track-index="2" muted playsinline></video>
+      <video id="v03" class="shot" src="assets/c03_red.mp4"   data-start="2.5"  data-duration="1.0" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="v04" class="shot" src="assets/c04_flare.mp4" data-start="3.5"  data-duration="0.5" data-media-start="0" data-track-index="2" muted playsinline></video>
+      <video id="v05" class="shot" src="assets/c05_amber.mp4" data-start="4.0"  data-duration="1.0" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="v06" class="shot" src="assets/c06_warm.mp4"  data-start="5.0"  data-duration="1.0" data-media-start="0" data-track-index="2" muted playsinline></video>
+      <video id="v07" class="shot" src="assets/c07_twist.mp4" data-start="6.0"  data-duration="2.0" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="v08" class="shot" src="assets/c08_base.mp4"  data-start="8.0"  data-duration="1.0" data-media-start="0" data-track-index="2" muted playsinline></video>
+      <video id="v09" class="shot" src="assets/c09_green.mp4" data-start="9.0"  data-duration="0.5" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="v10" class="shot" src="assets/c10_white.mp4" data-start="9.5"  data-duration="0.5" data-media-start="0" data-track-index="2" muted playsinline></video>
+      <video id="v11" class="shot" src="assets/c11_green.mp4" data-start="10.0" data-duration="0.5" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="v12" class="shot" src="assets/c05_amber.mp4" data-start="10.5" data-duration="0.5" data-media-start="0.3" data-track-index="2" muted playsinline></video>
+      <video id="v13" class="shot" src="assets/c12_hero.mp4"  data-start="11.0" data-duration="4.0" data-media-start="0" data-track-index="1" muted playsinline></video>
+
+      <div id="scrimTop" class="clip layer scrim-top" data-start="0" data-duration="11" data-track-index="3"></div>
+      <div id="scrimEnd" class="clip layer scrim-end" data-start="11" data-duration="4" data-track-index="3"></div>
+
+      <!-- colour tint pulses on each switch -->
+      <div id="tG" class="clip layer tint" style="background: radial-gradient(circle at 50% 60%, rgba(45,255,143,0.9), rgba(45,255,143,0) 70%);" data-start="1.5" data-duration="9.0" data-track-index="4"></div>
+      <div id="tR" class="clip layer tint" style="background: radial-gradient(circle at 50% 60%, rgba(255,51,70,0.9), rgba(255,51,70,0) 70%);" data-start="2.5" data-duration="1.0" data-track-index="5"></div>
+      <div id="tA" class="clip layer tint" style="background: radial-gradient(circle at 50% 60%, rgba(255,178,31,0.9), rgba(255,178,31,0) 70%);" data-start="4.0" data-duration="7.0" data-track-index="5"></div>
+      <div id="flash" class="clip layer" data-start="1.45" data-duration="0.6" data-track-index="6"></div>
+
+      <!-- hook -->
+      <div id="hook" class="clip hook" data-start="0" data-duration="2.5" data-track-index="7">
+        <span id="hk1" class="h-big">This lamp changes</span>
+        <span id="hk2" class="h-big rainbow">colour</span>
+        <span id="hk3" class="h-small">when you turn it ↻</span>
+      </div>
+
+      <!-- mood chips -->
+      <div id="ch1" class="clip chip" data-start="1.6" data-duration="0.9" data-track-index="8"><span class="dot" style="background: var(--green); box-shadow: 0 0 22px var(--green);"></span><span class="name">GREEN LUXE</span><span class="count">1/4</span></div>
+      <div id="ch2" class="clip chip" data-start="2.5" data-duration="1.5" data-track-index="9"><span class="dot" style="background: var(--red); box-shadow: 0 0 22px var(--red);"></span><span class="name">CRIMSON GLOW</span><span class="count">2/4</span></div>
+      <div id="ch3" class="clip chip" data-start="4.0" data-duration="1.0" data-track-index="8"><span class="dot" style="background: var(--amber); box-shadow: 0 0 22px var(--amber);"></span><span class="name">AMBER WAVE</span><span class="count">3/4</span></div>
+      <div id="ch4" class="clip chip" data-start="5.0" data-duration="1.0" data-track-index="9"><span class="dot" style="background: var(--warm); box-shadow: 0 0 22px var(--warm);"></span><span class="name">CLASSIC WARM</span><span class="count">4/4</span></div>
+
+      <div id="mood" class="clip mid" data-start="2.6" data-duration="3.4" data-track-index="10">Pick your mood<span class="sub">no app · no remote</span></div>
+      <div id="twist" class="clip mid" data-start="6.0" data-duration="2.0" data-track-index="10">Just rotate<span class="sub">the glass cube ↻</span></div>
+      <div id="wood" class="clip mid" data-start="8.0" data-duration="1.0" data-track-index="10">Solid sheesham<span class="sub">wood base</span></div>
+      <div id="p1" class="clip punch" data-start="9.0" data-duration="1.0" data-track-index="11">4 moods.</div>
+      <div id="p2" class="clip punch" data-start="10.0" data-duration="1.0" data-track-index="11">1 lamp.</div>
+
+      <!-- end card -->
+      <div id="endT" class="clip end-title" data-start="11" data-duration="4" data-track-index="12">
+        <span id="ek" class="e-kick">NIXWOODS</span>
+        <span id="eb" class="e-big">Rubik's Cube Lamp</span>
+        <span id="es" class="e-sub">Sheesham wood · glass · 3000K glow</span>
+      </div>
+      <div id="cta" class="clip e-cta" data-start="11" data-duration="4" data-track-index="13">Shop · nixwoods.com</div>
+      <div id="code" class="clip e-code" data-start="11" data-duration="4" data-track-index="14">Code FLY100 · ₹100 off prepaid</div>
+      <div id="fadeout" class="clip layer" data-start="14.6" data-duration="0.4" data-track-index="15"></div>
+
+      <audio id="music" src="assets/score.wav" data-start="0" data-duration="15" data-track-index="16" data-volume="1"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const pop = "back.out(2.2)";
+      const snap = "power3.out";
+
+      // footage: slow creep on the intro, punch-zoom on every cut
+      tl.fromTo("#v01", { scale: 1.0 }, { scale: 1.08, duration: 1.5, ease: "power1.in" }, 0);
+      const cuts = [["#v02",1.5],["#v03",2.5],["#v04",3.5],["#v05",4.0],["#v06",5.0],["#v08",8.0],["#v09",9.0],["#v10",9.5],["#v11",10.0],["#v12",10.5]];
+      cuts.forEach(([id, t0]) => tl.fromTo(id, { scale: 1.16 }, { scale: 1.0, duration: 0.4, ease: snap }, t0));
+      tl.fromTo("#v07", { scale: 1.0 }, { scale: 1.1, duration: 2.0, ease: "power1.inOut" }, 6.0);
+      tl.fromTo("#v13", { scale: 1.14 }, { scale: 1.0, duration: 4.0, ease: "power2.out" }, 11.0);
+
+      // drop flash
+      tl.fromTo("#flash", { opacity: 0 }, { opacity: 0.9, duration: 0.05, ease: "none" }, 1.45);
+      tl.to("#flash", { opacity: 0, duration: 0.45, ease: "power2.out" }, 1.5);
+      // colour pulses
+      [[1.5,"#tG"],[9.0,"#tG"],[10.0,"#tG"]].forEach(([t0,id]) => tl.fromTo(id, { opacity: 0.55 }, { opacity: 0, duration: 0.35, ease: "power2.out", immediateRender: false }, t0));
+      tl.fromTo("#tR", { opacity: 0.55 }, { opacity: 0, duration: 0.35, ease: "power2.out" }, 2.5);
+      [[4.0,"#tA"],[10.5,"#tA"]].forEach(([t0,id]) => tl.fromTo(id, { opacity: 0.5 }, { opacity: 0, duration: 0.35, ease: "power2.out", immediateRender: false }, t0));
+
+      // hook: lands inside the first second
+      tl.fromTo("#hk1", { opacity: 0, y: 40, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.35, ease: pop }, 0.05);
+      tl.fromTo("#hk2", { opacity: 0, y: 40, scale: 0.8 }, { opacity: 1, y: 0, scale: 1, duration: 0.35, ease: pop }, 0.3);
+      tl.fromTo("#hk3", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.3, ease: snap }, 0.75);
+      tl.fromTo("#hk2", { scale: 1 }, { scale: 1.12, duration: 0.12, ease: "power2.out", yoyo: true, repeat: 1, immediateRender: false }, 1.5);
+      tl.to("#hook", { opacity: 0, y: -30, duration: 0.2, ease: "power2.in" }, 2.3);
+
+      // chips
+      ["#ch1","#ch2","#ch3","#ch4"].forEach((id, i) => {
+        const t0 = [1.6, 2.5, 4.0, 5.0][i];
+        tl.fromTo(id, { opacity: 0, x: -60, scale: 0.85 }, { opacity: 1, x: 0, scale: 1, duration: 0.28, ease: pop }, t0);
+      });
+      tl.to("#ch2", { opacity: 0, duration: 0.1 }, 3.5);
+      tl.to("#ch4", { opacity: 0, x: 40, duration: 0.15, ease: "power2.in" }, 5.85);
+
+      // mid captions
+      tl.fromTo("#mood", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: pop }, 2.6);
+      tl.to("#mood", { opacity: 0, duration: 0.15 }, 5.85);
+      tl.fromTo("#twist", { opacity: 0, y: 30, rotation: -4 }, { opacity: 1, y: 0, rotation: 0, duration: 0.4, ease: pop }, 6.1);
+      tl.to("#twist", { opacity: 0, duration: 0.12 }, 7.88);
+      tl.fromTo("#wood", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.25, ease: pop }, 8.0);
+      tl.fromTo("#p1", { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1, duration: 0.22, ease: snap }, 9.0);
+      tl.fromTo("#p2", { opacity: 0, scale: 1.6 }, { opacity: 1, scale: 1, duration: 0.22, ease: snap }, 10.0);
+
+      // end card
+      tl.fromTo("#scrimEnd", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 11.0);
+      tl.fromTo("#ek", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: snap }, 11.1);
+      tl.fromTo("#eb", { opacity: 0, y: 40, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: pop }, 11.2);
+      tl.fromTo("#es", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.4, ease: snap }, 11.55);
+      tl.fromTo("#cta", { opacity: 0, y: 40, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: pop }, 11.9);
+      tl.fromTo("#cta", { scale: 1 }, { scale: 1.05, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: 3, immediateRender: false }, 12.5);
+      tl.fromTo("#code", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 12.3);
+      tl.fromTo("#fadeout", { opacity: 0 }, { opacity: 0.6, duration: 0.4, ease: "power1.in" }, 14.6);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

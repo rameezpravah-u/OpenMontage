@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "topic": "Aurora teak linear wall light \u2014 viral ad",
+  "research_date": "2026-11-05",
+  "landscape": {
+    "existing_content": [
+      {
+        "title": "needs-edit clips",
+        "source": "user drive",
+        "angle": "real product over art",
+        "what_it_covers": "glow",
+        "what_it_misses": "uses, price"
+      },
+      {
+        "title": "Store listing renders",
+        "url": "https://nixwoods.com/products/nixwoods-aurora-linear-wall-light",
+        "source": "brand site",
+        "angle": "room uses",
+        "what_it_covers": "sideboard/art/mirror/bed",
+        "what_it_misses": "motion"
+      },
+      {
+        "title": "Mislabelled share photos",
+        "source": "user drive",
+        "angle": "Compact light",
+        "what_it_covers": "n/a",
+        "what_it_misses": "wrong product"
+      }
+    ],
+    "saturated_angles": [
+      "static hero"
+    ],
+    "underserved_gaps": [
+      "tube-light replacement POV",
+      "multi-use + option pricing"
+    ]
+  },
+  "data_points": [
+    {
+      "claim": "30in down-only Rs1,999 (was 2,749); up+down 2,499; 48in 2,999/3,499",
+      "source_url": "https://nixwoods.com/products/nixwoods-aurora-linear-wall-light",
+      "credibility": "primary_source"
+    },
+    {
+      "claim": "Uses: sideboard, painting, mirror vanity, headboard",
+      "source_url": "https://nixwoods.com/products/nixwoods-aurora-linear-wall-light",
+      "credibility": "primary_source"
+    },
+    {
+      "claim": "1-2s hook window",
+      "source_url": "https://dev.to/fermainpariz/instagram-reels-strategy-2026-what-actually-works-data-backed-guide-11hn",
+      "credibility": "secondary_source"
+    }
+  ],
+  "audience_insights": {
+    "common_questions": [
+      "Which size?",
+      "Up or down light?",
+      "Price?"
+    ],
+    "misconceptions": [
+      {
+        "myth": "Wood lights are pricey",
+        "reality": "from Rs 1,999"
+      }
+    ],
+    "knowledge_level": "general consumer"
+  },
+  "angles_discovered": [
+    {
+      "name": "POV tube-light swap",
+      "hook": "POV: you replaced the tube light with this",
+      "type": "trending",
+      "why_now": "relatable Indian homes"
+    },
+    {
+      "name": "Every room",
+      "hook": "One light. Every room.",
+      "type": "evergreen",
+      "why_now": "uses"
+    },
+    {
+      "name": "Pick your glow",
+      "hook": "Down only or up + down",
+      "type": "evergreen",
+      "why_now": "variant clarity"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://nixwoods.com/products/nixwoods-aurora-linear-wall-light",
+      "title": "Aurora product page/JSON",
+      "used_for": "variants & prices, uses"
+    },
+    {
+      "url": "https://nixwoods.com/collections/wooden-wall-lights",
+      "title": "Collection",
+      "used_for": "FLY100"
+    },
+    {
+      "url": "https://dev.to/fermainpariz/instagram-reels-strategy-2026-what-actually-works-data-backed-guide-11hn",
+      "title": "Reels strategy",
+      "used_for": "hook"
+    },
+    {
+      "url": "https://invideo.io/faq/what-are-the-best-hook-formats-for-ugc-ads-on-instagram/",
+      "title": "Hooks",
+      "used_for": "POV/feeling-first"
+    },
+    {
+      "url": "https://oakgen.ai/blog/ai-beat-drops-viral-reels",
+      "title": "Beat drops",
+      "used_for": "pacing"
+    }
+  ]
+}

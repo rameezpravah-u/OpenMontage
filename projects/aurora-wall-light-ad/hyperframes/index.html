@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Aurora Wall Light Ad</title>
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "IDBlack"; src: url("assets/InterDisplay-Black.otf"); font-weight: 900; }
+      @font-face { font-family: "IDBold"; src: url("assets/InterDisplay-Bold.otf"); font-weight: 700; }
+      @font-face { font-family: "ISemi"; src: url("assets/Inter-SemiBold.otf"); font-weight: 600; }
+      @font-face { font-family: "Corm"; src: url("assets/cormorant-garamond-latin-400-italic.woff2") format("woff2"); font-style: italic; }
+      :root { --ink: #120d09; --amber: #ffb54a; --glow: #ffd796; --cream: #fff5e6; }
+      html, body { margin: 0; background: var(--ink); }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--ink); }
+      .fill { position: absolute; inset: 0; background: var(--ink); }
+      .shot { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; transform-origin: 50% 30%; }
+      .layer { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; box-sizing: border-box; }
+      .scrim { background: linear-gradient(180deg, rgba(18,13,9,0.55) 0%, rgba(18,13,9,0.15) 22%, rgba(18,13,9,0) 40%, rgba(18,13,9,0) 52%, rgba(18,13,9,0.55) 70%, rgba(18,13,9,0.8) 100%); }
+      /* copy kept inside y 330..1450: survives 4:5 feed crop and Reels UI */
+      .cap { position: absolute; left: 70px; top: 1080px; width: 940px; text-align: center; display: block; }
+      .top { position: absolute; left: 70px; top: 340px; width: 940px; text-align: center; display: block; }
+      .big { display: block; font-family: "IDBlack"; font-weight: 900; font-size: 98px; line-height: 1.0; letter-spacing: -0.022em; color: #fff; text-shadow: 0 6px 30px rgba(0,0,0,0.6); }
+      .mid { display: block; font-family: "IDBlack"; font-weight: 900; font-size: 84px; line-height: 1.0; letter-spacing: -0.02em; color: #fff; text-shadow: 0 6px 30px rgba(0,0,0,0.6); }
+      .sub { display: block; margin-top: 20px; font-family: "IDBold"; font-weight: 700; font-size: 48px; color: var(--glow); text-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+      .serif { font-family: "Corm"; font-style: italic; font-weight: 400; font-size: 110px; letter-spacing: 0; color: var(--glow); }
+      .pov { display: inline-block; margin-bottom: 18px; padding: 10px 24px; border-radius: 12px; background: #fff; color: var(--ink); font-family: "IDBlack"; font-weight: 900; font-size: 40px; letter-spacing: 0.06em; }
+      .chip { position: absolute; left: 50%; top: 1320px; transform: translateX(-50%); padding: 20px 40px; border-radius: 999px; background: rgba(18,13,9,0.66); border: 2px solid rgba(255,215,150,0.6); font-family: "IDBlack"; font-weight: 900; font-size: 44px; letter-spacing: 0.08em; color: var(--cream); display: block; white-space: nowrap; }
+      .opt { position: absolute; top: 1270px; width: 440px; text-align: center; display: block; font-family: "IDBlack"; font-weight: 900; font-size: 44px; color: #fff; text-shadow: 0 4px 18px rgba(0,0,0,0.7); }
+      .opt small { display: block; font-family: "IDBold"; font-weight: 700; font-size: 40px; color: var(--amber); margin-top: 8px; }
+      #flash { background: #fff1d6; opacity: 0; }
+      /* end card */
+      .e-brand { position: absolute; left: 60px; top: 380px; width: 960px; text-align: center; display: block; font-family: "ISemi"; font-weight: 600; font-size: 34px; letter-spacing: 0.5em; color: var(--glow); text-shadow: 0 2px 14px rgba(0,0,0,0.6); }
+      .e-panel { position: absolute; left: 60px; top: 760px; width: 960px; height: 700px; border-radius: 40px; background: rgba(18,13,9,0.8); border: 2px solid rgba(255,215,150,0.35); display: block; }
+      .e-name { position: absolute; left: 60px; top: 805px; width: 960px; text-align: center; display: block; }
+      .e-name .serif { font-size: 120px; line-height: 0.9; color: var(--glow); }
+      .e-name .nm { display: block; font-family: "IDBlack"; font-weight: 900; font-size: 54px; color: #fff; letter-spacing: -0.01em; margin-top: 6px; }
+      .e-specs { position: absolute; left: 60px; top: 1010px; width: 960px; text-align: center; display: block; font-family: "ISemi"; font-weight: 600; font-size: 32px; letter-spacing: 0.06em; color: var(--glow); }
+      .e-price { position: absolute; left: 60px; top: 1060px; width: 960px; text-align: center; display: block; white-space: nowrap; }
+      .from { font-family: "IDBold"; font-weight: 700; font-size: 44px; color: rgba(255,255,255,0.8); margin-right: 14px; }
+      .now { font-family: "IDBlack"; font-weight: 900; font-size: 112px; color: #fff; letter-spacing: -0.02em; }
+      .was { font-family: "IDBold"; font-weight: 700; font-size: 50px; color: rgba(255,255,255,0.55); text-decoration: line-through; margin-left: 18px; }
+      .off { display: inline-block; margin-left: 18px; padding: 8px 18px; border-radius: 14px; background: var(--amber); color: var(--ink); font-family: "IDBlack"; font-weight: 900; font-size: 42px; vertical-align: 20px; }
+      .e-cta { position: absolute; left: 190px; top: 1225px; width: 700px; height: 116px; border-radius: 999px; background: var(--amber); color: var(--ink); text-align: center; line-height: 116px; font-family: "IDBlack"; font-weight: 900; font-size: 52px; letter-spacing: 0.04em; display: block; box-shadow: 0 0 60px rgba(255,181,74,0.6); }
+      .e-code { position: absolute; left: 60px; top: 1370px; width: 960px; text-align: center; display: block; font-family: "IDBold"; font-weight: 700; font-size: 34px; color: var(--cream); }
+      #fadeout { background: var(--ink); opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-width="1080" data-height="1920" data-duration="17" data-fps="30">
+      <div id="bg" class="clip fill" data-start="0" data-duration="17" data-track-index="0"></div>
+
+      <video id="v1" class="shot" src="assets/r_hook.mp4" data-start="0" data-duration="2.0" data-media-start="0.5" data-track-index="1" muted playsinline></video>
+      <video id="v2" class="shot" src="assets/r_art.mp4"  data-start="2.0" data-duration="2.0" data-media-start="0.3" data-track-index="2" muted playsinline></video>
+      <img id="i3" class="clip shot" src="assets/u_grain.jpg"     alt="" data-start="4.0"  data-duration="1.0" data-track-index="1" />
+      <img id="i4" class="clip shot" src="assets/u_split.jpg"     alt="" data-start="5.0"  data-duration="2.0" data-track-index="3" />
+      <img id="i5" class="clip shot" src="assets/u_sideboard.jpg" alt="" data-start="7.0"  data-duration="1.0" data-track-index="1" />
+      <img id="i6" class="clip shot" src="assets/u_art.jpg"       alt="" data-start="8.0"  data-duration="1.0" data-track-index="3" />
+      <img id="i7" class="clip shot" src="assets/u_mirror.jpg"    alt="" data-start="9.0"  data-duration="1.0" data-track-index="1" />
+      <img id="i8" class="clip shot" src="assets/u_bed.jpg"       alt="" data-start="10.0" data-duration="1.0" data-track-index="3" />
+      <img id="i9" class="clip shot" src="assets/u_48.jpg"        alt="" data-start="11.0" data-duration="1.5" data-track-index="1" />
+      <img id="i10" class="clip shot" src="assets/r_end.jpg"      alt="" data-start="12.5" data-duration="4.5" data-track-index="3" />
+
+      <div id="scrim" class="clip layer scrim" data-start="0" data-duration="12.5" data-track-index="4"></div>
+      <div id="flash" class="clip layer" data-start="1.95" data-duration="9.1" data-track-index="5"></div>
+
+      <!-- hook: human POV voice -->
+      <div id="h1" class="clip cap" data-start="0" data-duration="2.0" data-track-index="6"><span class="pov">POV</span><span class="big">you replaced the tube light with this</span></div>
+      <div id="h2" class="clip cap" data-start="2.0" data-duration="2.0" data-track-index="7"><span class="big">Warm light.</span><span class="big serif">not white light.</span></div>
+
+      <div id="f1" class="clip cap" data-start="4.0" data-duration="1.0" data-track-index="6"><span class="big">Solid teak.</span><span class="sub">real grain, real knots</span></div>
+      <div id="f2" class="clip top" data-start="5.0" data-duration="2.0" data-track-index="7"><span class="mid">Pick your glow</span></div>
+      <div id="o1" class="clip opt" style="left: 60px;"  data-start="5.0" data-duration="2.0" data-track-index="8">Down only<small>₹1,999</small></div>
+      <div id="o2" class="clip opt" style="left: 580px;" data-start="5.0" data-duration="2.0" data-track-index="9">Up + down<small>₹2,499</small></div>
+
+      <div id="every" class="clip cap" data-start="7.0" data-duration="4.0" data-track-index="6"><span class="mid">One light.</span><span class="mid">Every room.</span></div>
+      <div id="c1" class="clip chip" data-start="7.0"  data-duration="1.0" data-track-index="10">ABOVE THE SIDEBOARD</div>
+      <div id="c2" class="clip chip" data-start="8.0"  data-duration="1.0" data-track-index="11">ABOVE YOUR ART</div>
+      <div id="c3" class="clip chip" data-start="9.0"  data-duration="1.0" data-track-index="10">ABOVE THE MIRROR</div>
+      <div id="c4" class="clip chip" data-start="10.0" data-duration="1.0" data-track-index="11">ABOVE THE BED</div>
+      <div id="sz" class="clip cap" data-start="11.0" data-duration="1.5" data-track-index="7"><span class="big">30″ or 48″</span><span class="sub">pick the length for your wall</span></div>
+
+      <!-- end card -->
+      <div id="eBrand" class="clip e-brand" data-start="12.5" data-duration="4.5" data-track-index="12">NIXWOODS</div>
+      <div id="ePanel" class="clip e-panel" data-start="12.5" data-duration="4.5" data-track-index="13"></div>
+      <div id="eName" class="clip e-name" data-start="12.5" data-duration="4.5" data-track-index="14"><span class="serif">Aurora</span><span class="nm">Teak Linear Wall Light</span></div>
+      <div id="eSpecs" class="clip e-specs" data-start="12.5" data-duration="4.5" data-track-index="15">SOLID TEAK · WARM LED · 30″ &amp; 48″</div>
+      <div id="ePrice" class="clip e-price" data-start="12.5" data-duration="4.5" data-track-index="16"><span class="from">from</span><span class="now">₹1,999</span><span class="was">₹2,749</span><span class="off">27% OFF</span></div>
+      <div id="eCta" class="clip e-cta" data-start="12.5" data-duration="4.5" data-track-index="17">SHOP NOW →</div>
+      <div id="eCode" class="clip e-code" data-start="12.5" data-duration="4.5" data-track-index="18">Extra ₹100 off on prepaid · code FLY100</div>
+      <div id="fadeout" class="clip layer" data-start="16.6" data-duration="0.4" data-track-index="19"></div>
+
+      <audio id="music" src="assets/score.wav" data-start="0" data-duration="17" data-track-index="20" data-volume="1"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const pop = "back.out(2.2)";
+      const snap = "power3.out";
+
+      tl.fromTo("#v1", { scale: 1.0 }, { scale: 1.08, duration: 2.0, ease: "power1.in" }, 0);
+      tl.fromTo("#v2", { scale: 1.12 }, { scale: 1.0, duration: 2.0, ease: "power2.out" }, 2.0);
+      [["#i3",4.0],["#i5",7.0],["#i6",8.0],["#i7",9.0],["#i8",10.0]].forEach(([id,t0]) => tl.fromTo(id, { scale: 1.14 }, { scale: 1.02, duration: 1.0, ease: snap }, t0));
+      tl.fromTo("#i4", { scale: 1.04 }, { scale: 1.0, duration: 2.0, ease: "power1.out" }, 5.0);
+      tl.fromTo("#i9", { scale: 1.0 }, { scale: 1.07, duration: 1.5, ease: "none" }, 11.0);
+      tl.fromTo("#i10", { scale: 1.1 }, { scale: 1.0, duration: 4.5, ease: "power2.out" }, 12.5);
+
+      tl.fromTo("#flash", { opacity: 0 }, { opacity: 0.8, duration: 0.05, ease: "none" }, 1.95);
+      tl.to("#flash", { opacity: 0, duration: 0.4, ease: "power2.out" }, 2.0);
+      [4.0, 5.0, 7.0, 8.0, 9.0, 10.0, 11.0].forEach((t0) => tl.fromTo("#flash", { opacity: 0.2 }, { opacity: 0, duration: 0.2, ease: "power2.out", immediateRender: false }, t0));
+
+      tl.fromTo("#h1 .pov", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.25, ease: pop }, 0.05);
+      tl.fromTo("#h1 .big", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: snap }, 0.2);
+      tl.to("#h1", { opacity: 0, duration: 0.06 }, 1.94);
+      tl.fromTo("#h2", { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, duration: 0.3, ease: snap }, 2.0);
+
+      tl.fromTo("#f1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.25, ease: pop }, 4.0);
+      tl.fromTo("#f2", { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.3, ease: snap }, 5.0);
+      tl.fromTo("#o1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: pop }, 5.25);
+      tl.fromTo("#o2", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: pop }, 5.55);
+
+      tl.fromTo("#every", { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.3, ease: snap }, 7.0);
+      [["#c1",7.0],["#c2",8.0],["#c3",9.0],["#c4",10.0]].forEach(([id,t0]) => tl.fromTo(id, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.25, ease: pop }, t0));
+      tl.fromTo("#sz", { opacity: 0, scale: 1.25 }, { opacity: 1, scale: 1, duration: 0.3, ease: snap }, 11.0);
+
+      tl.fromTo("#eBrand", { opacity: 0, y: -16 }, { opacity: 1, y: 0, duration: 0.35, ease: snap }, 12.55);
+      tl.fromTo("#ePanel", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.4, ease: snap }, 12.5);
+      tl.fromTo("#eName", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: snap }, 12.65);
+      tl.fromTo("#eSpecs", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power1.out" }, 12.9);
+      tl.fromTo("#ePrice", { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: snap }, 13.05);
+      tl.fromTo("#eCta", { opacity: 0, y: 30, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: pop }, 13.45);
+      tl.fromTo("#eCta", { scale: 1 }, { scale: 1.06, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: 5, immediateRender: false }, 14.0);
+      tl.fromTo("#eCode", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 13.75);
+      tl.fromTo("#fadeout", { opacity: 0 }, { opacity: 0.5, duration: 0.4, ease: "power1.in" }, 16.6);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

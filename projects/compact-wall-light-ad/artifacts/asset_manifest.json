@@ -1,0 +1,68 @@
+{
+  "version": "1.0",
+  "assets": [
+    {
+      "id": "a_hook.jpg-0",
+      "type": "image",
+      "path": "hyperframes/assets/a_hook.jpg",
+      "source_tool": "ffmpeg crop from Drive assets",
+      "scene_id": "b1"
+    },
+    {
+      "id": "a_tubes2.jpg-3",
+      "type": "image",
+      "path": "hyperframes/assets/a_tubes2.jpg",
+      "source_tool": "ffmpeg crop from Drive assets",
+      "scene_id": "b1"
+    },
+    {
+      "id": "a_tubes.jpg-4",
+      "type": "image",
+      "path": "hyperframes/assets/a_tubes.jpg",
+      "source_tool": "ffmpeg crop from Drive assets",
+      "scene_id": "b1"
+    },
+    {
+      "id": "v_pan.mp4-5",
+      "type": "video",
+      "path": "hyperframes/assets/v_pan.mp4",
+      "source_tool": "ffmpeg crop from Drive assets",
+      "scene_id": "b1"
+    },
+    {
+      "id": "a_mirror.jpg-7",
+      "type": "image",
+      "path": "hyperframes/assets/a_mirror.jpg",
+      "source_tool": "ffmpeg crop from Drive assets",
+      "scene_id": "b1"
+    },
+    {
+      "id": "a_art.jpg-8",
+      "type": "image",
+      "path": "hyperframes/assets/a_art.jpg",
+      "source_tool": "ffmpeg crop from Drive assets",
+      "scene_id": "b1"
+    },
+    {
+      "id": "a_real2.jpg-9",
+      "type": "image",
+      "path": "hyperframes/assets/a_real2.jpg",
+      "source_tool": "ffmpeg crop from Drive assets",
+      "scene_id": "b1"
+    },
+    {
+      "id": "a_hook.jpg-10.5",
+      "type": "image",
+      "path": "hyperframes/assets/a_hook.jpg",
+      "source_tool": "ffmpeg crop from Drive assets",
+      "scene_id": "b1"
+    },
+    {
+      "id": "score",
+      "type": "music",
+      "path": "assets/music/score.wav",
+      "source_tool": "local synth",
+      "scene_id": "b1"
+    }
+  ]
+}

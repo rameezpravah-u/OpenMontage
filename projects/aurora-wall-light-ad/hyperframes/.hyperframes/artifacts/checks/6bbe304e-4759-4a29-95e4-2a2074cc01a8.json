@@ -1,0 +1,309 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 1 has 4 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/OpenMontage/projects/aurora-wall-light-ad/hyperframes/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "Track 3 has 4 timed elements in this HTML file. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/OpenMontage/projects/aurora-wall-light-ad/hyperframes/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 17,
+    "samples": [
+      0.944,
+      2.833,
+      4.722,
+      6.611,
+      8.5,
+      10.389,
+      12.278,
+      14.167,
+      16.056
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.65:1; WCAG AA requires 3:1.",
+        "text": "real grain, real knots",
+        "fg": "rgb(255,215,150)",
+        "bg": "rgb(161,130,78)",
+        "ratio": 2.65,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(70,59,41)",
+        "large": true,
+        "selector": "div > div:nth-of-type(6) > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 70,
+          "y": 1198,
+          "width": 940,
+          "height": 59
+        },
+        "time": 4.722,
+        "times": [
+          4.722
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      0.944,
+      4.722,
+      8.5,
+      12.278,
+      16.056
+    ],
+    "checked": 19,
+    "passed": 18
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 8,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"POV you replaced the tube light with this\" (8 words) is on screen 1.87 s (±0.01 s), under its 2.17 s floor: hold it about 0.5 s + 0.3 s a word (2.90 s here) before it leaves or changes; see references/motion.md.",
+        "text": "POV you replaced the tube light with this",
+        "selector": "#h1",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 498.77,
+          "y": 1092.26,
+          "width": 82.45000000000005,
+          "height": 44.48000000000002
+        },
+        "time": 0.102,
+        "words": 8,
+        "seconds": 1.867,
+        "floorSeconds": 2.175
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"you replaced the tube light with this\" (7 words) is on screen 1.70 s (±0.01 s), under its 1.95 s floor: hold it about 0.5 s + 0.3 s a word (2.60 s here) before it leaves or changes; see references/motion.md.",
+        "text": "you replaced the tube light with this",
+        "selector": "#h1 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 116.44,
+          "y": 1157.17,
+          "width": 847.1199999999999,
+          "height": 217
+        },
+        "time": 0.273,
+        "words": 7,
+        "seconds": 1.695,
+        "floorSeconds": 1.95
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"real grain, real knots\" (4 words) is on screen 0.96 s (±0.01 s), under its 1.27 s floor: hold it about 0.5 s + 0.3 s a word (1.70 s here) before it leaves or changes; see references/motion.md.",
+        "text": "real grain, real knots",
+        "selector": "#f1 > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 317.44,
+          "y": 1194.98,
+          "width": 445.11999999999995,
+          "height": 59
+        },
+        "time": 4.039,
+        "words": 4,
+        "seconds": 0.961,
+        "floorSeconds": 1.275
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"ABOVE THE SIDEBOARD\" (3 words) is on screen 0.96 s (±0.01 s), under its 1.05 s floor: hold it about 0.5 s + 0.3 s a word (1.40 s here) before it leaves or changes; see references/motion.md.",
+        "text": "ABOVE THE SIDEBOARD",
+        "selector": "#c1",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 243.91,
+          "y": 1341.45,
+          "width": 591.95,
+          "height": 55.09999999999991
+        },
+        "time": 7.039,
+        "words": 3,
+        "seconds": 0.961,
+        "floorSeconds": 1.05
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"ABOVE YOUR ART\" (3 words) is on screen 0.96 s (±0.01 s), under its 1.05 s floor: hold it about 0.5 s + 0.3 s a word (1.40 s here) before it leaves or changes; see references/motion.md.",
+        "text": "ABOVE YOUR ART",
+        "selector": "#c2",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 319.25,
+          "y": 1341.45,
+          "width": 441.5,
+          "height": 55.09999999999991
+        },
+        "time": 8.039,
+        "words": 3,
+        "seconds": 0.961,
+        "floorSeconds": 1.05
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"ABOVE THE MIRROR\" (3 words) is on screen 0.96 s (±0.01 s), under its 1.05 s floor: hold it about 0.5 s + 0.3 s a word (1.40 s here) before it leaves or changes; see references/motion.md.",
+        "text": "ABOVE THE MIRROR",
+        "selector": "#c3",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 290.93,
+          "y": 1341.45,
+          "width": 498.00000000000006,
+          "height": 55.09999999999991
+        },
+        "time": 9.039,
+        "words": 3,
+        "seconds": 0.961,
+        "floorSeconds": 1.05
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"ABOVE THE BED\" (3 words) is on screen 0.96 s (±0.01 s), under its 1.05 s floor: hold it about 0.5 s + 0.3 s a word (1.40 s here) before it leaves or changes; see references/motion.md.",
+        "text": "ABOVE THE BED",
+        "selector": "#c4",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 340.31,
+          "y": 1341.45,
+          "width": 399.65000000000003,
+          "height": 55.09999999999991
+        },
+        "time": 10.039,
+        "words": 3,
+        "seconds": 0.961,
+        "floorSeconds": 1.05
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"pick the length for your wall\" (6 words) is on screen 1.43 s (±0.01 s), under its 1.72 s floor: hold it about 0.5 s + 0.3 s a word (2.30 s here) before it leaves or changes; see references/motion.md.",
+        "text": "pick the length for your wall",
+        "selector": "#sz > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 219.59,
+          "y": 1199.46,
+          "width": 640.8,
+          "height": 61.91000000000008
+        },
+        "time": 11.07,
+        "words": 6,
+        "seconds": 1.43,
+        "floorSeconds": 1.725
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 136
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

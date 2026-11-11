@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Compact Wall Light Ad</title>
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "IDBlack"; src: url("assets/InterDisplay-Black.otf"); font-weight: 900; }
+      @font-face { font-family: "IDBold"; src: url("assets/InterDisplay-Bold.otf"); font-weight: 700; }
+      @font-face { font-family: "ISemi"; src: url("assets/Inter-SemiBold.otf"); font-weight: 600; }
+      @font-face { font-family: "Corm"; src: url("assets/cormorant-garamond-latin-400-italic.woff2") format("woff2"); font-style: italic; }
+      :root { --ink: #110d0a; --amber: #ffb54a; --glow: #ffd796; --cream: #fff5e6; --wood: #6b4429; }
+      html, body { margin: 0; background: var(--ink); }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--ink); }
+      .fill { position: absolute; inset: 0; background: var(--ink); }
+      .shot { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; transform-origin: 50% 35%; }
+      .layer { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; box-sizing: border-box; }
+      .scrim { background: linear-gradient(180deg, rgba(17,13,10,0.0) 0%, rgba(17,13,10,0) 45%, rgba(17,13,10,0.55) 66%, rgba(17,13,10,0.8) 100%); }
+      /* all copy lives inside y 330..1450 so it survives the 4:5 feed crop and Reels UI */
+      .cap { position: absolute; left: 70px; top: 1060px; width: 940px; text-align: center; display: block; }
+      .big { display: block; font-family: "IDBlack"; font-weight: 900; font-size: 96px; line-height: 1.0; letter-spacing: -0.022em; color: #fff; text-shadow: 0 6px 30px rgba(0,0,0,0.6); }
+      .sub { display: block; margin-top: 20px; font-family: "IDBold"; font-weight: 700; font-size: 48px; color: var(--glow); text-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+      .serif { font-family: "Corm"; font-style: italic; font-weight: 400; font-size: 104px; letter-spacing: 0; color: var(--glow); }
+      .chip { position: absolute; left: 50%; top: 1300px; transform: translateX(-50%); padding: 20px 40px; border-radius: 999px; background: rgba(17,13,10,0.62); border: 2px solid rgba(255,215,150,0.6); font-family: "IDBlack"; font-weight: 900; font-size: 44px; letter-spacing: 0.08em; color: var(--cream); display: block; white-space: nowrap; }
+      #dark { background: #050302; opacity: 0.9; }
+      #dimmer { background: #050302; opacity: 0; }
+      #flash { background: #fff1d6; opacity: 0; }
+      /* end card */
+      .e-panel { position: absolute; left: 60px; top: 760px; width: 960px; height: 690px; border-radius: 40px; background: rgba(17,13,10,0.78); border: 2px solid rgba(255,215,150,0.35); display: block; }
+      .e-name { position: absolute; left: 60px; top: 810px; width: 960px; text-align: center; display: block; font-family: "IDBlack"; font-weight: 900; font-size: 70px; line-height: 1.02; color: #fff; letter-spacing: -0.015em; }
+      .e-specs { position: absolute; left: 60px; top: 975px; width: 960px; text-align: center; display: block; font-family: "ISemi"; font-weight: 600; font-size: 34px; letter-spacing: 0.06em; color: var(--glow); }
+      .e-price { position: absolute; left: 60px; top: 1040px; width: 960px; text-align: center; display: block; white-space: nowrap; }
+      .now { font-family: "IDBlack"; font-weight: 900; font-size: 120px; color: #fff; letter-spacing: -0.02em; }
+      .was { font-family: "IDBold"; font-weight: 700; font-size: 54px; color: rgba(255,255,255,0.55); text-decoration: line-through; margin-left: 22px; }
+      .off { display: inline-block; margin-left: 22px; padding: 8px 20px; border-radius: 14px; background: var(--amber); color: var(--ink); font-family: "IDBlack"; font-weight: 900; font-size: 44px; vertical-align: 22px; }
+      .e-cta { position: absolute; left: 190px; top: 1215px; width: 700px; height: 116px; border-radius: 999px; background: var(--amber); color: var(--ink); text-align: center; line-height: 116px; font-family: "IDBlack"; font-weight: 900; font-size: 52px; letter-spacing: 0.04em; display: block; box-shadow: 0 0 60px rgba(255,181,74,0.6); }
+      .e-code { position: absolute; left: 60px; top: 1360px; width: 960px; text-align: center; display: block; font-family: "IDBold"; font-weight: 700; font-size: 34px; color: var(--cream); }
+      .e-brand { position: absolute; left: 60px; top: 380px; width: 960px; text-align: center; display: block; font-family: "ISemi"; font-weight: 600; font-size: 34px; letter-spacing: 0.5em; color: var(--glow); text-shadow: 0 2px 14px rgba(0,0,0,0.6); }
+      #fadeout { background: var(--ink); opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-width="1080" data-height="1920" data-duration="15" data-fps="30">
+      <div id="bg" class="clip fill" data-start="0" data-duration="15" data-track-index="0"></div>
+
+      <img id="i1" class="clip shot" src="assets/a_hook.jpg"   alt="" data-start="0"   data-duration="3.0" data-track-index="1" />
+      <img id="i2" class="clip shot" src="assets/a_tubes2.jpg" alt="" data-start="3.0" data-duration="1.0" data-track-index="2" />
+      <img id="i3" class="clip shot" src="assets/a_tubes.jpg"  alt="" data-start="4.0" data-duration="1.0" data-track-index="1" />
+      <video id="v4" class="shot" src="assets/v_pan.mp4" data-start="5.0" data-duration="2.0" data-media-start="0.5" data-track-index="2" muted playsinline></video>
+      <img id="i5" class="clip shot" src="assets/a_mirror.jpg" alt="" data-start="7.0" data-duration="1.0" data-track-index="1" />
+      <img id="i6" class="clip shot" src="assets/a_art.jpg"    alt="" data-start="8.0" data-duration="1.0" data-track-index="3" />
+      <img id="i7" class="clip shot" src="assets/a_real2.jpg"  alt="" data-start="9.0" data-duration="1.5" data-track-index="1" />
+      <img id="i8" class="clip shot" src="assets/a_hook.jpg"   alt="" data-start="10.5" data-duration="4.5" data-track-index="2" />
+
+      <div id="dark" class="clip layer" data-start="0" data-duration="3.0" data-track-index="4"></div>
+      <div id="dimmer" class="clip layer" data-start="9.0" data-duration="1.5" data-track-index="4"></div>
+      <div id="scrim" class="clip layer scrim" data-start="0" data-duration="10.5" data-track-index="5"></div>
+      <div id="flash" class="clip layer" data-start="0.95" data-duration="9.6" data-track-index="6"></div>
+
+      <!-- hook -->
+      <div id="h1" class="clip cap" data-start="0" data-duration="1.0" data-track-index="7"><span class="big">Your wall art is sitting in the dark.</span></div>
+      <div id="h2" class="clip cap" data-start="1.0" data-duration="2.0" data-track-index="8"><span class="big">Give it a</span><span class="big serif">spotlight.</span></div>
+
+      <!-- features -->
+      <div id="f1" class="clip cap" data-start="3.0" data-duration="1.0" data-track-index="7"><span class="big">Twin warm-white LED tubes</span></div>
+      <div id="f2" class="clip cap" data-start="4.0" data-duration="1.0" data-track-index="8"><span class="big">Light up + down</span><span class="sub">or downward only</span></div>
+      <div id="f3" class="clip cap" data-start="5.0" data-duration="2.0" data-track-index="7"><span class="big">Solid sheesham wood</span><span class="sub">made by hand in Khatauli, UP</span></div>
+      <div id="c1" class="clip chip" data-start="7.0" data-duration="1.0" data-track-index="9">OVER MIRRORS</div>
+      <div id="c2" class="clip chip" data-start="8.0" data-duration="1.0" data-track-index="10">OVER ART</div>
+      <div id="f4" class="clip cap" data-start="9.0" data-duration="1.5" data-track-index="8"><span class="big">Remote dimmable</span><span class="sub">bright for reading · low for movie night</span></div>
+
+      <!-- end card -->
+      <div id="eBrand" class="clip e-brand" data-start="10.5" data-duration="4.5" data-track-index="11">NIXWOODS</div>
+      <div id="ePanel" class="clip e-panel" data-start="10.5" data-duration="4.5" data-track-index="12"></div>
+      <div id="eName" class="clip e-name" data-start="10.5" data-duration="4.5" data-track-index="13">Compact Wooden Wall Light</div>
+      <div id="eSpecs" class="clip e-specs" data-start="10.5" data-duration="4.5" data-track-index="14">24″ &amp; 40″ · SOLID SHEESHAM · DIMMABLE</div>
+      <div id="ePrice" class="clip e-price" data-start="10.5" data-duration="4.5" data-track-index="15"><span class="now">₹4,999</span><span class="was">₹6,999</span><span class="off">28% OFF</span></div>
+      <div id="eCta" class="clip e-cta" data-start="10.5" data-duration="4.5" data-track-index="16">SHOP NOW →</div>
+      <div id="eCode" class="clip e-code" data-start="10.5" data-duration="4.5" data-track-index="17">Extra ₹100 off on prepaid · code FLY100</div>
+      <div id="fadeout" class="clip layer" data-start="14.6" data-duration="0.4" data-track-index="18"></div>
+
+      <audio id="music" src="assets/score.wav" data-start="0" data-duration="15" data-track-index="19" data-volume="1"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const pop = "back.out(2.2)";
+      const snap = "power3.out";
+
+      // hook: dark room → lights on, on the beat at 1.0s
+      tl.fromTo("#i1", { scale: 1.12 }, { scale: 1.0, duration: 3.0, ease: "power2.out" }, 0);
+      tl.fromTo("#dark", { opacity: 0.9 }, { opacity: 0, duration: 0.45, ease: "power2.out", immediateRender: false }, 1.0);
+      tl.fromTo("#flash", { opacity: 0 }, { opacity: 0.75, duration: 0.05, ease: "none" }, 0.95);
+      tl.to("#flash", { opacity: 0, duration: 0.4, ease: "power2.out" }, 1.0);
+      [3.0, 4.0, 5.0, 7.0, 8.0, 9.0].forEach((t0) => tl.fromTo("#flash", { opacity: 0.2 }, { opacity: 0, duration: 0.2, ease: "power2.out", immediateRender: false }, t0));
+
+      tl.fromTo("#h1", { opacity: 0, y: 30, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.3, ease: pop }, 0.05);
+      tl.to("#h1", { opacity: 0, duration: 0.06 }, 0.94);
+      tl.fromTo("#h2", { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, duration: 0.3, ease: snap }, 1.0);
+
+      // features: punch on every cut
+      [["#i2",3.0],["#i3",4.0],["#i5",7.0],["#i6",8.0]].forEach(([id,t0]) => tl.fromTo(id, { scale: 1.14 }, { scale: 1.02, duration: 1.0, ease: snap }, t0));
+      tl.fromTo("#v4", { scale: 1.06 }, { scale: 1.0, duration: 2.0, ease: "power1.out" }, 5.0);
+      tl.fromTo("#i7", { scale: 1.0 }, { scale: 1.06, duration: 1.5, ease: "none" }, 9.0);
+      [["#f1",3.0],["#f2",4.0],["#f3",5.0],["#f4",9.0]].forEach(([id,t0]) => tl.fromTo(id, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.25, ease: pop }, t0));
+      [["#c1",7.0],["#c2",8.0]].forEach(([id,t0]) => tl.fromTo(id, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.25, ease: pop }, t0));
+
+      // remote-dimmable beat: brightness eases down then back up
+      tl.fromTo("#dimmer", { opacity: 0 }, { opacity: 0.55, duration: 0.6, ease: "sine.inOut" }, 9.15);
+      tl.to("#dimmer", { opacity: 0, duration: 0.5, ease: "sine.inOut" }, 9.85);
+
+      // end card
+      tl.fromTo("#i8", { scale: 1.08 }, { scale: 1.0, duration: 4.5, ease: "power2.out" }, 10.5);
+      tl.fromTo("#eBrand", { opacity: 0, y: -16 }, { opacity: 1, y: 0, duration: 0.35, ease: snap }, 10.55);
+      tl.fromTo("#ePanel", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.4, ease: snap }, 10.5);
+      tl.fromTo("#eName", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: snap }, 10.65);
+      tl.fromTo("#eSpecs", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power1.out" }, 10.85);
+      tl.fromTo("#ePrice", { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1, duration: 0.3, ease: snap }, 11.0);
+      tl.fromTo("#eCta", { opacity: 0, y: 30, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: pop }, 11.4);
+      tl.fromTo("#eCta", { scale: 1 }, { scale: 1.06, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: 5, immediateRender: false }, 12.0);
+      tl.fromTo("#eCode", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 11.7);
+      tl.fromTo("#fadeout", { opacity: 0 }, { opacity: 0.5, duration: 0.4, ease: "power1.in" }, 14.6);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

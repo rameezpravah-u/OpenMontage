@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "assets": [
+    {
+      "id": "h_flip",
+      "type": "video",
+      "path": "hyperframes/assets/h_flip.mp4",
+      "source_tool": "ffmpeg from Drive clips (Veo renders / montage crop)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "r_bedroom",
+      "type": "video",
+      "path": "hyperframes/assets/r_bedroom.mp4",
+      "source_tool": "ffmpeg from Drive clips (Veo renders / montage crop)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "r_livingroom",
+      "type": "video",
+      "path": "hyperframes/assets/r_livingroom.mp4",
+      "source_tool": "ffmpeg from Drive clips (Veo renders / montage crop)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "r_hallway",
+      "type": "video",
+      "path": "hyperframes/assets/r_hallway.mp4",
+      "source_tool": "ffmpeg from Drive clips (Veo renders / montage crop)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "r_dining",
+      "type": "video",
+      "path": "hyperframes/assets/r_dining.mp4",
+      "source_tool": "ffmpeg from Drive clips (Veo renders / montage crop)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "p1_aurora",
+      "type": "video",
+      "path": "hyperframes/assets/p1_aurora.mp4",
+      "source_tool": "ffmpeg from Drive clips (Veo renders / montage crop)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "p2_compact",
+      "type": "video",
+      "path": "hyperframes/assets/p2_compact.mp4",
+      "source_tool": "ffmpeg from Drive clips (Veo renders / montage crop)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "p3_nixline",
+      "type": "video",
+      "path": "hyperframes/assets/p3_nixline.mp4",
+      "source_tool": "ffmpeg from Drive clips (Veo renders / montage crop)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "p4_vertical",
+      "type": "video",
+      "path": "hyperframes/assets/p4_vertical.mp4",
+      "source_tool": "ffmpeg from Drive clips (Veo renders / montage crop)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "p5_shelf",
+      "type": "video",
+      "path": "hyperframes/assets/p5_shelf.mp4",
+      "source_tool": "ffmpeg from Drive clips (Veo renders / montage crop)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "end_dining",
+      "type": "video",
+      "path": "hyperframes/assets/end_dining.mp4",
+      "source_tool": "ffmpeg from Drive clips (Veo renders / montage crop)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "score",
+      "type": "music",
+      "path": "assets/music/score.wav",
+      "source_tool": "local synth",
+      "scene_id": "b1"
+    }
+  ]
+}

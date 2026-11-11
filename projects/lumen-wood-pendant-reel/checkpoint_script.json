@@ -1,0 +1,80 @@
+{
+  "version": "1.0",
+  "project_id": "lumen-wood-pendant-reel",
+  "pipeline_type": "cinematic",
+  "stage": "script",
+  "status": "completed",
+  "timestamp": "2026-11-05T08:46:48.364110+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "script": {
+      "version": "1.0",
+      "title": "One Line of Light",
+      "total_duration_seconds": 18.0,
+      "sections": [
+        {
+          "id": "s1",
+          "text": "A single line",
+          "start_seconds": 0,
+          "end_seconds": 1.8
+        },
+        {
+          "id": "s2",
+          "text": "of warm, even light",
+          "start_seconds": 1.8,
+          "end_seconds": 4.8
+        },
+        {
+          "id": "s3",
+          "text": "HAND-FINISHED / set in solid walnut.",
+          "start_seconds": 4.8,
+          "end_seconds": 7.2
+        },
+        {
+          "id": "s4",
+          "text": "[no text \u2014 reveal: tilt up to canopy]",
+          "start_seconds": 7.2,
+          "end_seconds": 10.2
+        },
+        {
+          "id": "s5",
+          "text": "[no text \u2014 4 beat cuts]",
+          "start_seconds": 10.2,
+          "end_seconds": 12.6
+        },
+        {
+          "id": "s6",
+          "text": "One Line / of Light \u2014 WALNUT \u00b7 LED PENDANT \u2014 DM TO ORDER",
+          "start_seconds": 12.6,
+          "end_seconds": 18.0
+        }
+      ],
+      "metadata": {
+        "beat_map": [
+          "hook 0-1.8",
+          "escalation 1.8-7.2",
+          "reveal 7.2-10.2",
+          "rhythm 10.2-12.6",
+          "landing 12.6-18"
+        ],
+        "title_card_copy": [
+          "A single line",
+          "of warm, even light",
+          "HAND-FINISHED / set in solid walnut.",
+          "[no text \u2014 reveal: tilt up to canopy]",
+          "[no text \u2014 4 beat cuts]",
+          "One Line / of Light \u2014 WALNUT \u00b7 LED PENDANT \u2014 DM TO ORDER"
+        ],
+        "music_turns": [
+          8.4,
+          10.2,
+          12.6
+        ],
+        "dialogue_selects": [],
+        "narration": "none \u2014 title-led"
+      }
+    }
+  }
+}

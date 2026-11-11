@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "project_id": "lumen-wood-pendant-reel",
+  "pipeline_type": "cinematic",
+  "stage": "compose",
+  "status": "completed",
+  "timestamp": "2026-11-05T08:46:48.822805+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "render_report": {
+      "version": "1.0",
+      "outputs": [
+        {
+          "path": "renders/one-line-of-light_reel.mp4",
+          "format": "mp4 h264/aac",
+          "resolution": "1080x1920",
+          "duration_seconds": 18.0
+        },
+        {
+          "path": "renders/final.mp4",
+          "format": "mp4 hevc/aac (hyperframes master)",
+          "resolution": "1080x1920",
+          "duration_seconds": 18.0
+        }
+      ]
+    },
+    "final_review": {
+      "version": "1.0",
+      "output_path": "renders/one-line-of-light_reel.mp4",
+      "status": "pass",
+      "checks": {
+        "technical_probe": {
+          "pass": true,
+          "notes": "1080x1920 30fps h264 high, aac 192k, 18.0s, faststart"
+        },
+        "visual_spotcheck": {
+          "pass": true,
+          "notes": "Frames at 0.9/3.2/6.0/10.5/15.5s checked; fixed label/lamp overlap and switch-plate in beat cut"
+        },
+        "audio_spotcheck": {
+          "pass": true,
+          "notes": "Integrated -14.5 LUFS; spectrogram confirms hits on cut points; not auditioned by ear"
+        },
+        "promise_preservation": {
+          "pass": true,
+          "notes": "Motion-led from real footage, HyperFrames runtime as approved; music source swapped (logged d-007)"
+        },
+        "subtitle_check": {
+          "pass": true,
+          "notes": "No narration; title cards kept above Reels UI safe zone"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "version": "1.0",
+  "project_id": "lumen-wood-pendant-reel",
+  "decisions": [
+    {
+      "decision_id": "d-001",
+      "stage": "research",
+      "category": "pipeline_selection",
+      "subject": "Pipeline for product reel from supplied footage",
+      "options_considered": [
+        {
+          "option_id": "cinematic",
+          "label": "cinematic",
+          "score": 0.9,
+          "reason": "mood-led edits of supplied footage"
+        },
+        {
+          "option_id": "hybrid",
+          "label": "hybrid",
+          "score": 0.6,
+          "reason": "needs footage + generated support visuals; none configured"
+        }
+      ],
+      "selected": "cinematic",
+      "reason": "Source footage, mood-led, no narration",
+      "user_visible": true,
+      "user_approved": false
+    },
+    {
+      "decision_id": "d-002",
+      "stage": "proposal",
+      "category": "render_runtime_selection",
+      "subject": "Composition runtime",
+      "options_considered": [
+        {
+          "option_id": "hyperframes",
+          "label": "HyperFrames",
+          "score": 0.85,
+          "reason": "kinetic type + video + transitions, installed"
+        },
+        {
+          "option_id": "remotion",
+          "label": "Remotion",
+          "score": 0.5,
+          "reason": "CinematicRenderer fits, but node_modules not installed",
+          "rejected_because": "not installed on this machine (npm install needed)"
+        },
+        {
+          "option_id": "ffmpeg",
+          "label": "FFmpeg only",
+          "score": 0.4,
+          "reason": "simple cuts, weak typography"
+        }
+      ],
+      "selected": "hyperframes",
+      "reason": "Recommended pending user approval",
+      "user_visible": true,
+      "user_approved": false
+    },
+    {
+      "decision_id": "d-003",
+      "stage": "proposal",
+      "category": "music_source",
+      "subject": "Music source",
+      "options_considered": [
+        {
+          "option_id": "pixabay",
+          "label": "Pixabay Music search",
+          "score": 0.8,
+          "reason": "free, configured"
+        },
+        {
+          "option_id": "library",
+          "label": "music_library/",
+          "score": 0.3,
+          "reason": "empty"
+        },
+        {
+          "option_id": "generate",
+          "label": "AI music generation",
+          "score": 0.0,
+          "reason": "no provider configured",
+          "rejected_because": "0/6 configured"
+        }
+      ],
+      "selected": "pixabay",
+      "reason": "Only available source; user may supply own track",
+      "user_visible": true,
+      "user_approved": false
+    },
+    {
+      "decision_id": "d-004",
+      "stage": "proposal",
+      "category": "approval_policy",
+      "subject": "Run approval policy",
+      "options_considered": [
+        {
+          "option_id": "per_gate",
+          "label": "Ask at every gate",
+          "score": 0.5,
+          "reason": "default"
+        },
+        {
+          "option_id": "delegated",
+          "label": "Full-run delegation",
+          "score": 0.9,
+          "reason": "user replied 'Do your best' to the proposal"
+        }
+      ],
+      "selected": "delegated",
+      "reason": "User delegated all creative choices; agent proceeds through all gates, reporting at the end.",
+      "user_visible": true,
+      "user_approved": true
+    },
+    {
+      "decision_id": "d-005",
+      "stage": "proposal",
+      "category": "concept_selection",
+      "subject": "Concept",
+      "options_considered": [
+        {
+          "option_id": "c1",
+          "label": "One Line of Light",
+          "score": 0.9,
+          "reason": "best use of wall-glow footage"
+        },
+        {
+          "option_id": "c2",
+          "label": "Grain & Glow",
+          "score": 0.6,
+          "reason": "less hook"
+        },
+        {
+          "option_id": "c3",
+          "label": "The Line",
+          "score": 0.7,
+          "reason": "energy but cheaper feel"
+        }
+      ],
+      "selected": "c1",
+      "reason": "Recommended; added a 4-cut beat run from c3 before the end card.",
+      "user_visible": true,
+      "user_approved": true
+    },
+    {
+      "decision_id": "d-006",
+      "stage": "proposal",
+      "category": "composition_mode",
+      "subject": "Composition authoring mode",
+      "options_considered": [
+        {
+          "option_id": "atelier",
+          "label": "Atelier (hand-authored)",
+          "score": 0.9,
+          "reason": "hero marketing piece"
+        },
+        {
+          "option_id": "templated",
+          "label": "Templated",
+          "score": 0.4,
+          "reason": "generic look"
+        }
+      ],
+      "selected": "atelier",
+      "reason": "HyperFrames is inherently atelier; bespoke art direction in hyperframes/art-direction.md",
+      "user_visible": true,
+      "user_approved": true
+    },
+    {
+      "decision_id": "d-007",
+      "stage": "assets",
+      "category": "music_source",
+      "subject": "Music source",
+      "options_considered": [
+        {
+          "option_id": "pixabay",
+          "label": "Pixabay Music search",
+          "score": 0.0,
+          "reason": "approved source",
+          "rejected_because": "HTTP 403 Forbidden from pixabay.com for every query"
+        },
+        {
+          "option_id": "generate",
+          "label": "AI music generation",
+          "score": 0.0,
+          "reason": "none configured",
+          "rejected_because": "0/6 providers configured"
+        },
+        {
+          "option_id": "synth",
+          "label": "Original score synthesized locally (numpy, 100 BPM, cut-synced)",
+          "score": 0.8,
+          "reason": "free, royalty-free, timed to cuts"
+        }
+      ],
+      "selected": "synth",
+      "reason": "Approved source blocked; user delegated decisions ('Do your best'). Swap flagged to user in final report.",
+      "user_visible": true,
+      "user_approved": false
+    },
+    {
+      "decision_id": "d-008",
+      "stage": "assets",
+      "category": "playbook_override",
+      "subject": "Color grade profile",
+      "options_considered": [
+        {
+          "option_id": "cinematic_warm",
+          "label": "color_grade preset cinematic_warm",
+          "score": 0.4,
+          "reason": "too subtle; walls stayed blue"
+        },
+        {
+          "option_id": "custom",
+          "label": "Custom warm/moody custom_vf via color_grade",
+          "score": 0.9,
+          "reason": "~2900K amber, lowered exposure, vignette"
+        }
+      ],
+      "selected": "custom",
+      "reason": "Visual A/B check of frames.",
+      "user_visible": true,
+      "user_approved": false
+    }
+  ]
+}

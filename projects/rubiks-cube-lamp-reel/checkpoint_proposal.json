@@ -1,0 +1,173 @@
+{
+  "version": "1.0",
+  "project_id": "rubiks-cube-lamp-reel",
+  "pipeline_type": "cinematic",
+  "stage": "proposal",
+  "status": "completed",
+  "timestamp": "2026-11-05T09:13:14.077566+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "proposal_packet": {
+      "version": "1.0",
+      "concept_options": [
+        {
+          "id": "c1",
+          "title": "Turn It. Change the Mood.",
+          "hook": "This lamp changes colour when you turn it",
+          "narrative_structure": "story",
+          "visual_approach": "curiosity hook over unlit glass \u2192 beat drop exactly on light-on \u2192 4 named moods on beat cuts \u2192 twist reveal \u2192 wood base \u2192 '4 moods. 1 lamp.' \u2192 end card with CTA + code",
+          "target_platform": "instagram",
+          "target_duration_seconds": 15,
+          "why_this_works": "payoff within 1.5s, change every 0.5-1s, loopable, clear CTA"
+        },
+        {
+          "id": "c2",
+          "title": "ASMR Mood Switch",
+          "hook": "*click*",
+          "narrative_structure": "comparison",
+          "visual_approach": "no text, sound-design led, slow colour transitions",
+          "target_platform": "instagram",
+          "target_duration_seconds": 12,
+          "why_this_works": "satisfying loop format"
+        },
+        {
+          "id": "c3",
+          "title": "Desk Setup Glow-up",
+          "hook": "Your desk needs this",
+          "narrative_structure": "problem_solution",
+          "visual_approach": "before/after desk ambience",
+          "target_platform": "instagram",
+          "target_duration_seconds": 15,
+          "why_this_works": "aspirational setup content"
+        }
+      ],
+      "selected_concept": {
+        "concept_id": "c1",
+        "rationale": "Strongest hook/payoff for virality; user delegated choices ('make a reel that will go viral', prior 'do your best')."
+      },
+      "production_plan": {
+        "pipeline": "cinematic",
+        "render_runtime": "hyperframes",
+        "stages": [
+          {
+            "stage": "compose",
+            "tools": [
+              {
+                "tool_name": "hyperframes_compose",
+                "role": "render",
+                "available": true,
+                "estimated_cost_usd": 0
+              }
+            ],
+            "approach": "atelier HTML/GSAP composition over user footage"
+          }
+        ],
+        "decision_log_ref": "/home/user/OpenMontage/projects/rubiks-cube-lamp-reel/decision_log.json"
+      },
+      "cost_estimate": {
+        "total_estimated_usd": 0.0,
+        "line_items": [
+          {
+            "tool": "hyperframes_compose",
+            "operation": "local render",
+            "estimated_usd": 0.0
+          }
+        ],
+        "budget_verdict": "within_budget"
+      },
+      "approval": {
+        "status": "approved",
+        "user_notes": "Delegated: 'Make a reel that will go viral' following prior 'Do your best' preference."
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "rubiks-cube-lamp-reel",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "proposal",
+          "category": "approval_policy",
+          "subject": "Run approval policy",
+          "options_considered": [
+            {
+              "option_id": "delegated",
+              "label": "Full-run delegation",
+              "score": 0.9,
+              "reason": "user's established 'do your best' preference + direct 'make a reel' ask"
+            }
+          ],
+          "selected": "delegated",
+          "reason": "Proceed end-to-end; report and offer variants.",
+          "user_visible": true,
+          "user_approved": false
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.9,
+              "reason": "kinetic text + video"
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.4,
+              "reason": "",
+              "rejected_because": "not installed on this machine"
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.3,
+              "reason": "weak typography"
+            }
+          ],
+          "selected": "hyperframes",
+          "reason": "Same approved runtime as previous reel",
+          "user_visible": true,
+          "user_approved": false
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "assets",
+          "category": "music_source",
+          "subject": "Music source",
+          "options_considered": [
+            {
+              "option_id": "original_audio",
+              "label": "Clip's original audio",
+              "score": 0.3,
+              "reason": "unknown/possibly copyrighted track",
+              "rejected_because": "copyright risk on a brand ad"
+            },
+            {
+              "option_id": "pixabay",
+              "label": "Pixabay",
+              "score": 0.0,
+              "reason": "",
+              "rejected_because": "HTTP 403 earlier this session"
+            },
+            {
+              "option_id": "synth",
+              "label": "Original 120 BPM score synthesized locally",
+              "score": 0.85,
+              "reason": "royalty-free, drop on light-on"
+            }
+          ],
+          "selected": "synth",
+          "reason": "Owned audio, synced to cuts",
+          "user_visible": true,
+          "user_approved": false
+        }
+      ]
+    }
+  }
+}

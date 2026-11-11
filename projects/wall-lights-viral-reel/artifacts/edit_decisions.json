@@ -1,0 +1,72 @@
+{
+  "version": "1.0",
+  "render_runtime": "hyperframes",
+  "cuts": [
+    {
+      "id": "h_flip",
+      "source": "hyperframes/assets/h_flip.mp4",
+      "in_seconds": 0,
+      "out_seconds": 3.5
+    },
+    {
+      "id": "r_bedroom",
+      "source": "hyperframes/assets/r_bedroom.mp4",
+      "in_seconds": 3.5,
+      "out_seconds": 4.5
+    },
+    {
+      "id": "r_livingroom",
+      "source": "hyperframes/assets/r_livingroom.mp4",
+      "in_seconds": 4.5,
+      "out_seconds": 5.5
+    },
+    {
+      "id": "r_hallway",
+      "source": "hyperframes/assets/r_hallway.mp4",
+      "in_seconds": 5.5,
+      "out_seconds": 6.5
+    },
+    {
+      "id": "r_dining",
+      "source": "hyperframes/assets/r_dining.mp4",
+      "in_seconds": 6.5,
+      "out_seconds": 7.5
+    },
+    {
+      "id": "p1_aurora",
+      "source": "hyperframes/assets/p1_aurora.mp4",
+      "in_seconds": 7.5,
+      "out_seconds": 8.5
+    },
+    {
+      "id": "p2_compact",
+      "source": "hyperframes/assets/p2_compact.mp4",
+      "in_seconds": 8.5,
+      "out_seconds": 9.5
+    },
+    {
+      "id": "p3_nixline",
+      "source": "hyperframes/assets/p3_nixline.mp4",
+      "in_seconds": 9.5,
+      "out_seconds": 10.5
+    },
+    {
+      "id": "p4_vertical",
+      "source": "hyperframes/assets/p4_vertical.mp4",
+      "in_seconds": 10.5,
+      "out_seconds": 11.5
+    },
+    {
+      "id": "p5_shelf",
+      "source": "hyperframes/assets/p5_shelf.mp4",
+      "in_seconds": 11.5,
+      "out_seconds": 12.5
+    },
+    {
+      "id": "end_dining",
+      "source": "hyperframes/assets/end_dining.mp4",
+      "in_seconds": 12.5,
+      "out_seconds": 16
+    }
+  ]
+}

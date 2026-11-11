@@ -1,0 +1,82 @@
+{
+  "version": "1.0",
+  "assets": [
+    {
+      "id": "r_hook.mp4",
+      "type": "video",
+      "path": "hyperframes/assets/r_hook.mp4",
+      "source_tool": "real Drive clip",
+      "scene_id": "b1"
+    },
+    {
+      "id": "r_art.mp4",
+      "type": "video",
+      "path": "hyperframes/assets/r_art.mp4",
+      "source_tool": "real Drive clip",
+      "scene_id": "b1"
+    },
+    {
+      "id": "u_grain.jpg",
+      "type": "image",
+      "path": "hyperframes/assets/u_grain.jpg",
+      "source_tool": "store listing image (render)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "u_split.jpg",
+      "type": "image",
+      "path": "hyperframes/assets/u_split.jpg",
+      "source_tool": "store listing image (render)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "u_sideboard.jpg",
+      "type": "image",
+      "path": "hyperframes/assets/u_sideboard.jpg",
+      "source_tool": "store listing image (render)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "u_art.jpg",
+      "type": "image",
+      "path": "hyperframes/assets/u_art.jpg",
+      "source_tool": "store listing image (render)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "u_mirror.jpg",
+      "type": "image",
+      "path": "hyperframes/assets/u_mirror.jpg",
+      "source_tool": "store listing image (render)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "u_bed.jpg",
+      "type": "image",
+      "path": "hyperframes/assets/u_bed.jpg",
+      "source_tool": "store listing image (render)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "u_48.jpg",
+      "type": "image",
+      "path": "hyperframes/assets/u_48.jpg",
+      "source_tool": "store listing image (render)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "r_end.jpg",
+      "type": "image",
+      "path": "hyperframes/assets/r_end.jpg",
+      "source_tool": "real Drive clip",
+      "scene_id": "b1"
+    },
+    {
+      "id": "score",
+      "type": "music",
+      "path": "assets/music/score.wav",
+      "source_tool": "local synth",
+      "scene_id": "b1"
+    }
+  ]
+}

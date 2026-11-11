@@ -1,0 +1,97 @@
+{
+  "version": "1.0",
+  "project_id": "rubiks-cube-lamp-reel",
+  "pipeline_type": "cinematic",
+  "stage": "edit",
+  "status": "completed",
+  "timestamp": "2026-11-05T09:13:14.501902+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "edit_decisions": {
+      "version": "1.0",
+      "render_runtime": "hyperframes",
+      "cuts": [
+        {
+          "id": "cut0",
+          "source": "hyperframes/assets/c01_place.mp4",
+          "in_seconds": 0,
+          "out_seconds": 1.5
+        },
+        {
+          "id": "cut1",
+          "source": "hyperframes/assets/c02_green.mp4",
+          "in_seconds": 1.5,
+          "out_seconds": 2.5
+        },
+        {
+          "id": "cut2",
+          "source": "hyperframes/assets/c03_red.mp4",
+          "in_seconds": 2.5,
+          "out_seconds": 3.5
+        },
+        {
+          "id": "cut3",
+          "source": "hyperframes/assets/c04_flare.mp4",
+          "in_seconds": 3.5,
+          "out_seconds": 4.0
+        },
+        {
+          "id": "cut4",
+          "source": "hyperframes/assets/c05_amber.mp4",
+          "in_seconds": 4.0,
+          "out_seconds": 5.0
+        },
+        {
+          "id": "cut5",
+          "source": "hyperframes/assets/c06_warm.mp4",
+          "in_seconds": 5.0,
+          "out_seconds": 6.0
+        },
+        {
+          "id": "cut6",
+          "source": "hyperframes/assets/c07_twist.mp4",
+          "in_seconds": 6.0,
+          "out_seconds": 8.0
+        },
+        {
+          "id": "cut7",
+          "source": "hyperframes/assets/c08_base.mp4",
+          "in_seconds": 8.0,
+          "out_seconds": 9.0
+        },
+        {
+          "id": "cut8",
+          "source": "hyperframes/assets/c09_green.mp4",
+          "in_seconds": 9.0,
+          "out_seconds": 9.5
+        },
+        {
+          "id": "cut9",
+          "source": "hyperframes/assets/c10_white.mp4",
+          "in_seconds": 9.5,
+          "out_seconds": 10.0
+        },
+        {
+          "id": "cut10",
+          "source": "hyperframes/assets/c11_green.mp4",
+          "in_seconds": 10.0,
+          "out_seconds": 10.5
+        },
+        {
+          "id": "cut11",
+          "source": "hyperframes/assets/c05_amber.mp4",
+          "in_seconds": 10.5,
+          "out_seconds": 11.0
+        },
+        {
+          "id": "cut12",
+          "source": "hyperframes/assets/c12_hero.mp4",
+          "in_seconds": 11.0,
+          "out_seconds": 15.0
+        }
+      ]
+    }
+  }
+}

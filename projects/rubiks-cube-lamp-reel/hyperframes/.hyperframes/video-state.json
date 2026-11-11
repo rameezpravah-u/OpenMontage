@@ -1,0 +1,216 @@
+{
+  "version": 1,
+  "historyId": "fa9b9ca5-3e53-4687-9e44-9624519c254c",
+  "currentRevision": "60ecb598-7d0b-43b9-8593-a94bad85d801",
+  "pendingChanges": false,
+  "files": {
+    "assets/Inter-SemiBold.otf": {
+      "hash": "bd68706b7bf8b3c580ae57685a2116bb1704b3a9998309ccfec7cd486f8a593e",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/bd/bd68706b7bf8b3c580ae57685a2116bb1704b3a9998309ccfec7cd486f8a593e"
+    },
+    "assets/InterDisplay-Black.otf": {
+      "hash": "c0ebb676933a45d73d16fea70c875f9f2b711b585c69b15962b7f2a890b5f8e8",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/c0/c0ebb676933a45d73d16fea70c875f9f2b711b585c69b15962b7f2a890b5f8e8"
+    },
+    "assets/InterDisplay-Bold.otf": {
+      "hash": "4253eed76d9014a469d7449934e54250497ee007f4d58dab4ddefe9f759b1970",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/42/4253eed76d9014a469d7449934e54250497ee007f4d58dab4ddefe9f759b1970"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/c1/c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "index.html": {
+      "hash": "3e267eb5cf2c5df207a1455373c13139b1e331c11dd26fd81795d4341572ce2b",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/3e/3e267eb5cf2c5df207a1455373c13139b1e331c11dd26fd81795d4341572ce2b"
+    },
+    "assets/c01_place.mp4": {
+      "hash": "5948286b23bd9b5376e0c831cd041595f3b74a984a6b1d1bf8f7073a18c2a5cc",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/59/5948286b23bd9b5376e0c831cd041595f3b74a984a6b1d1bf8f7073a18c2a5cc"
+    },
+    "assets/c02_green.mp4": {
+      "hash": "ee6df391501493689e9150120c85e26a882640bd9acc63d4cf657b4f5591a5c8",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/ee/ee6df391501493689e9150120c85e26a882640bd9acc63d4cf657b4f5591a5c8"
+    },
+    "assets/c03_red.mp4": {
+      "hash": "f1aa69116435a389322aba50f2e7544de582c2861735c259c5976dad76206b14",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/f1/f1aa69116435a389322aba50f2e7544de582c2861735c259c5976dad76206b14"
+    },
+    "assets/c04_flare.mp4": {
+      "hash": "42d1627fff1f5545ec6d9d0475e272970358301c8886f3ff45018ac822cc8035",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/42/42d1627fff1f5545ec6d9d0475e272970358301c8886f3ff45018ac822cc8035"
+    },
+    "assets/c05_amber.mp4": {
+      "hash": "fc3803e3402bfb752b980457acc0087cbef1f58bf9ab847f55dfc6ecd370b63c",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/fc/fc3803e3402bfb752b980457acc0087cbef1f58bf9ab847f55dfc6ecd370b63c"
+    },
+    "assets/c06_warm.mp4": {
+      "hash": "9c0c9929db2916446907b7f74404cfdd89c1e235419e49f3246e143c7a237153",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/9c/9c0c9929db2916446907b7f74404cfdd89c1e235419e49f3246e143c7a237153"
+    },
+    "assets/c07_twist.mp4": {
+      "hash": "5b439fb2d1e5bcf5a15c3f73a26ab37719187a40dd6382ca306cbe1ec1e3a4fe",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/5b/5b439fb2d1e5bcf5a15c3f73a26ab37719187a40dd6382ca306cbe1ec1e3a4fe"
+    },
+    "assets/c08_base.mp4": {
+      "hash": "0d552a40f72f1ae2ce6480fb63596dd1fddf22ff19ea6596a6cc62a1b4c51d78",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/0d/0d552a40f72f1ae2ce6480fb63596dd1fddf22ff19ea6596a6cc62a1b4c51d78"
+    },
+    "assets/c09_green.mp4": {
+      "hash": "47fb384fdad730327c67e50b3f6bfdee579d3719a1fb88425483248b051edbc5",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/47/47fb384fdad730327c67e50b3f6bfdee579d3719a1fb88425483248b051edbc5"
+    },
+    "assets/c10_white.mp4": {
+      "hash": "25060389deb98ba9fabd7a072c740a287e4c0f488bfce248825e80fee52a9878",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/25/25060389deb98ba9fabd7a072c740a287e4c0f488bfce248825e80fee52a9878"
+    },
+    "assets/c11_green.mp4": {
+      "hash": "f188f075b7ea6b15565bbc46893349865ff7d3edd7aa6a0b6dc04b1732d9efd2",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/f1/f188f075b7ea6b15565bbc46893349865ff7d3edd7aa6a0b6dc04b1732d9efd2"
+    },
+    "assets/c12_hero.mp4": {
+      "hash": "89718a11bd545081e9222f8bd82799de5e10b8c2318983c9a0b53c7b2329bb56",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/89/89718a11bd545081e9222f8bd82799de5e10b8c2318983c9a0b53c7b2329bb56"
+    },
+    "assets/score.wav": {
+      "hash": "ab0dc8785b3a60c7deb6edfeb1c5519984a6f02301e1fcfdf03b342c01a23bb4",
+      "content": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/ab/ab0dc8785b3a60c7deb6edfeb1c5519984a6f02301e1fcfdf03b342c01a23bb4"
+    }
+  },
+  "revisions": {
+    "60ecb598-7d0b-43b9-8593-a94bad85d801": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793869801650,
+      "endedAt": 1793869801771,
+      "files": {
+        "assets/c01_place.mp4": {
+          "before": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/71/71ea375b9d59f16921ce8136a71a4d1d042151ce125529c81fc781e40814fbb1",
+          "after": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/59/5948286b23bd9b5376e0c831cd041595f3b74a984a6b1d1bf8f7073a18c2a5cc"
+        },
+        "assets/c02_green.mp4": {
+          "before": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/0d/0deb7cafd9d15d2ae8cd094c43410253052e300b47882b02e8f46e77ff33a968",
+          "after": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/ee/ee6df391501493689e9150120c85e26a882640bd9acc63d4cf657b4f5591a5c8"
+        },
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/36/364211bedf345158ff542f04c888246110a94b6b4057dfbc3cbde75ca5e8218a",
+          "after": "/root/.cache/hyperframes/history/fa9b9ca5-3e53-4687-9e44-9624519c254c/blobs/3e/3e267eb5cf2c5df207a1455373c13139b1e331c11dd26fd81795d4341572ce2b"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "60ecb598-7d0b-43b9-8593-a94bad85d801",
+      "id": "89751b30-46a2-4d01-87c7-394e2cb40e22"
+    },
+    "revisions": {
+      "60ecb598-7d0b-43b9-8593-a94bad85d801": [
+        {
+          "id": "89751b30-46a2-4d01-87c7-394e2cb40e22",
+          "scope": "project",
+          "report": "/home/user/OpenMontage/projects/rubiks-cube-lamp-reel/hyperframes/.hyperframes/artifacts/checks/89751b30-46a2-4d01-87c7-394e2cb40e22.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793869819843,
+          "contentHash": "598067d6a539d94da7fb37956809bb8a40e585ad6b03cb22fe82b3e822111b1d",
+          "revision": "60ecb598-7d0b-43b9-8593-a94bad85d801",
+          "inputFingerprint": "c4ebd43a0d494579679402c351139781334cefcb30e15fb8ec78caeac68e1ca3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "62768557-9baf-4050-90e0-5684a4ebdbff",
+        "scope": "project",
+        "report": "/home/user/OpenMontage/projects/rubiks-cube-lamp-reel/hyperframes/.hyperframes/artifacts/checks/62768557-9baf-4050-90e0-5684a4ebdbff.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793869599011,
+        "contentHash": "32936d2a140cdf8f117ba29394950a857c60ca4ca8094c18a9dbd39c5a0d1308",
+        "revision": null,
+        "inputFingerprint": "43a3f9d1351d6e2f7424e62336bbf9d5ea0baf0bdf841ff87f88b0eccfb5dd93",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "c12c4f8d-ecf1-4784-8df2-0b0caa92c7f9",
+        "scope": "project",
+        "report": "/home/user/OpenMontage/projects/rubiks-cube-lamp-reel/hyperframes/.hyperframes/artifacts/checks/c12c4f8d-ecf1-4784-8df2-0b0caa92c7f9.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793869620355,
+        "contentHash": "32936d2a140cdf8f117ba29394950a857c60ca4ca8094c18a9dbd39c5a0d1308",
+        "revision": null,
+        "inputFingerprint": "43a3f9d1351d6e2f7424e62336bbf9d5ea0baf0bdf841ff87f88b0eccfb5dd93",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "e5085418-1ca1-4570-bae4-20972382e936",
+      "completedAt": 1793869908165,
+      "output": "/home/user/OpenMontage/projects/rubiks-cube-lamp-reel/renders/final.mp4",
+      "status": "completed",
+      "revision": "60ecb598-7d0b-43b9-8593-a94bad85d801"
+    },
+    "retainedRevisions": [
+      "60ecb598-7d0b-43b9-8593-a94bad85d801"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

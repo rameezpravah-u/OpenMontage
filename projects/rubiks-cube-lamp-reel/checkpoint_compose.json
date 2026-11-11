@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "project_id": "rubiks-cube-lamp-reel",
+  "pipeline_type": "cinematic",
+  "stage": "compose",
+  "status": "completed",
+  "timestamp": "2026-11-05T09:13:14.667811+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "render_report": {
+      "version": "1.0",
+      "outputs": [
+        {
+          "path": "renders/rubiks-cube-lamp_reel.mp4",
+          "format": "mp4 h264/aac",
+          "resolution": "1080x1920",
+          "duration_seconds": 15.0
+        }
+      ]
+    },
+    "final_review": {
+      "version": "1.0",
+      "output_path": "renders/rubiks-cube-lamp_reel.mp4",
+      "status": "pass",
+      "checks": {
+        "technical_probe": {
+          "pass": true,
+          "notes": "1080x1920 h264, 15s, -13.8 LUFS"
+        },
+        "visual_spotcheck": {
+          "pass": true,
+          "notes": "light-on frame aligned to drop; source is 480p upscaled"
+        },
+        "audio_spotcheck": {
+          "pass": true,
+          "notes": "spectrogram verified; not auditioned by ear"
+        },
+        "promise_preservation": {
+          "pass": true,
+          "notes": "real footage, motion-led"
+        },
+        "subtitle_check": {
+          "pass": true,
+          "notes": "short labels intentionally <1s (rewatch bait), flagged by checker"
+        }
+      }
+    }
+  }
+}

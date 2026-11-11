@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "title": "Give It a Spotlight",
+  "total_duration_seconds": 15,
+  "sections": [
+    {
+      "id": "b1",
+      "text": "Your wall art is sitting in the dark.",
+      "start_seconds": 0,
+      "end_seconds": 1
+    },
+    {
+      "id": "b2",
+      "text": "Give it a spotlight.",
+      "start_seconds": 1,
+      "end_seconds": 3
+    },
+    {
+      "id": "b3",
+      "text": "Twin warm-white LED tubes / Light up + down",
+      "start_seconds": 3,
+      "end_seconds": 5
+    },
+    {
+      "id": "b4",
+      "text": "Solid sheesham wood, made by hand in Khatauli, UP",
+      "start_seconds": 5,
+      "end_seconds": 7
+    },
+    {
+      "id": "b5",
+      "text": "OVER MIRRORS / OVER ART",
+      "start_seconds": 7,
+      "end_seconds": 9
+    },
+    {
+      "id": "b6",
+      "text": "Remote dimmable",
+      "start_seconds": 9,
+      "end_seconds": 10.5
+    },
+    {
+      "id": "b7",
+      "text": "Compact Wooden Wall Light \u20b94,999 (\u20b96,999) 28% OFF, SHOP NOW, FLY100",
+      "start_seconds": 10.5,
+      "end_seconds": 15
+    }
+  ]
+}

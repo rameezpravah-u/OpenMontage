@@ -1,0 +1,171 @@
+{
+  "version": "1.0",
+  "topic": "Walnut linear LED pendant light \u2014 product reel",
+  "research_date": "2026-11-05",
+  "landscape": {
+    "existing_content": [
+      {
+        "title": "Walnut linear pendant listings",
+        "url": "https://vakkerlight.com/products/linearity-pendant-lamp",
+        "source": "retailer",
+        "angle": "static product photos + spec copy",
+        "what_it_covers": "form, material, specs",
+        "what_it_misses": "motion, the light's effect in a room"
+      },
+      {
+        "title": "Mood lighting Instagram tips",
+        "url": "https://www.monulo.com/blogs/lighting/how-to-photograph-mood-lighting-instagram-tips",
+        "source": "blog",
+        "angle": "photograph the effect of the light",
+        "what_it_covers": "shooting technique",
+        "what_it_misses": "reel pacing"
+      },
+      {
+        "title": "Pendant install videos",
+        "source": "retailer",
+        "angle": "how-to / installation",
+        "what_it_covers": "mounting steps",
+        "what_it_misses": "aesthetic, mood"
+      }
+    ],
+    "saturated_angles": [
+      "Plain product rotation with stock corporate music",
+      "Room-tour with fixture as background"
+    ],
+    "underserved_gaps": [
+      "Reels that sell the LIGHT ON THE WALL as the hook",
+      "Rhythm built around the fixture's single vertical line"
+    ]
+  },
+  "data_points": [
+    {
+      "claim": "Retention is decided in the first 1-2 seconds",
+      "source_url": "https://dev.to/fermainpariz/instagram-reels-strategy-2026-what-actually-works-data-backed-guide-11hn",
+      "credibility": "secondary_source"
+    },
+    {
+      "claim": "Opening on a feeling reads as content; opening on the product reads as an ad",
+      "source_url": "https://invideo.io/faq/what-are-the-best-hook-formats-for-ugc-ads-on-instagram/",
+      "credibility": "secondary_source"
+    },
+    {
+      "claim": "Photographing the light's effect is often more compelling than the bulb",
+      "source_url": "https://www.monulo.com/blogs/lighting/how-to-photograph-mood-lighting-instagram-tips",
+      "credibility": "secondary_source"
+    },
+    {
+      "claim": "Japandi look relies on 2700-3000K warm, low-glare light",
+      "source_url": "https://global.fujioh.com/2025/04/01/japandilighting/",
+      "credibility": "secondary_source"
+    },
+    {
+      "claim": "Mixed color temperatures create distracting casts on camera",
+      "source_url": "https://www.nlfxpro.com/blog2/lighting-101-understanding-color-temperature-kelvin",
+      "credibility": "secondary_source"
+    }
+  ],
+  "audience_insights": {
+    "common_questions": [
+      "How warm is the light?",
+      "How long/large is it?",
+      "Real wood?"
+    ],
+    "misconceptions": [
+      {
+        "myth": "Linear LEDs always look clinical/cold",
+        "reality": "Warm 2700-3000K diffused LEDs in wood read soft and natural"
+      }
+    ],
+    "knowledge_level": "general consumer / interior enthusiast"
+  },
+  "angles_discovered": [
+    {
+      "name": "Shadow first, product second",
+      "hook": "A line of warm light on a bare wall.",
+      "type": "narrative",
+      "why_now": "Hook-in-2s data favors feeling-first openings"
+    },
+    {
+      "name": "Grain and glow macro study",
+      "hook": "Walnut you can almost touch.",
+      "type": "evergreen",
+      "why_now": "Natural-material Japandi demand"
+    },
+    {
+      "name": "Rhythm of a single line",
+      "hook": "One line. Every cut.",
+      "type": "trending",
+      "why_now": "Beat-synced cuts drive reel completion"
+    }
+  ],
+  "visual_references": [
+    {
+      "url": "https://www.monulo.com/blogs/lighting/how-to-photograph-mood-lighting-instagram-tips",
+      "description": "Mood lighting Instagram tips",
+      "what_works": "photograph the light's effect, not just the bulb"
+    },
+    {
+      "url": "https://morphic.com/ai-glossary/Tilt-Shot",
+      "description": "Tilt shot",
+      "what_works": "slow tilt reveals subject and scale"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.monulo.com/blogs/lighting/how-to-photograph-mood-lighting-instagram-tips",
+      "title": "Mood lighting Instagram tips",
+      "used_for": "photograph the light's effect, not just the bulb"
+    },
+    {
+      "url": "https://global.fujioh.com/2025/04/01/japandilighting/",
+      "title": "Japandi lighting",
+      "used_for": "2700-3000K warm, low-glare aesthetic"
+    },
+    {
+      "url": "https://theshumba.github.io/framecoach-blog/white-balance-for-filmmaking",
+      "title": "White balance for filmmaking",
+      "used_for": "grade from correct WB baseline"
+    },
+    {
+      "url": "https://www.nlfxpro.com/blog2/lighting-101-understanding-color-temperature-kelvin",
+      "title": "Lighting 101 color temperature",
+      "used_for": "mixed-temperature casts look distracting"
+    },
+    {
+      "url": "https://dev.to/fermainpariz/instagram-reels-strategy-2026-what-actually-works-data-backed-guide-11hn",
+      "title": "Instagram Reels Strategy 2026",
+      "used_for": "first 1-2s hook window"
+    },
+    {
+      "url": "https://invideo.io/faq/what-are-the-best-hook-formats-for-ugc-ads-on-instagram/",
+      "title": "Hook formats for ads",
+      "used_for": "open on a feeling, not the product"
+    },
+    {
+      "url": "https://www.themusicase.com/library/minimal?page=6",
+      "title": "Minimal music library",
+      "used_for": "sparse piano + ambient pads for design reels"
+    },
+    {
+      "url": "https://vakkerlight.com/products/linearity-pendant-lamp",
+      "title": "Vakkerlight Linearity",
+      "used_for": "comparable walnut linear pendant positioning"
+    },
+    {
+      "url": "https://www.moonb.io/blog/kinetic-typography",
+      "title": "Kinetic typography examples",
+      "used_for": "motion should reinforce meaning"
+    },
+    {
+      "url": "https://morphic.com/ai-glossary/Tilt-Shot",
+      "title": "Tilt shot",
+      "used_for": "slow tilt reveals subject and scale"
+    },
+    {
+      "url": "https://getimg.ai/blog/7-camera-movements-that-make-ai-video-look-cinematic",
+      "title": "Camera movements",
+      "used_for": "tilt works with strong vertical line"
+    }
+  ],
+  "research_summary": "The footage's strongest asset is the warm light spill on the side wall plus the fixture's single strong vertical line. Research favors a feeling-first hook (the glow), a tilt-style reveal to the walnut fixture, warm 2700-3000K grade correcting the cool-blue phone white balance, and sparse piano/ambient audio \u2014 or a beat-cut variant for energy."
+}

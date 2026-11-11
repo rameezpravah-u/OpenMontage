@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "outputs": [
+    {
+      "path": "renders/wall-lights_reel.mp4",
+      "format": "mp4 h264/aac",
+      "resolution": "1080x1920",
+      "duration_seconds": 16.0
+    }
+  ]
+}

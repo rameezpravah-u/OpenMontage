@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "historyId": "d1e2a724-fadb-4a72-b384-44cef745b9f5",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "assets/Inter-SemiBold.otf": {
+      "hash": "bd68706b7bf8b3c580ae57685a2116bb1704b3a9998309ccfec7cd486f8a593e",
+      "content": "/root/.cache/hyperframes/history/d1e2a724-fadb-4a72-b384-44cef745b9f5/blobs/bd/bd68706b7bf8b3c580ae57685a2116bb1704b3a9998309ccfec7cd486f8a593e"
+    },
+    "assets/InterDisplay-Black.otf": {
+      "hash": "c0ebb676933a45d73d16fea70c875f9f2b711b585c69b15962b7f2a890b5f8e8",
+      "content": "/root/.cache/hyperframes/history/d1e2a724-fadb-4a72-b384-44cef745b9f5/blobs/c0/c0ebb676933a45d73d16fea70c875f9f2b711b585c69b15962b7f2a890b5f8e8"
+    },
+    "assets/InterDisplay-Bold.otf": {
+      "hash": "4253eed76d9014a469d7449934e54250497ee007f4d58dab4ddefe9f759b1970",
+      "content": "/root/.cache/hyperframes/history/d1e2a724-fadb-4a72-b384-44cef745b9f5/blobs/42/4253eed76d9014a469d7449934e54250497ee007f4d58dab4ddefe9f759b1970"
+    },
+    "assets/a_art.jpg": {
+      "hash": "44958266b231cd9dc0cb2bdaace8df543d6b6b78a8ab50ef5b8edd1eabfb11d2",
+      "content": "/root/.cache/hyperframes/history/d1e2a724-fadb-4a72-b384-44cef745b9f5/blobs/44/44958266b231cd9dc0cb2bdaace8df543d6b6b78a8ab50ef5b8edd1eabfb11d2"
+    },
+    "assets/a_hook.jpg": {
+      "hash": "762bdd0e593a4ea9ae3e57178aede7b4f8be89177f3888d2d238f4c5a9867c70",
+      "content": "/root/.cache/hyperframes/history/d1e2a724-fadb-4a72-b384-44cef745b9f5/blobs/76/762bdd0e593a4ea9ae3e57178aede7b4f8be89177f3888d2d238f4c5a9867c70"
+    },
+    "assets/a_mirror.jpg": {
+      "hash": "40fe876ea81ff2c6f785d528a71b91004518a2119942c3196f4b72bf4748e812",
+      "content": "/root/.cache/hyperframes/history/d1e2a724-fadb-4a72-b384-44cef745b9f5/blobs/40/40fe876ea81ff2c6f785d528a71b91004518a2119942c3196f4b72bf4748e812"
+    },
+    "assets/a_real2.jpg": {
+      "hash": "e60d7cc26e0b85132b7d5b070519c2b19052b062c63b7f6709d0688701e42168",
+      "content": "/root/.cache/hyperframes/history/d1e2a724-fadb-4a72-b384-44cef745b9f5/blobs/e6/e60d7cc26e0b85132b7d5b070519c2b19052b062c63b7f6709d0688701e42168"
+    },
+    "assets/a_tubes.jpg": {
+      "hash": "70ba2459692c26a1220fd3351ceca69c1ce756592146ac2cc5e5416c1f480c66",
+      "content": "/root/.cache/hyperframes/history/d1e2a724-fadb-4a72-b384-44cef745b9f5/blobs/70/70ba2459692c26a1220fd3351ceca69c1ce756592146ac2cc5e5416c1f480c66"
+    },
+    "assets/a_tubes2.jpg": {
+      "hash": "bec870e0c21c032dfa9550019fe8241dcaf7e069a9ddb0ffc7be25f89c0226c7",
+      "content": "/root/.cache/hyperframes/history/d1e2a724-fadb-4a72-b384-44cef745b9f5/blobs/be/bec870e0c21c032dfa9550019fe8241dcaf7e069a9ddb0ffc7be25f89c0226c7"
+    },
+    "assets/cormorant-garamond-latin-400-italic.woff2": {
+      "hash": "effe3ef07d4e0d249d837344e70bdf50fc94ccc44870b02103dad9a75d4e003f",
+      "content": "/root/.cache/hyperframes/history/d1e2a724-fadb-4a72-b384-44cef745b9f5/blobs/ef/effe3ef07d4e0d249d837344e70bdf50fc94ccc44870b02103dad9a75d4e003f"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "/root/.cache/hyperframes/history/d1e2a724-fadb-4a72-b384-44cef745b9f5/blobs/c1/c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "index.html": {
+      "hash": "50a724f6e5197a5b606b33f6efa1cf4327c67e52b22d5092aff4bc07d2885bb2",
+      "content": "/root/.cache/hyperframes/history/d1e2a724-fadb-4a72-b384-44cef745b9f5/blobs/50/50a724f6e5197a5b606b33f6efa1cf4327c67e52b22d5092aff4bc07d2885bb2"
+    },
+    "assets/score.wav": {
+      "hash": "6e6d8aa787982fa0d431a587603e96d0a24180f8cf870335d4aa842756a68928",
+      "content": "/root/.cache/hyperframes/history/d1e2a724-fadb-4a72-b384-44cef745b9f5/blobs/6e/6e6d8aa787982fa0d431a587603e96d0a24180f8cf870335d4aa842756a68928"
+    },
+    "assets/v_pan.mp4": {
+      "hash": "c42742ed234d2d7255becc17f3a20ba82fbf0cdce8356b04823dfdd1c907a79f",
+      "content": "/root/.cache/hyperframes/history/d1e2a724-fadb-4a72-b384-44cef745b9f5/blobs/c4/c42742ed234d2d7255becc17f3a20ba82fbf0cdce8356b04823dfdd1c907a79f"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "f6b45bb0-e846-4acb-9cde-113629beab91"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "8dbf2fbe-9794-42b0-afec-936cfb7270c7",
+        "scope": "project",
+        "report": "/home/user/OpenMontage/projects/compact-wall-light-ad/hyperframes/.hyperframes/artifacts/checks/8dbf2fbe-9794-42b0-afec-936cfb7270c7.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793872154476,
+        "contentHash": "64957315e113bee3eba882c38f4e2df423cbbac33c3bc0db483a26624a105aaf",
+        "revision": null,
+        "inputFingerprint": "eff3035fd3dd1c65b6b666567bdb1fdedf5fc8091980eed46557739ab290e488",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "f6b45bb0-e846-4acb-9cde-113629beab91",
+        "scope": "project",
+        "report": "/home/user/OpenMontage/projects/compact-wall-light-ad/hyperframes/.hyperframes/artifacts/checks/f6b45bb0-e846-4acb-9cde-113629beab91.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793872162629,
+        "contentHash": "64957315e113bee3eba882c38f4e2df423cbbac33c3bc0db483a26624a105aaf",
+        "revision": null,
+        "inputFingerprint": "eff3035fd3dd1c65b6b666567bdb1fdedf5fc8091980eed46557739ab290e488",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "39307914-fa22-4586-8092-8e48fff77375",
+      "completedAt": 1793872211099,
+      "output": "/home/user/OpenMontage/projects/compact-wall-light-ad/renders/final.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

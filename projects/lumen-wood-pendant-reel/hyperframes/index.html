@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>One Line of Light</title>
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Cormorant";
+        src: url("assets/cormorant-garamond-latin-400-italic.woff2") format("woff2");
+        font-style: italic;
+        font-weight: 400;
+      }
+      @font-face {
+        font-family: "Cormorant";
+        src: url("assets/cormorant-garamond-latin-500-normal.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 500;
+      }
+      :root {
+        --night: #120d09;
+        --walnut: #5a3d28;
+        --amber: #f3c98b;
+        --cream: #f4ebdd;
+      }
+      html, body { margin: 0; background: var(--night); }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--night);
+      }
+      .bg-fill { position: absolute; inset: 0; background: var(--night); }
+      video.shot, img.shot {
+        position: absolute;
+        left: 0; top: 0;
+        width: 1080px; height: 1920px;
+        object-fit: cover;
+        transform-origin: 50% 50%;
+      }
+      .layer { position: absolute; inset: 0; width: 1080px; height: 1920px; box-sizing: border-box; }
+
+      /* bottom scrim keeps captions legible over bright walls */
+      #scrim {
+        background: linear-gradient(180deg, rgba(18,13,9,0) 48%, rgba(18,13,9,0.55) 66%, rgba(18,13,9,0.78) 100%);
+      }
+      #topscrim {
+        background: linear-gradient(180deg, rgba(18,13,9,0.72) 0%, rgba(18,13,9,0.35) 30%, rgba(18,13,9,0) 52%),
+                    linear-gradient(180deg, rgba(18,13,9,0) 58%, rgba(18,13,9,0.6) 78%, rgba(18,13,9,0.8) 100%);
+      }
+
+      /* captions: one sentence spoken across the cuts */
+      .cap {
+        position: absolute;
+        left: 132px;
+        top: 1190px;
+        width: 800px;
+        font-family: "Cormorant", Georgia, serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 106px;
+        line-height: 1.02;
+        color: var(--cream);
+        text-shadow: 0 2px 24px rgba(18,13,9,0.55);
+        display: block;
+      }
+      .kicker {
+        position: absolute;
+        left: 136px;
+        top: 1150px;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        letter-spacing: 0.42em;
+        color: var(--amber);
+        display: block;
+      }
+      /* signature device: a drawn line of light */
+      .sigline {
+        position: absolute;
+        width: 3px;
+        background: linear-gradient(180deg, rgba(243,201,139,0) 0%, var(--amber) 18%, #fff4e0 50%, var(--amber) 82%, rgba(243,201,139,0) 100%);
+        box-shadow: 0 0 18px 3px rgba(243,201,139,0.55);
+        border-radius: 3px;
+        transform-origin: 50% 0%;
+        display: block;
+      }
+      #sig1 { left: 96px; top: 1130px; height: 240px; }
+
+      #flash { background: #fff3df; opacity: 0; }
+      #bloom { background: radial-gradient(circle at 55% 45%, #fffaf0 0%, #f7d9a8 45%, rgba(243,201,139,0.0) 100%); opacity: 0; }
+
+      /* end card */
+      .title {
+        position: absolute;
+        left: 110px;
+        top: 250px;
+        width: 860px;
+        font-family: "Cormorant", Georgia, serif;
+        color: var(--cream);
+        text-shadow: 0 2px 30px rgba(18,13,9,0.5);
+      }
+      .t-line { display: block; font-weight: 500; font-size: 168px; line-height: 0.92; letter-spacing: -0.01em; }
+      .t-line.it { font-style: italic; font-weight: 400; padding-left: 92px; color: var(--amber); }
+      #sig2 { left: 112px; top: 640px; height: 640px; }
+      .label {
+        position: absolute;
+        left: 150px;
+        top: 1236px;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        letter-spacing: 0.26em;
+        color: var(--cream);
+        display: block;
+      }
+      .cta {
+        position: absolute;
+        left: 150px;
+        top: 1300px;
+        padding: 18px 34px 18px 38px;
+        border: 1.5px solid rgba(243,201,139,0.85);
+        border-radius: 999px;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        letter-spacing: 0.32em;
+        color: var(--amber);
+        background: rgba(18,13,9,0.35);
+        display: block;
+      }
+      #v5a { transform-origin: 70% 30%; }
+      #fadeout { background: var(--night); opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-width="1080" data-height="1920" data-duration="18" data-fps="30">
+      <div id="bgfill" class="clip bg-fill" data-start="0" data-duration="18" data-track-index="0"></div>
+
+      <!-- footage (graded, speed-ramped selects) -->
+      <video id="v1" class="shot" src="assets/s1_hook.mp4"   data-start="0"    data-duration="1.8" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="v2" class="shot" src="assets/s2_line.mp4"   data-start="1.8"  data-duration="3.0" data-media-start="0" data-track-index="2" muted playsinline></video>
+      <video id="v3" class="shot" src="assets/s3_grain.mp4"  data-start="4.8"  data-duration="2.4" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="v4" class="shot" src="assets/s4_reveal.mp4" data-start="7.2"  data-duration="3.0" data-media-start="0" data-track-index="2" muted playsinline></video>
+      <video id="v5a" class="shot" src="assets/s5a.mp4"     data-start="10.2" data-duration="0.6" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="v5b" class="shot" src="assets/s5b.mp4"     data-start="10.8" data-duration="0.6" data-media-start="0" data-track-index="2" muted playsinline></video>
+      <video id="v5c" class="shot" src="assets/s5c.mp4"     data-start="11.4" data-duration="0.6" data-media-start="0" data-track-index="1" muted playsinline></video>
+      <video id="v5d" class="shot" src="assets/s5d.mp4"     data-start="12.0" data-duration="0.6" data-media-start="0" data-track-index="2" muted playsinline></video>
+      <img id="hero" class="clip shot" src="assets/hero_end.jpg" alt="" data-start="12.6" data-duration="5.4" data-track-index="1" />
+
+      <!-- legibility scrims -->
+      <div id="scrim" class="clip layer" data-start="0" data-duration="7.2" data-track-index="3"></div>
+      <div id="topscrim" class="clip layer" data-start="12.6" data-duration="5.4" data-track-index="3"></div>
+
+      <!-- beat 1: the line draws, the sentence begins -->
+      <div id="sig1" class="clip sigline" data-start="0" data-duration="1.8" data-track-index="4"></div>
+      <div id="cap1" class="clip cap" data-start="0" data-duration="1.8" data-track-index="5">A single line</div>
+      <!-- beat 2 -->
+      <div id="cap2" class="clip cap" data-start="1.8" data-duration="3.0" data-track-index="6">of warm, even light</div>
+      <!-- beat 3 -->
+      <div id="kick3" class="clip kicker" data-start="4.8" data-duration="2.4" data-track-index="4">HAND-FINISHED</div>
+      <div id="cap3" class="clip cap" data-start="4.8" data-duration="2.4" data-track-index="5">set in solid walnut.</div>
+
+      <!-- beat run exposure pulses + light bloom into the end card -->
+      <div id="flash" class="clip layer" data-start="10.2" data-duration="2.4" data-track-index="7"></div>
+      <div id="bloom" class="clip layer" data-start="12.3" data-duration="1.0" data-track-index="8"></div>
+
+      <!-- end card -->
+      <div id="title" class="clip title" data-start="12.6" data-duration="5.4" data-track-index="4">
+        <span id="tl1" class="t-line">One Line</span>
+        <span id="tl2" class="t-line it">of Light</span>
+      </div>
+      <div id="sig2" class="clip sigline" data-start="12.6" data-duration="5.4" data-track-index="5"></div>
+      <div id="label" class="clip label" data-start="12.6" data-duration="5.4" data-track-index="6">WALNUT · LED PENDANT</div>
+      <div id="cta" class="clip cta" data-start="12.6" data-duration="5.4" data-track-index="9">DM TO ORDER</div>
+      <div id="fadeout" class="clip layer" data-start="17.2" data-duration="0.8" data-track-index="10"></div>
+
+      <audio id="music" src="assets/score.wav" data-start="0" data-duration="18" data-track-index="11" data-volume="1"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const soft = "power2.inOut";
+      const rise = "expo.out";
+
+      // footage: slow, contemplative pushes (slow-in / slow-out)
+      tl.fromTo("#v1", { scale: 1.0 }, { scale: 1.06, duration: 1.8, ease: "none" }, 0);
+      tl.fromTo("#v2", { scale: 1.08, y: 0 }, { scale: 1.0, y: -20, duration: 3.0, ease: soft }, 1.8);
+      tl.fromTo("#v3", { scale: 1.12 }, { scale: 1.02, duration: 2.4, ease: soft }, 4.8);
+      tl.fromTo("#v4", { scale: 1.0 }, { scale: 1.05, duration: 3.0, ease: "none" }, 7.2);
+      ["#v5a", "#v5b", "#v5c", "#v5d"].forEach((id, i) => {
+        tl.fromTo(id, { scale: i === 0 ? 1.24 : 1.1 }, { scale: i === 0 ? 1.14 : 1.0, duration: 0.6, ease: "power3.out" }, 10.2 + i * 0.6);
+      });
+      tl.fromTo("#hero", { scale: 1.12 }, { scale: 1.0, duration: 5.4, ease: "power2.out" }, 12.6);
+
+      // beat 1 — signature line draws, then the sentence starts
+      tl.fromTo("#sig1", { scaleY: 0, opacity: 1 }, { scaleY: 1, duration: 0.9, ease: "power3.inOut" }, 0.1);
+      tl.to("#sig1", { opacity: 0, duration: 0.3, ease: "power1.in" }, 1.5);
+      tl.fromTo("#cap1", { opacity: 0, y: 28 }, { opacity: 1, y: 0, duration: 0.8, ease: rise }, 0.5);
+      tl.to("#cap1", { opacity: 0, y: -10, duration: 0.25, ease: "power1.in" }, 1.55);
+      // beat 2
+      tl.fromTo("#cap2", { opacity: 0, y: 28 }, { opacity: 1, y: 0, duration: 0.9, ease: rise }, 2.0);
+      tl.to("#cap2", { opacity: 0, y: -10, duration: 0.3, ease: "power1.in" }, 4.45);
+      // beat 3
+      tl.fromTo("#kick3", { opacity: 0, x: -16 }, { opacity: 1, x: 0, duration: 0.7, ease: rise }, 4.95);
+      tl.fromTo("#cap3", { opacity: 0, y: 28 }, { opacity: 1, y: 0, duration: 0.9, ease: rise }, 5.05);
+      tl.to(["#kick3", "#cap3"], { opacity: 0, duration: 0.3, ease: "power1.in" }, 6.85);
+      tl.to("#scrim", { opacity: 0, duration: 0.4, ease: "power1.in" }, 6.8);
+
+      // beat run — a short exposure pulse on each cut (light flicker)
+      [10.2, 10.8, 11.4, 12.0].forEach((t0) => {
+        tl.fromTo("#flash", { opacity: 0.38 }, { opacity: 0, duration: 0.22, ease: "power2.out", immediateRender: false }, t0);
+      });
+      // bloom into the end card
+      tl.fromTo("#bloom", { opacity: 0 }, { opacity: 0.95, duration: 0.3, ease: "power2.in" }, 12.3);
+      tl.to("#bloom", { opacity: 0, duration: 0.7, ease: "power2.out" }, 12.6);
+
+      // end card
+      tl.fromTo("#topscrim", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: soft }, 12.6);
+      tl.fromTo("#tl1", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 1.1, ease: rise }, 12.9);
+      tl.fromTo("#tl2", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 1.1, ease: rise }, 13.2);
+      tl.fromTo("#sig2", { scaleY: 0 }, { scaleY: 1, duration: 1.3, ease: "power3.inOut" }, 13.5);
+      tl.fromTo("#label", { opacity: 0, x: -18 }, { opacity: 1, x: 0, duration: 0.9, ease: rise }, 14.4);
+      tl.fromTo("#cta", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.9, ease: rise }, 14.9);
+      tl.fromTo("#fadeout", { opacity: 0 }, { opacity: 0.85, duration: 0.8, ease: "power1.in" }, 17.2);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "project_id": "compact-wall-light-ad",
+  "pipeline_type": "cinematic",
+  "stage": "compose",
+  "status": "completed",
+  "timestamp": "2026-11-05T09:51:24.055201+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "render_report": {
+      "version": "1.0",
+      "outputs": [
+        {
+          "path": "renders/compact-wall-light_meta-ad_9x16.mp4",
+          "format": "mp4 h264/aac",
+          "resolution": "1080x1920",
+          "duration_seconds": 15.0
+        },
+        {
+          "path": "renders/compact-wall-light_meta-ad_4x5.mp4",
+          "format": "mp4 h264/aac",
+          "resolution": "1080x1350",
+          "duration_seconds": 15.0
+        }
+      ]
+    },
+    "final_review": {
+      "version": "1.0",
+      "output_path": "renders/compact-wall-light_meta-ad_9x16.mp4",
+      "status": "pass",
+      "checks": {
+        "technical_probe": {
+          "pass": true,
+          "notes": "h264, -13.9 LUFS"
+        },
+        "visual_spotcheck": {
+          "pass": true,
+          "notes": "9 frames + 4:5 crop checked"
+        },
+        "audio_spotcheck": {
+          "pass": true,
+          "notes": "not auditioned"
+        },
+        "promise_preservation": {
+          "pass": true,
+          "notes": "still-led with motion graphics; no raw compact video available"
+        },
+        "subtitle_check": {
+          "pass": true,
+          "notes": "sound-off captions throughout"
+        }
+      }
+    }
+  }
+}

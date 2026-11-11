@@ -1,0 +1,77 @@
+{
+  "version": "1.0",
+  "project_id": "lumen-wood-pendant-reel",
+  "pipeline_type": "cinematic",
+  "stage": "edit",
+  "status": "completed",
+  "timestamp": "2026-11-05T08:46:48.669704+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "edit_decisions": {
+      "version": "1.0",
+      "render_runtime": "hyperframes",
+      "cuts": [
+        {
+          "id": "v1",
+          "source": "assets/video/s1_hook.mp4",
+          "in_seconds": 0,
+          "out_seconds": 1.8
+        },
+        {
+          "id": "v2",
+          "source": "assets/video/s2_line.mp4",
+          "in_seconds": 1.8,
+          "out_seconds": 4.8
+        },
+        {
+          "id": "v3",
+          "source": "assets/video/s3_grain.mp4",
+          "in_seconds": 4.8,
+          "out_seconds": 7.2
+        },
+        {
+          "id": "v4",
+          "source": "assets/video/s4_reveal.mp4",
+          "in_seconds": 7.2,
+          "out_seconds": 10.2
+        },
+        {
+          "id": "v5a",
+          "source": "assets/video/s5a.mp4",
+          "in_seconds": 10.2,
+          "out_seconds": 10.8
+        },
+        {
+          "id": "v5b",
+          "source": "assets/video/s5b.mp4",
+          "in_seconds": 10.8,
+          "out_seconds": 11.4
+        },
+        {
+          "id": "v5c",
+          "source": "assets/video/s5c.mp4",
+          "in_seconds": 11.4,
+          "out_seconds": 12.0
+        },
+        {
+          "id": "v5d",
+          "source": "assets/video/s5d.mp4",
+          "in_seconds": 12.0,
+          "out_seconds": 12.6
+        },
+        {
+          "id": "hero",
+          "source": "assets/images/hero_end.jpg",
+          "in_seconds": 12.6,
+          "out_seconds": 18.0
+        }
+      ],
+      "metadata": {
+        "composition_mode": "atelier",
+        "workspace": "hyperframes/index.html"
+      }
+    }
+  }
+}

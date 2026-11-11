@@ -1,0 +1,328 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 8,
+    "findings": [
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:34489/assets/s1_hook.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "18",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:34489/",
+        "line": 1787
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:34489/assets/s2_line.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "18",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:34489/",
+        "line": 1787
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:34489/assets/s3_grain.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "18",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:34489/",
+        "line": 1787
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:34489/assets/s4_reveal.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "18",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:34489/",
+        "line": 1787
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:34489/assets/s5a.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "18",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:34489/",
+        "line": 1787
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:34489/assets/s5b.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "18",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:34489/",
+        "line": 1787
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:34489/assets/s5c.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "18",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:34489/",
+        "line": 1787
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:34489/assets/s5d.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "18",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:34489/",
+        "line": 1787
+      }
+    ]
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 18,
+    "samples": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1,
+      5,
+      9,
+      13,
+      17
+    ],
+    "checked": 7,
+    "passed": 7
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"HAND-FINISHED\" renders at 24 px for 2.00 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "HAND-FINISHED",
+        "selector": "#kick3",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 132.35,
+          "y": 1150,
+          "width": 323.04,
+          "height": 29
+        },
+        "time": 5.125,
+        "times": [
+          5.125
+        ],
+        "fontPx": 24,
+        "floorPx": 28,
+        "seconds": 2,
+        "elements": [
+          {
+            "selector": "#kick3",
+            "text": "HAND-FINISHED",
+            "fontPx": 24,
+            "time": 5.125,
+            "seconds": 2
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 144
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": {
+      "triggeringAsset": "assets/s1_hook.mp4",
+      "output": {
+        "colorSpace": "BT.2020",
+        "codec": "HEVC Main10"
+      }
+    },
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

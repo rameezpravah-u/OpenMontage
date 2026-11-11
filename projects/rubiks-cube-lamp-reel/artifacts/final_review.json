@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "output_path": "renders/rubiks-cube-lamp_reel.mp4",
+  "status": "pass",
+  "checks": {
+    "technical_probe": {
+      "pass": true,
+      "notes": "1080x1920 h264, 15s, -13.8 LUFS"
+    },
+    "visual_spotcheck": {
+      "pass": true,
+      "notes": "light-on frame aligned to drop; source is 480p upscaled"
+    },
+    "audio_spotcheck": {
+      "pass": true,
+      "notes": "spectrogram verified; not auditioned by ear"
+    },
+    "promise_preservation": {
+      "pass": true,
+      "notes": "real footage, motion-led"
+    },
+    "subtitle_check": {
+      "pass": true,
+      "notes": "short labels intentionally <1s (rewatch bait), flagged by checker"
+    }
+  }
+}

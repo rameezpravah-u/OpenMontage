@@ -1,0 +1,217 @@
+{
+  "version": "1.0",
+  "project_id": "aurora-wall-light-ad",
+  "pipeline_type": "cinematic",
+  "stage": "proposal",
+  "status": "completed",
+  "timestamp": "2026-11-05T10:07:11.574076+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "proposal_packet": {
+      "version": "1.0",
+      "concept_options": [
+        {
+          "id": "c1",
+          "title": "POV: Tube Light Swap",
+          "hook": "POV: you replaced the tube light with this",
+          "narrative_structure": "comparison",
+          "visual_approach": "real Aurora clips hook/close; store renders for 4 uses + glow options; price card",
+          "target_platform": "instagram",
+          "target_duration_seconds": 17,
+          "why_this_works": "relatable POV, uses, clear price ladder"
+        },
+        {
+          "id": "c2",
+          "title": "AI people lifestyle",
+          "hook": "Her evening routine",
+          "narrative_structure": "story",
+          "visual_approach": "Higgsfield Seedance human scenes",
+          "target_platform": "instagram",
+          "target_duration_seconds": 15,
+          "why_this_works": "human involvement"
+        },
+        {
+          "id": "c3",
+          "title": "User-filmed UGC",
+          "hook": "Watch me install this",
+          "narrative_structure": "tutorial",
+          "visual_approach": "real people",
+          "target_platform": "instagram",
+          "target_duration_seconds": 15,
+          "why_this_works": "most credible"
+        }
+      ],
+      "selected_concept": {
+        "concept_id": "c1",
+        "rationale": "User chose 'No AI, real footage only'"
+      },
+      "production_plan": {
+        "pipeline": "cinematic",
+        "render_runtime": "hyperframes",
+        "stages": [
+          {
+            "stage": "compose",
+            "tools": [
+              {
+                "tool_name": "hyperframes_compose",
+                "role": "render",
+                "available": true,
+                "estimated_cost_usd": 0
+              }
+            ],
+            "approach": "atelier"
+          }
+        ],
+        "decision_log_ref": "projects/aurora-wall-light-ad/decision_log.json"
+      },
+      "cost_estimate": {
+        "total_estimated_usd": 0.0,
+        "line_items": [
+          {
+            "tool": "hyperframes_compose",
+            "operation": "local render",
+            "estimated_usd": 0.0
+          }
+        ],
+        "budget_verdict": "within_budget"
+      },
+      "approval": {
+        "status": "approved",
+        "user_notes": "No AI, real footage only"
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "aurora-wall-light-ad",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "proposal",
+          "category": "provider_selection",
+          "subject": "Human scenes source",
+          "options_considered": [
+            {
+              "option_id": "ai720",
+              "label": "Higgsfield Seedance 2.5 720p ~140cr",
+              "score": 0.7,
+              "reason": "adds people",
+              "rejected_because": "user declined"
+            },
+            {
+              "option_id": "ai1080",
+              "label": "Seedance 1080p ~320cr",
+              "score": 0.6,
+              "reason": "sharper",
+              "rejected_because": "user declined"
+            },
+            {
+              "option_id": "real",
+              "label": "Real footage only",
+              "score": 0.8,
+              "reason": "user choice"
+            },
+            {
+              "option_id": "film",
+              "label": "User films people",
+              "score": 0.9,
+              "reason": "most credible",
+              "rejected_because": "not available now"
+            }
+          ],
+          "selected": "real",
+          "reason": "User selected No AI",
+          "user_visible": true,
+          "user_approved": true
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.9,
+              "reason": "text-led ad"
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.3,
+              "reason": "",
+              "rejected_because": "not installed"
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg",
+              "score": 0.2,
+              "reason": "weak type"
+            }
+          ],
+          "selected": "hyperframes",
+          "reason": "consistent"
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "assets",
+          "category": "visual_accuracy_check",
+          "subject": "Product identity of Drive photos",
+          "options_considered": [
+            {
+              "option_id": "exclude",
+              "label": "Exclude aurora_share_* and AC4I photos",
+              "score": 0.9,
+              "reason": "they show the twin-tube Compact, not the slim Aurora"
+            },
+            {
+              "option_id": "include",
+              "label": "Use them",
+              "score": 0.1,
+              "reason": "",
+              "rejected_because": "would show wrong product"
+            }
+          ],
+          "selected": "exclude",
+          "reason": "avoid misrepresenting product",
+          "user_visible": true
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "script",
+          "category": "visual_accuracy_check",
+          "subject": "Installation claim",
+          "options_considered": [
+            {
+              "option_id": "drop",
+              "label": "Remove 'plugs in, no electrician'",
+              "score": 0.9,
+              "reason": "not stated on product page"
+            }
+          ],
+          "selected": "drop",
+          "reason": "unverified claim",
+          "user_visible": true
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "assets",
+          "category": "music_source",
+          "subject": "Music source",
+          "options_considered": [
+            {
+              "option_id": "synth",
+              "label": "Original score",
+              "score": 0.85,
+              "reason": "owned"
+            }
+          ],
+          "selected": "synth",
+          "reason": "royalty-free"
+        }
+      ]
+    }
+  }
+}

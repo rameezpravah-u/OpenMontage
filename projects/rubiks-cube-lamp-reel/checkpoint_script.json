@@ -1,0 +1,56 @@
+{
+  "version": "1.0",
+  "project_id": "rubiks-cube-lamp-reel",
+  "pipeline_type": "cinematic",
+  "stage": "script",
+  "status": "completed",
+  "timestamp": "2026-11-05T09:13:14.180972+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "script": {
+      "version": "1.0",
+      "title": "Turn It. Change the Mood.",
+      "total_duration_seconds": 15,
+      "sections": [
+        {
+          "id": "b1",
+          "text": "This lamp changes colour / when you turn it \u21bb",
+          "start_seconds": 0,
+          "end_seconds": 1.5
+        },
+        {
+          "id": "b2",
+          "text": "GREEN LUXE 1/4 \u00b7 CRIMSON GLOW 2/4 \u00b7 AMBER WAVE 3/4 \u00b7 CLASSIC WARM 4/4 \u00b7 Pick your mood / no app \u00b7 no remote",
+          "start_seconds": 1.5,
+          "end_seconds": 6.0
+        },
+        {
+          "id": "b3",
+          "text": "Just rotate / the glass cube \u21bb",
+          "start_seconds": 6.0,
+          "end_seconds": 8.0
+        },
+        {
+          "id": "b4",
+          "text": "Solid sheesham / wood base",
+          "start_seconds": 8.0,
+          "end_seconds": 9.0
+        },
+        {
+          "id": "b5",
+          "text": "4 moods. / 1 lamp.",
+          "start_seconds": 9.0,
+          "end_seconds": 11.0
+        },
+        {
+          "id": "b6",
+          "text": "NIXWOODS \u00b7 Rubik's Cube Lamp \u00b7 Shop \u00b7 nixwoods.com \u00b7 Code FLY100 \u00b7 \u20b9100 off prepaid",
+          "start_seconds": 11.0,
+          "end_seconds": 15.0
+        }
+      ]
+    }
+  }
+}

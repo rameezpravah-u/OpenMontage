@@ -1,0 +1,388 @@
+{
+  "version": "1.0",
+  "project_id": "lumen-wood-pendant-reel",
+  "pipeline_type": "cinematic",
+  "stage": "proposal",
+  "status": "completed",
+  "timestamp": "2026-11-05T08:46:48.180958+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "proposal_packet": {
+      "version": "1.0",
+      "concept_options": [
+        {
+          "id": "c1",
+          "title": "One Line of Light",
+          "hook": "A warm glow appears on a bare wall\u2026 then the source.",
+          "narrative_structure": "story",
+          "visual_approach": "stillness \u2192 reveal. Open on the wall light-spill (IMG_8209/8211), slow 60fps-to-30fps slow-mo tilt up to the walnut body, canopy-to-tip hero (IMG_8205), end on full hero frame + name/CTA. Warm Japandi grade (~2900K look), soft grain, thin sans-serif type, 3 word cards max.",
+          "target_platform": "instagram",
+          "target_duration_seconds": 18,
+          "tone": "calm, premium, intimate",
+          "key_points": [
+            "The light is warm, soft and diffused",
+            "Real walnut body, minimal form"
+          ],
+          "cta": "Shop the pendant / DM to order",
+          "grounded_in": [
+            "feeling-first hook",
+            "shoot the effect not the bulb",
+            "Japandi warm grade"
+          ],
+          "why_this_works": "Feeling-first opening in the first 1.5s, product reveal earns attention; uses the footage's best frame (the wall glow)."
+        },
+        {
+          "id": "c2",
+          "title": "Grain & Glow",
+          "hook": "Walnut you can almost touch.",
+          "narrative_structure": "journey",
+          "visual_approach": "intimacy \u2192 payoff. Punch-in crops (4K source allows 2x) on wood grain at the base, the glowing slot, the canopy; match-cut along the vertical line; slow push-ins; payoff wide. Rich warm-brown grade, macro feel, serif + sans pairing.",
+          "target_platform": "instagram",
+          "target_duration_seconds": 20,
+          "tone": "tactile, crafted",
+          "key_points": [
+            "Natural wood craft",
+            "Hidden LED slot detail"
+          ],
+          "cta": "Handcrafted. Link in bio.",
+          "grounded_in": [
+            "walnut handcrafted positioning"
+          ],
+          "why_this_works": "Sells material quality, which differentiates from cheap linear LEDs."
+        },
+        {
+          "id": "c3",
+          "title": "The Line",
+          "hook": "One line. Every cut.",
+          "narrative_structure": "comparison",
+          "visual_approach": "urgency \u2192 resolution. Beat-synced cuts every 0.4\u20130.8s, the light line locked to the same screen position across shots, white-flash/light-leak transitions, bold kinetic type stomps; ends on a held hero shot. Higher-contrast cool-to-warm grade.",
+          "target_platform": "instagram",
+          "target_duration_seconds": 12,
+          "tone": "energetic, graphic",
+          "key_points": [
+            "Striking minimal silhouette",
+            "Statement piece"
+          ],
+          "cta": "Get yours",
+          "grounded_in": [
+            "beat-sync cut pacing",
+            "change every 2-4s retention"
+          ],
+          "why_this_works": "Maximum scroll-stop energy; short loopable runtime boosts replays."
+        }
+      ],
+      "selected_concept": {
+        "concept_id": "c1",
+        "rationale": "User said 'Do your best' \u2014 agent's recommendation applied: Concept A with a short beat-cut energy passage borrowed from Concept C."
+      },
+      "production_plan": {
+        "pipeline": "cinematic",
+        "playbook": "premium-minimalist",
+        "render_runtime": "hyperframes",
+        "stages": [
+          {
+            "stage": "assets",
+            "tools": [
+              {
+                "tool_name": "source footage",
+                "role": "primary visuals",
+                "provider": "user",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "7 vertical 4K/1080p clips supplied"
+              },
+              {
+                "tool_name": "pixabay_music",
+                "role": "royalty-free track search",
+                "provider": "pixabay",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "only configured music source"
+              }
+            ],
+            "approach": "Trim selects from supplied clips; pick 2-3 music candidates for user approval."
+          },
+          {
+            "stage": "compose",
+            "tools": [
+              {
+                "tool_name": "video_compose",
+                "role": "render vertical 1080x1920",
+                "provider": "hyperframes",
+                "available": true,
+                "estimated_cost_usd": 0,
+                "why_this_provider": "HyperFrames available; Remotion deps not installed"
+              },
+              {
+                "tool_name": "color_grade",
+                "role": "warm grade",
+                "provider": "ffmpeg",
+                "available": true,
+                "estimated_cost_usd": 0
+              },
+              {
+                "tool_name": "audio_mixer",
+                "role": "music fade/levels",
+                "provider": "ffmpeg",
+                "available": true,
+                "estimated_cost_usd": 0
+              }
+            ],
+            "approach": "Atelier (hand-authored) composition: clips + kinetic type + grade + music."
+          }
+        ],
+        "decision_log_ref": "/home/user/OpenMontage/projects/lumen-wood-pendant-reel/decision_log.json"
+      },
+      "cost_estimate": {
+        "total_estimated_usd": 0.0,
+        "budget_verdict": "within_budget",
+        "budget_cap_usd": 2.0,
+        "line_items": [
+          {
+            "tool": "pixabay_music",
+            "operation": "music search/download",
+            "estimated_usd": 0.0
+          },
+          {
+            "tool": "video_compose",
+            "operation": "local render",
+            "estimated_usd": 0.0
+          }
+        ]
+      },
+      "approval": {
+        "status": "approved_with_changes",
+        "user_notes": "'Do your best' \u2014 full creative delegation; neutral text (no brand name supplied).",
+        "approved_budget_usd": 0.0
+      }
+    },
+    "decision_log": {
+      "version": "1.0",
+      "project_id": "lumen-wood-pendant-reel",
+      "decisions": [
+        {
+          "decision_id": "d-001",
+          "stage": "research",
+          "category": "pipeline_selection",
+          "subject": "Pipeline for product reel from supplied footage",
+          "options_considered": [
+            {
+              "option_id": "cinematic",
+              "label": "cinematic",
+              "score": 0.9,
+              "reason": "mood-led edits of supplied footage"
+            },
+            {
+              "option_id": "hybrid",
+              "label": "hybrid",
+              "score": 0.6,
+              "reason": "needs footage + generated support visuals; none configured"
+            }
+          ],
+          "selected": "cinematic",
+          "reason": "Source footage, mood-led, no narration",
+          "user_visible": true,
+          "user_approved": true
+        },
+        {
+          "decision_id": "d-002",
+          "stage": "proposal",
+          "category": "render_runtime_selection",
+          "subject": "Composition runtime",
+          "options_considered": [
+            {
+              "option_id": "hyperframes",
+              "label": "HyperFrames",
+              "score": 0.85,
+              "reason": "kinetic type + video + transitions, installed"
+            },
+            {
+              "option_id": "remotion",
+              "label": "Remotion",
+              "score": 0.5,
+              "reason": "CinematicRenderer fits, but node_modules not installed",
+              "rejected_because": "not installed on this machine (npm install needed)"
+            },
+            {
+              "option_id": "ffmpeg",
+              "label": "FFmpeg only",
+              "score": 0.4,
+              "reason": "simple cuts, weak typography"
+            }
+          ],
+          "selected": "hyperframes",
+          "reason": "Recommended pending user approval",
+          "user_visible": true,
+          "user_approved": true
+        },
+        {
+          "decision_id": "d-003",
+          "stage": "proposal",
+          "category": "music_source",
+          "subject": "Music source",
+          "options_considered": [
+            {
+              "option_id": "pixabay",
+              "label": "Pixabay Music search",
+              "score": 0.8,
+              "reason": "free, configured"
+            },
+            {
+              "option_id": "library",
+              "label": "music_library/",
+              "score": 0.3,
+              "reason": "empty"
+            },
+            {
+              "option_id": "generate",
+              "label": "AI music generation",
+              "score": 0.0,
+              "reason": "no provider configured",
+              "rejected_because": "0/6 configured"
+            }
+          ],
+          "selected": "pixabay",
+          "reason": "Only available source; user may supply own track",
+          "user_visible": true,
+          "user_approved": false
+        },
+        {
+          "decision_id": "d-004",
+          "stage": "proposal",
+          "category": "approval_policy",
+          "subject": "Run approval policy",
+          "options_considered": [
+            {
+              "option_id": "per_gate",
+              "label": "Ask at every gate",
+              "score": 0.5,
+              "reason": "default"
+            },
+            {
+              "option_id": "delegated",
+              "label": "Full-run delegation",
+              "score": 0.9,
+              "reason": "user replied 'Do your best' to the proposal"
+            }
+          ],
+          "selected": "delegated",
+          "reason": "User delegated all creative choices; agent proceeds through all gates, reporting at the end.",
+          "user_visible": true,
+          "user_approved": true
+        },
+        {
+          "decision_id": "d-005",
+          "stage": "proposal",
+          "category": "concept_selection",
+          "subject": "Concept",
+          "options_considered": [
+            {
+              "option_id": "c1",
+              "label": "One Line of Light",
+              "score": 0.9,
+              "reason": "best use of wall-glow footage"
+            },
+            {
+              "option_id": "c2",
+              "label": "Grain & Glow",
+              "score": 0.6,
+              "reason": "less hook"
+            },
+            {
+              "option_id": "c3",
+              "label": "The Line",
+              "score": 0.7,
+              "reason": "energy but cheaper feel"
+            }
+          ],
+          "selected": "c1",
+          "reason": "Recommended; added a 4-cut beat run from c3 before the end card.",
+          "user_visible": true,
+          "user_approved": true
+        },
+        {
+          "decision_id": "d-006",
+          "stage": "proposal",
+          "category": "composition_mode",
+          "subject": "Composition authoring mode",
+          "options_considered": [
+            {
+              "option_id": "atelier",
+              "label": "Atelier (hand-authored)",
+              "score": 0.9,
+              "reason": "hero marketing piece"
+            },
+            {
+              "option_id": "templated",
+              "label": "Templated",
+              "score": 0.4,
+              "reason": "generic look"
+            }
+          ],
+          "selected": "atelier",
+          "reason": "HyperFrames is inherently atelier; bespoke art direction in hyperframes/art-direction.md",
+          "user_visible": true,
+          "user_approved": true
+        },
+        {
+          "decision_id": "d-007",
+          "stage": "assets",
+          "category": "music_source",
+          "subject": "Music source",
+          "options_considered": [
+            {
+              "option_id": "pixabay",
+              "label": "Pixabay Music search",
+              "score": 0.0,
+              "reason": "approved source",
+              "rejected_because": "HTTP 403 Forbidden from pixabay.com for every query"
+            },
+            {
+              "option_id": "generate",
+              "label": "AI music generation",
+              "score": 0.0,
+              "reason": "none configured",
+              "rejected_because": "0/6 providers configured"
+            },
+            {
+              "option_id": "synth",
+              "label": "Original score synthesized locally (numpy, 100 BPM, cut-synced)",
+              "score": 0.8,
+              "reason": "free, royalty-free, timed to cuts"
+            }
+          ],
+          "selected": "synth",
+          "reason": "Approved source blocked; user delegated decisions ('Do your best'). Swap flagged to user in final report.",
+          "user_visible": true,
+          "user_approved": false
+        },
+        {
+          "decision_id": "d-008",
+          "stage": "assets",
+          "category": "playbook_override",
+          "subject": "Color grade profile",
+          "options_considered": [
+            {
+              "option_id": "cinematic_warm",
+              "label": "color_grade preset cinematic_warm",
+              "score": 0.4,
+              "reason": "too subtle; walls stayed blue"
+            },
+            {
+              "option_id": "custom",
+              "label": "Custom warm/moody custom_vf via color_grade",
+              "score": 0.9,
+              "reason": "~2900K amber, lowered exposure, vignette"
+            }
+          ],
+          "selected": "custom",
+          "reason": "Visual A/B check of frames.",
+          "user_visible": true,
+          "user_approved": false
+        }
+      ]
+    }
+  }
+}

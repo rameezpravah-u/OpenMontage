@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "output_path": "renders/one-line-of-light_reel.mp4",
+  "status": "pass",
+  "checks": {
+    "technical_probe": {
+      "pass": true,
+      "notes": "1080x1920 30fps h264 high, aac 192k, 18.0s, faststart"
+    },
+    "visual_spotcheck": {
+      "pass": true,
+      "notes": "Frames at 0.9/3.2/6.0/10.5/15.5s checked; fixed label/lamp overlap and switch-plate in beat cut"
+    },
+    "audio_spotcheck": {
+      "pass": true,
+      "notes": "Integrated -14.5 LUFS; spectrogram confirms hits on cut points; not auditioned by ear"
+    },
+    "promise_preservation": {
+      "pass": true,
+      "notes": "Motion-led from real footage, HyperFrames runtime as approved; music source swapped (logged d-007)"
+    },
+    "subtitle_check": {
+      "pass": true,
+      "notes": "No narration; title cards kept above Reels UI safe zone"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "render_runtime": "hyperframes",
+  "cuts": [
+    {
+      "id": "cut0",
+      "source": "hyperframes/assets/a_hook.jpg",
+      "in_seconds": 0,
+      "out_seconds": 3
+    },
+    {
+      "id": "cut1",
+      "source": "hyperframes/assets/a_tubes2.jpg",
+      "in_seconds": 3,
+      "out_seconds": 4
+    },
+    {
+      "id": "cut2",
+      "source": "hyperframes/assets/a_tubes.jpg",
+      "in_seconds": 4,
+      "out_seconds": 5
+    },
+    {
+      "id": "cut3",
+      "source": "hyperframes/assets/v_pan.mp4",
+      "in_seconds": 5,
+      "out_seconds": 7
+    },
+    {
+      "id": "cut4",
+      "source": "hyperframes/assets/a_mirror.jpg",
+      "in_seconds": 7,
+      "out_seconds": 8
+    },
+    {
+      "id": "cut5",
+      "source": "hyperframes/assets/a_art.jpg",
+      "in_seconds": 8,
+      "out_seconds": 9
+    },
+    {
+      "id": "cut6",
+      "source": "hyperframes/assets/a_real2.jpg",
+      "in_seconds": 9,
+      "out_seconds": 10.5
+    },
+    {
+      "id": "cut7",
+      "source": "hyperframes/assets/a_hook.jpg",
+      "in_seconds": 10.5,
+      "out_seconds": 15
+    }
+  ]
+}

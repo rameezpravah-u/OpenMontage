@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "project_id": "wall-lights-viral-reel",
+  "pipeline_type": "cinematic",
+  "stage": "compose",
+  "status": "completed",
+  "timestamp": "2026-11-05T09:43:20.037251+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "render_report": {
+      "version": "1.0",
+      "outputs": [
+        {
+          "path": "renders/wall-lights_reel.mp4",
+          "format": "mp4 h264/aac",
+          "resolution": "1080x1920",
+          "duration_seconds": 16.0
+        }
+      ]
+    },
+    "final_review": {
+      "version": "1.0",
+      "output_path": "renders/wall-lights_reel.mp4",
+      "status": "pass",
+      "checks": {
+        "technical_probe": {
+          "pass": true,
+          "notes": "1080x1920 h264 16s -13.3 LUFS"
+        },
+        "visual_spotcheck": {
+          "pass": true,
+          "notes": "9 frames checked; contrast fix on vertical shot"
+        },
+        "audio_spotcheck": {
+          "pass": true,
+          "notes": "waveform verified, not auditioned"
+        },
+        "promise_preservation": {
+          "pass": true,
+          "notes": "motion from clips; product shots are crops of montage stills"
+        },
+        "subtitle_check": {
+          "pass": true,
+          "notes": "no VO"
+        }
+      }
+    }
+  }
+}

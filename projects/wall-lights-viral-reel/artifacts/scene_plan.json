@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "scenes": [
+    {
+      "id": "b1",
+      "type": "broll",
+      "description": "Your wall at 4 PM / plain. flat. boring.",
+      "start_seconds": 0,
+      "end_seconds": 2.0
+    },
+    {
+      "id": "b2",
+      "type": "broll",
+      "description": "Your wall at 8 PM / one wooden light. that's it.",
+      "start_seconds": 2.0,
+      "end_seconds": 3.5
+    },
+    {
+      "id": "b3",
+      "type": "broll",
+      "description": "Works in every room: BEDROOM, LIVING ROOM, HALLWAY, DINING",
+      "start_seconds": 3.5,
+      "end_seconds": 7.5
+    },
+    {
+      "id": "b4",
+      "type": "broll",
+      "description": "Pick yours, comment 1-5: Aurora Linear from \u20b91,999; Compact Sheesham from \u20b94,999; Nix Line 30\" from \u20b91,799; Vertical Curved \u20b96,999; Floating Shelf Light from \u20b92,999",
+      "start_seconds": 7.5,
+      "end_seconds": 12.5
+    },
+    {
+      "id": "b5",
+      "type": "broll",
+      "description": "NIXWOODS Solid-wood wall lights, 13 designs from \u20b91,599, Shop nixwoods.com, Code FLY100",
+      "start_seconds": 12.5,
+      "end_seconds": 16
+    }
+  ]
+}

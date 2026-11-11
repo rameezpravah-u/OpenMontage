@@ -1,0 +1,90 @@
+{
+  "version": "1.0",
+  "project_id": "compact-wall-light-ad",
+  "decisions": [
+    {
+      "decision_id": "d-001",
+      "stage": "proposal",
+      "category": "approval_policy",
+      "subject": "Run approval policy",
+      "options_considered": [
+        {
+          "option_id": "delegated",
+          "label": "Full-run delegation",
+          "score": 0.9,
+          "reason": "user preference"
+        }
+      ],
+      "selected": "delegated",
+      "reason": "proceed end-to-end"
+    },
+    {
+      "decision_id": "d-002",
+      "stage": "proposal",
+      "category": "render_runtime_selection",
+      "subject": "Composition runtime",
+      "options_considered": [
+        {
+          "option_id": "hyperframes",
+          "label": "HyperFrames",
+          "score": 0.9,
+          "reason": "text-heavy ad"
+        },
+        {
+          "option_id": "remotion",
+          "label": "Remotion",
+          "score": 0.3,
+          "reason": "",
+          "rejected_because": "not installed"
+        },
+        {
+          "option_id": "ffmpeg",
+          "label": "FFmpeg",
+          "score": 0.2,
+          "reason": "weak type"
+        }
+      ],
+      "selected": "hyperframes",
+      "reason": "consistent"
+    },
+    {
+      "decision_id": "d-003",
+      "stage": "assets",
+      "category": "downgrade_approval",
+      "subject": "Still-led treatment",
+      "options_considered": [
+        {
+          "option_id": "stills",
+          "label": "Real photos + 2s real pan, animated",
+          "score": 0.8,
+          "reason": "no raw compact video exists in Drive"
+        },
+        {
+          "option_id": "ai_video",
+          "label": "Generate video",
+          "score": 0.0,
+          "reason": "",
+          "rejected_because": "no video provider configured"
+        }
+      ],
+      "selected": "stills",
+      "reason": "only available footage; flagged to user"
+    },
+    {
+      "decision_id": "d-004",
+      "stage": "assets",
+      "category": "music_source",
+      "subject": "Music source",
+      "options_considered": [
+        {
+          "option_id": "synth",
+          "label": "Original score",
+          "score": 0.85,
+          "reason": "owned"
+        }
+      ],
+      "selected": "synth",
+      "reason": "royalty-free"
+    }
+  ]
+}

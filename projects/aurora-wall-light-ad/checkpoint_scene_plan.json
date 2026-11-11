@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "project_id": "aurora-wall-light-ad",
+  "pipeline_type": "cinematic",
+  "stage": "scene_plan",
+  "status": "completed",
+  "timestamp": "2026-11-05T10:07:11.790656+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "scene_plan": {
+      "version": "1.0",
+      "scenes": [
+        {
+          "id": "b1",
+          "type": "broll",
+          "description": "POV: you replaced the tube light with this",
+          "start_seconds": 0,
+          "end_seconds": 2
+        },
+        {
+          "id": "b2",
+          "type": "broll",
+          "description": "Warm light. not white light.",
+          "start_seconds": 2,
+          "end_seconds": 4
+        },
+        {
+          "id": "b3",
+          "type": "broll",
+          "description": "Solid teak. real grain, real knots",
+          "start_seconds": 4,
+          "end_seconds": 5
+        },
+        {
+          "id": "b4",
+          "type": "broll",
+          "description": "Pick your glow: Down only \u20b91,999 / Up + down \u20b92,499",
+          "start_seconds": 5,
+          "end_seconds": 7
+        },
+        {
+          "id": "b5",
+          "type": "broll",
+          "description": "One light. Every room. \u2014 sideboard / art / mirror / bed",
+          "start_seconds": 7,
+          "end_seconds": 11
+        },
+        {
+          "id": "b6",
+          "type": "broll",
+          "description": "30\u2033 or 48\u2033",
+          "start_seconds": 11,
+          "end_seconds": 12.5
+        },
+        {
+          "id": "b7",
+          "type": "broll",
+          "description": "Aurora Teak Linear Wall Light from \u20b91,999 (\u20b92,749) 27% OFF, SHOP NOW, FLY100",
+          "start_seconds": 12.5,
+          "end_seconds": 17
+        }
+      ]
+    }
+  }
+}

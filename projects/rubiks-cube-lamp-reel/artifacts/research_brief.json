@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "topic": "Nixwoods Rubik's Cube table lamp \u2014 viral reel",
+  "research_date": "2026-11-05",
+  "landscape": {
+    "existing_content": [
+      {
+        "title": "Nixwoods product page",
+        "url": "https://nixwoods.com/products/rubiks-cube-table-lamp-sheesham-wood",
+        "source": "brand site",
+        "angle": "product photos",
+        "what_it_covers": "variants, glow modes",
+        "what_it_misses": "the colour-change moment in motion"
+      },
+      {
+        "title": "User demo clip",
+        "source": "user",
+        "angle": "raw 38s demo",
+        "what_it_covers": "every colour + rotation",
+        "what_it_misses": "hook, pacing, text"
+      },
+      {
+        "title": "Generic lamp reels",
+        "source": "instagram",
+        "angle": "slow product pans",
+        "what_it_covers": "looks",
+        "what_it_misses": "interaction payoff"
+      }
+    ],
+    "saturated_angles": [
+      "slow pan + trending audio"
+    ],
+    "underserved_gaps": [
+      "the physical 'turn it \u2192 colour changes' interaction as the hook"
+    ]
+  },
+  "data_points": [
+    {
+      "claim": "First 1-2s decide retention",
+      "source_url": "https://dev.to/fermainpariz/instagram-reels-strategy-2026-what-actually-works-data-backed-guide-11hn",
+      "credibility": "secondary_source"
+    },
+    {
+      "claim": "Cuts should land on the beat",
+      "source_url": "https://oakgen.ai/blog/ai-beat-drops-viral-reels",
+      "credibility": "anecdotal"
+    },
+    {
+      "claim": "Visual change every 2-4s sustains watch time",
+      "source_url": "https://spliceapp.com/blog/mastering-travel-vlog-pacing-for-instagram-reels-in-2026/",
+      "credibility": "anecdotal"
+    }
+  ],
+  "audience_insights": {
+    "common_questions": [
+      "How does it change colour?",
+      "Is it real wood?",
+      "Price / where to buy?"
+    ],
+    "misconceptions": [
+      {
+        "myth": "It's an RGB app lamp",
+        "reality": "Colour comes from rotating the coloured glass on the lit base"
+      }
+    ],
+    "knowledge_level": "general consumer"
+  },
+  "angles_discovered": [
+    {
+      "name": "Turn it, change the mood",
+      "hook": "This lamp changes colour when you turn it",
+      "type": "trending",
+      "why_now": "interaction payoff + beat drop"
+    },
+    {
+      "name": "4 moods 1 lamp",
+      "hook": "4 moods. 1 lamp.",
+      "type": "evergreen",
+      "why_now": "value framing"
+    },
+    {
+      "name": "No app, no remote",
+      "hook": "No app. No remote.",
+      "type": "contrarian",
+      "why_now": "anti-smart-home tactile appeal"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://nixwoods.com/products/rubiks-cube-table-lamp-sheesham-wood",
+      "title": "Nixwoods product page",
+      "used_for": "product facts: sheesham base, glass, 3000K, mood names, FLY100 code"
+    },
+    {
+      "url": "https://dev.to/fermainpariz/instagram-reels-strategy-2026-what-actually-works-data-backed-guide-11hn",
+      "title": "Reels strategy 2026",
+      "used_for": "1-2s hook window"
+    },
+    {
+      "url": "https://invideo.io/faq/what-are-the-best-hook-formats-for-ugc-ads-on-instagram/",
+      "title": "Hook formats",
+      "used_for": "feeling/curiosity-first hooks"
+    },
+    {
+      "url": "https://oakgen.ai/blog/ai-beat-drops-viral-reels",
+      "title": "Beat drops in reels",
+      "used_for": "cuts on the beat, drop on the payoff"
+    },
+    {
+      "url": "https://spliceapp.com/blog/mastering-travel-vlog-pacing-for-instagram-reels-in-2026/",
+      "title": "Reels pacing 2026",
+      "used_for": "change every 2-4s"
+    }
+  ],
+  "research_summary": "The single strongest moment is the instant the glass lights up and changes colour; open on curiosity text, drop the beat exactly on light-on, then rapid colour switches with named moods, finish on product + CTA + FLY100 code."
+}

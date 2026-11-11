@@ -1,0 +1,131 @@
+{
+  "version": "1.0",
+  "project_id": "aurora-wall-light-ad",
+  "decisions": [
+    {
+      "decision_id": "d-001",
+      "stage": "proposal",
+      "category": "provider_selection",
+      "subject": "Human scenes source",
+      "options_considered": [
+        {
+          "option_id": "ai720",
+          "label": "Higgsfield Seedance 2.5 720p ~140cr",
+          "score": 0.7,
+          "reason": "adds people",
+          "rejected_because": "user declined"
+        },
+        {
+          "option_id": "ai1080",
+          "label": "Seedance 1080p ~320cr",
+          "score": 0.6,
+          "reason": "sharper",
+          "rejected_because": "user declined"
+        },
+        {
+          "option_id": "real",
+          "label": "Real footage only",
+          "score": 0.8,
+          "reason": "user choice"
+        },
+        {
+          "option_id": "film",
+          "label": "User films people",
+          "score": 0.9,
+          "reason": "most credible",
+          "rejected_because": "not available now"
+        }
+      ],
+      "selected": "real",
+      "reason": "User selected No AI",
+      "user_visible": true,
+      "user_approved": true
+    },
+    {
+      "decision_id": "d-002",
+      "stage": "proposal",
+      "category": "render_runtime_selection",
+      "subject": "Composition runtime",
+      "options_considered": [
+        {
+          "option_id": "hyperframes",
+          "label": "HyperFrames",
+          "score": 0.9,
+          "reason": "text-led ad"
+        },
+        {
+          "option_id": "remotion",
+          "label": "Remotion",
+          "score": 0.3,
+          "reason": "",
+          "rejected_because": "not installed"
+        },
+        {
+          "option_id": "ffmpeg",
+          "label": "FFmpeg",
+          "score": 0.2,
+          "reason": "weak type"
+        }
+      ],
+      "selected": "hyperframes",
+      "reason": "consistent"
+    },
+    {
+      "decision_id": "d-003",
+      "stage": "assets",
+      "category": "visual_accuracy_check",
+      "subject": "Product identity of Drive photos",
+      "options_considered": [
+        {
+          "option_id": "exclude",
+          "label": "Exclude aurora_share_* and AC4I photos",
+          "score": 0.9,
+          "reason": "they show the twin-tube Compact, not the slim Aurora"
+        },
+        {
+          "option_id": "include",
+          "label": "Use them",
+          "score": 0.1,
+          "reason": "",
+          "rejected_because": "would show wrong product"
+        }
+      ],
+      "selected": "exclude",
+      "reason": "avoid misrepresenting product",
+      "user_visible": true
+    },
+    {
+      "decision_id": "d-004",
+      "stage": "script",
+      "category": "visual_accuracy_check",
+      "subject": "Installation claim",
+      "options_considered": [
+        {
+          "option_id": "drop",
+          "label": "Remove 'plugs in, no electrician'",
+          "score": 0.9,
+          "reason": "not stated on product page"
+        }
+      ],
+      "selected": "drop",
+      "reason": "unverified claim",
+      "user_visible": true
+    },
+    {
+      "decision_id": "d-005",
+      "stage": "assets",
+      "category": "music_source",
+      "subject": "Music source",
+      "options_considered": [
+        {
+          "option_id": "synth",
+          "label": "Original score",
+          "score": 0.85,
+          "reason": "owned"
+        }
+      ],
+      "selected": "synth",
+      "reason": "royalty-free"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "output_path": "renders/aurora-wall-light_ad_9x16.mp4",
+  "status": "pass",
+  "checks": {
+    "technical_probe": {
+      "pass": true,
+      "notes": "-13.8 LUFS"
+    },
+    "visual_spotcheck": {
+      "pass": true,
+      "notes": "10 frames + 4:5 checked"
+    },
+    "audio_spotcheck": {
+      "pass": true,
+      "notes": "not auditioned"
+    },
+    "promise_preservation": {
+      "pass": true,
+      "notes": "no AI generation; no real human footage available"
+    },
+    "subtitle_check": {
+      "pass": true,
+      "notes": "sound-off text"
+    }
+  }
+}

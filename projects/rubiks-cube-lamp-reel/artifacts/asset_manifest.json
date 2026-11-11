@@ -1,0 +1,96 @@
+{
+  "version": "1.0",
+  "assets": [
+    {
+      "id": "c01_place",
+      "type": "video",
+      "path": "hyperframes/assets/c01_place.mp4",
+      "source_tool": "ffmpeg (crop/upscale/sharpen)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "c02_green",
+      "type": "video",
+      "path": "hyperframes/assets/c02_green.mp4",
+      "source_tool": "ffmpeg (crop/upscale/sharpen)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "c03_red",
+      "type": "video",
+      "path": "hyperframes/assets/c03_red.mp4",
+      "source_tool": "ffmpeg (crop/upscale/sharpen)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "c04_flare",
+      "type": "video",
+      "path": "hyperframes/assets/c04_flare.mp4",
+      "source_tool": "ffmpeg (crop/upscale/sharpen)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "c05_amber",
+      "type": "video",
+      "path": "hyperframes/assets/c05_amber.mp4",
+      "source_tool": "ffmpeg (crop/upscale/sharpen)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "c06_warm",
+      "type": "video",
+      "path": "hyperframes/assets/c06_warm.mp4",
+      "source_tool": "ffmpeg (crop/upscale/sharpen)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "c07_twist",
+      "type": "video",
+      "path": "hyperframes/assets/c07_twist.mp4",
+      "source_tool": "ffmpeg (crop/upscale/sharpen)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "c08_base",
+      "type": "video",
+      "path": "hyperframes/assets/c08_base.mp4",
+      "source_tool": "ffmpeg (crop/upscale/sharpen)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "c09_green",
+      "type": "video",
+      "path": "hyperframes/assets/c09_green.mp4",
+      "source_tool": "ffmpeg (crop/upscale/sharpen)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "c10_white",
+      "type": "video",
+      "path": "hyperframes/assets/c10_white.mp4",
+      "source_tool": "ffmpeg (crop/upscale/sharpen)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "c11_green",
+      "type": "video",
+      "path": "hyperframes/assets/c11_green.mp4",
+      "source_tool": "ffmpeg (crop/upscale/sharpen)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "c12_hero",
+      "type": "video",
+      "path": "hyperframes/assets/c12_hero.mp4",
+      "source_tool": "ffmpeg (crop/upscale/sharpen)",
+      "scene_id": "b1"
+    },
+    {
+      "id": "score",
+      "type": "music",
+      "path": "assets/music/score.wav",
+      "source_tool": "local numpy synth + loudnorm",
+      "scene_id": "b1"
+    }
+  ]
+}

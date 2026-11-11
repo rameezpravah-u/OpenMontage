@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "outputs": [
+    {
+      "path": "renders/compact-wall-light_meta-ad_9x16.mp4",
+      "format": "mp4 h264/aac",
+      "resolution": "1080x1920",
+      "duration_seconds": 15.0
+    },
+    {
+      "path": "renders/compact-wall-light_meta-ad_4x5.mp4",
+      "format": "mp4 h264/aac",
+      "resolution": "1080x1350",
+      "duration_seconds": 15.0
+    }
+  ]
+}
