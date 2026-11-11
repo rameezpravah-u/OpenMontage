@@ -1,0 +1,245 @@
+{
+  "duration": 28.0,
+  "segments": [
+    {
+      "id": "hook",
+      "src": "IMG_8271",
+      "src_in": 3.55,
+      "start": 0.0,
+      "dur": 2.0,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": "q"
+    },
+    {
+      "id": "plane1",
+      "src": "IMG_8239",
+      "src_in": 1.5,
+      "start": 2.0,
+      "dur": 1.0,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "plane2",
+      "src": "IMG_8243",
+      "src_in": 0.3,
+      "start": 3.0,
+      "dur": 0.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "plane3",
+      "src": "IMG_8241",
+      "src_in": 1.5,
+      "start": 3.5,
+      "dur": 0.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "cut1",
+      "src": "IMG_8246",
+      "src_in": 2.0,
+      "start": 4.0,
+      "dur": 1.0,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "cut2",
+      "src": "IMG_8248",
+      "src_in": 0.3,
+      "start": 5.0,
+      "dur": 0.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "cut3",
+      "src": "IMG_8247",
+      "src_in": 0.5,
+      "start": 5.5,
+      "dur": 0.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "sand1",
+      "src": "IMG_8235",
+      "src_in": 0.6,
+      "start": 6.0,
+      "dur": 0.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "sand2",
+      "src": "IMG_8237",
+      "src_in": 0.4,
+      "start": 6.5,
+      "dur": 0.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "route",
+      "src": "IMG_8255",
+      "src_in": 1.5,
+      "start": 7.0,
+      "dur": 1.5,
+      "speed": 0.5,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "pol1",
+      "src": "IMG_8252",
+      "src_in": 1.0,
+      "start": 8.5,
+      "dur": 1.0,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "pol2",
+      "src": "IMG_8254",
+      "src_in": 0.5,
+      "start": 9.5,
+      "dur": 1.0,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "rows1",
+      "src": "IMG_8250",
+      "src_in": 2.0,
+      "start": 10.5,
+      "dur": 0.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "rows2",
+      "src": "IMG_8249",
+      "src_in": 0.3,
+      "start": 11.0,
+      "dur": 0.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "sun1",
+      "src": "IMG_8263",
+      "src_in": 0.5,
+      "start": 11.5,
+      "dur": 1.0,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "sun2",
+      "src": "IMG_8267",
+      "src_in": 0.8,
+      "start": 12.5,
+      "dur": 0.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "brand",
+      "src": "IMG_8269",
+      "src_in": 1.0,
+      "start": 13.0,
+      "dur": 1.0,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": "f"
+    },
+    {
+      "id": "wire",
+      "src": "IMG_8277",
+      "src_in": 0.3,
+      "start": 14.0,
+      "dur": 1.0,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "beam",
+      "src": "IMG_8280",
+      "src_in": 0.3,
+      "start": 15.0,
+      "dur": 1.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": "w"
+    },
+    {
+      "id": "grain",
+      "src": "IMG_8289",
+      "src_in": 1.0,
+      "start": 16.5,
+      "dur": 1.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "hand",
+      "src": "IMG_8303",
+      "src_in": 0.2,
+      "start": 18.0,
+      "dur": 1.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "person",
+      "src": "IMG_8285",
+      "src_in": 3.0,
+      "start": 19.5,
+      "dur": 2.5,
+      "speed": 1.0,
+      "mode": "fit",
+      "flags": ""
+    },
+    {
+      "id": "updown",
+      "src": "IMG_8273",
+      "src_in": 0.3,
+      "start": 22.0,
+      "dur": 1.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": "w"
+    },
+    {
+      "id": "end",
+      "src": "IMG_8284",
+      "src_in": 0.0,
+      "start": 23.5,
+      "dur": 4.5,
+      "speed": 0.33,
+      "mode": "fit",
+      "flags": "q"
+    }
+  ]
+}

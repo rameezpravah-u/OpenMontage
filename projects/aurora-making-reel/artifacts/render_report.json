@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "outputs": [
+    {
+      "path": "renders/aurora_how-its-made_28s_9x16.mp4",
+      "format": "mp4 h264/aac",
+      "resolution": "1080x1920",
+      "duration_seconds": 28
+    },
+    {
+      "path": "renders/aurora_how-its-made_28s_4x5.mp4",
+      "format": "mp4 h264/aac",
+      "resolution": "1080x1350",
+      "duration_seconds": 28
+    },
+    {
+      "path": "renders/aurora_raw-teak-to-light_ad_15s_9x16.mp4",
+      "format": "mp4 h264/aac",
+      "resolution": "1080x1920",
+      "duration_seconds": 15
+    },
+    {
+      "path": "renders/aurora_raw-teak-to-light_ad_15s_4x5.mp4",
+      "format": "mp4 h264/aac",
+      "resolution": "1080x1350",
+      "duration_seconds": 15
+    },
+    {
+      "path": "renders/aurora_satisfying-loop_8s_9x16.mp4",
+      "format": "mp4 h264/aac",
+      "resolution": "1080x1920",
+      "duration_seconds": 8
+    },
+    {
+      "path": "renders/aurora_satisfying-loop_8s_4x5.mp4",
+      "format": "mp4 h264/aac",
+      "resolution": "1080x1350",
+      "duration_seconds": 8
+    }
+  ]
+}

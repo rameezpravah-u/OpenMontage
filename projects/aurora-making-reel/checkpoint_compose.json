@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "project_id": "aurora-making-reel",
+  "pipeline_type": "cinematic",
+  "stage": "compose",
+  "status": "completed",
+  "timestamp": "2026-11-11T09:45:09.780143+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "render_report": {
+      "version": "1.0",
+      "outputs": [
+        {
+          "path": "renders/aurora_how-its-made_28s_9x16.mp4",
+          "format": "mp4 h264/aac",
+          "resolution": "1080x1920",
+          "duration_seconds": 28
+        },
+        {
+          "path": "renders/aurora_how-its-made_28s_4x5.mp4",
+          "format": "mp4 h264/aac",
+          "resolution": "1080x1350",
+          "duration_seconds": 28
+        },
+        {
+          "path": "renders/aurora_raw-teak-to-light_ad_15s_9x16.mp4",
+          "format": "mp4 h264/aac",
+          "resolution": "1080x1920",
+          "duration_seconds": 15
+        },
+        {
+          "path": "renders/aurora_raw-teak-to-light_ad_15s_4x5.mp4",
+          "format": "mp4 h264/aac",
+          "resolution": "1080x1350",
+          "duration_seconds": 15
+        },
+        {
+          "path": "renders/aurora_satisfying-loop_8s_9x16.mp4",
+          "format": "mp4 h264/aac",
+          "resolution": "1080x1920",
+          "duration_seconds": 8
+        },
+        {
+          "path": "renders/aurora_satisfying-loop_8s_4x5.mp4",
+          "format": "mp4 h264/aac",
+          "resolution": "1080x1350",
+          "duration_seconds": 8
+        }
+      ]
+    },
+    "final_review": {
+      "version": "1.0",
+      "output_path": "renders/aurora_how-its-made_28s_9x16.mp4",
+      "status": "pass",
+      "checks": {
+        "technical_probe": {
+          "pass": true,
+          "notes": "h264, -14.1..-14.7 LUFS"
+        },
+        "visual_spotcheck": {
+          "pass": true,
+          "notes": "caption overlap fixed (moved to top + backdrop); logo rotated 180"
+        },
+        "audio_spotcheck": {
+          "pass": true,
+          "notes": "score + real workshop audio; not auditioned by ear"
+        },
+        "promise_preservation": {
+          "pass": true,
+          "notes": "real footage only"
+        },
+        "subtitle_check": {
+          "pass": true,
+          "notes": "captions within 4:5 safe area except 'HOW IT'S MADE' bar label"
+        }
+      }
+    }
+  }
+}

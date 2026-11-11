@@ -1,0 +1,361 @@
+{
+  "version": "1.0",
+  "project_id": "aurora-making-reel",
+  "pipeline_type": "cinematic",
+  "stage": "assets",
+  "status": "completed",
+  "timestamp": "2026-11-11T09:45:09.456007+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": true,
+  "human_approved": true,
+  "artifacts": {
+    "asset_manifest": {
+      "version": "1.0",
+      "assets": [
+        {
+          "id": "r1-hook",
+          "type": "video",
+          "path": "r1/hyperframes/assets/hook.mp4",
+          "source_tool": "ffmpeg from IMG_8271.mov",
+          "scene_id": "r1-hook"
+        },
+        {
+          "id": "r1-plane1",
+          "type": "video",
+          "path": "r1/hyperframes/assets/plane1.mp4",
+          "source_tool": "ffmpeg from IMG_8239.mov",
+          "scene_id": "r1-plane1"
+        },
+        {
+          "id": "r1-plane2",
+          "type": "video",
+          "path": "r1/hyperframes/assets/plane2.mp4",
+          "source_tool": "ffmpeg from IMG_8243.mov",
+          "scene_id": "r1-plane2"
+        },
+        {
+          "id": "r1-plane3",
+          "type": "video",
+          "path": "r1/hyperframes/assets/plane3.mp4",
+          "source_tool": "ffmpeg from IMG_8241.mov",
+          "scene_id": "r1-plane3"
+        },
+        {
+          "id": "r1-cut1",
+          "type": "video",
+          "path": "r1/hyperframes/assets/cut1.mp4",
+          "source_tool": "ffmpeg from IMG_8246.mov",
+          "scene_id": "r1-cut1"
+        },
+        {
+          "id": "r1-cut2",
+          "type": "video",
+          "path": "r1/hyperframes/assets/cut2.mp4",
+          "source_tool": "ffmpeg from IMG_8248.mov",
+          "scene_id": "r1-cut2"
+        },
+        {
+          "id": "r1-cut3",
+          "type": "video",
+          "path": "r1/hyperframes/assets/cut3.mp4",
+          "source_tool": "ffmpeg from IMG_8247.mov",
+          "scene_id": "r1-cut3"
+        },
+        {
+          "id": "r1-sand1",
+          "type": "video",
+          "path": "r1/hyperframes/assets/sand1.mp4",
+          "source_tool": "ffmpeg from IMG_8235.mov",
+          "scene_id": "r1-sand1"
+        },
+        {
+          "id": "r1-sand2",
+          "type": "video",
+          "path": "r1/hyperframes/assets/sand2.mp4",
+          "source_tool": "ffmpeg from IMG_8237.mov",
+          "scene_id": "r1-sand2"
+        },
+        {
+          "id": "r1-route",
+          "type": "video",
+          "path": "r1/hyperframes/assets/route.mp4",
+          "source_tool": "ffmpeg from IMG_8255.mov",
+          "scene_id": "r1-route"
+        },
+        {
+          "id": "r1-pol1",
+          "type": "video",
+          "path": "r1/hyperframes/assets/pol1.mp4",
+          "source_tool": "ffmpeg from IMG_8252.mov",
+          "scene_id": "r1-pol1"
+        },
+        {
+          "id": "r1-pol2",
+          "type": "video",
+          "path": "r1/hyperframes/assets/pol2.mp4",
+          "source_tool": "ffmpeg from IMG_8254.mov",
+          "scene_id": "r1-pol2"
+        },
+        {
+          "id": "r1-rows1",
+          "type": "video",
+          "path": "r1/hyperframes/assets/rows1.mp4",
+          "source_tool": "ffmpeg from IMG_8250.mov",
+          "scene_id": "r1-rows1"
+        },
+        {
+          "id": "r1-rows2",
+          "type": "video",
+          "path": "r1/hyperframes/assets/rows2.mp4",
+          "source_tool": "ffmpeg from IMG_8249.mov",
+          "scene_id": "r1-rows2"
+        },
+        {
+          "id": "r1-sun1",
+          "type": "video",
+          "path": "r1/hyperframes/assets/sun1.mp4",
+          "source_tool": "ffmpeg from IMG_8263.mov",
+          "scene_id": "r1-sun1"
+        },
+        {
+          "id": "r1-sun2",
+          "type": "video",
+          "path": "r1/hyperframes/assets/sun2.mp4",
+          "source_tool": "ffmpeg from IMG_8267.mov",
+          "scene_id": "r1-sun2"
+        },
+        {
+          "id": "r1-brand",
+          "type": "video",
+          "path": "r1/hyperframes/assets/brand.mp4",
+          "source_tool": "ffmpeg from IMG_8269.mov",
+          "scene_id": "r1-brand"
+        },
+        {
+          "id": "r1-wire",
+          "type": "video",
+          "path": "r1/hyperframes/assets/wire.mp4",
+          "source_tool": "ffmpeg from IMG_8277.mov",
+          "scene_id": "r1-wire"
+        },
+        {
+          "id": "r1-beam",
+          "type": "video",
+          "path": "r1/hyperframes/assets/beam.mp4",
+          "source_tool": "ffmpeg from IMG_8280.mov",
+          "scene_id": "r1-beam"
+        },
+        {
+          "id": "r1-grain",
+          "type": "video",
+          "path": "r1/hyperframes/assets/grain.mp4",
+          "source_tool": "ffmpeg from IMG_8289.mov",
+          "scene_id": "r1-grain"
+        },
+        {
+          "id": "r1-hand",
+          "type": "video",
+          "path": "r1/hyperframes/assets/hand.mp4",
+          "source_tool": "ffmpeg from IMG_8303.mov",
+          "scene_id": "r1-hand"
+        },
+        {
+          "id": "r1-person",
+          "type": "video",
+          "path": "r1/hyperframes/assets/person.mp4",
+          "source_tool": "ffmpeg from IMG_8285.mov",
+          "scene_id": "r1-person"
+        },
+        {
+          "id": "r1-updown",
+          "type": "video",
+          "path": "r1/hyperframes/assets/updown.mp4",
+          "source_tool": "ffmpeg from IMG_8273.mov",
+          "scene_id": "r1-updown"
+        },
+        {
+          "id": "r1-end",
+          "type": "video",
+          "path": "r1/hyperframes/assets/end.mp4",
+          "source_tool": "ffmpeg from IMG_8284.mov",
+          "scene_id": "r1-end"
+        },
+        {
+          "id": "r1-mix",
+          "type": "music",
+          "path": "r1/hyperframes/assets/mix.wav",
+          "source_tool": "score_making.py + workshop audio bed",
+          "scene_id": "r1-hook"
+        },
+        {
+          "id": "r2-hook",
+          "type": "video",
+          "path": "r2/hyperframes/assets/hook.mp4",
+          "source_tool": "ffmpeg from IMG_8271.mov",
+          "scene_id": "r2-hook"
+        },
+        {
+          "id": "r2-plane1",
+          "type": "video",
+          "path": "r2/hyperframes/assets/plane1.mp4",
+          "source_tool": "ffmpeg from IMG_8239.mov",
+          "scene_id": "r2-plane1"
+        },
+        {
+          "id": "r2-plane3",
+          "type": "video",
+          "path": "r2/hyperframes/assets/plane3.mp4",
+          "source_tool": "ffmpeg from IMG_8241.mov",
+          "scene_id": "r2-plane3"
+        },
+        {
+          "id": "r2-cut1",
+          "type": "video",
+          "path": "r2/hyperframes/assets/cut1.mp4",
+          "source_tool": "ffmpeg from IMG_8246.mov",
+          "scene_id": "r2-cut1"
+        },
+        {
+          "id": "r2-cut2",
+          "type": "video",
+          "path": "r2/hyperframes/assets/cut2.mp4",
+          "source_tool": "ffmpeg from IMG_8248.mov",
+          "scene_id": "r2-cut2"
+        },
+        {
+          "id": "r2-sand1",
+          "type": "video",
+          "path": "r2/hyperframes/assets/sand1.mp4",
+          "source_tool": "ffmpeg from IMG_8235.mov",
+          "scene_id": "r2-sand1"
+        },
+        {
+          "id": "r2-sand2",
+          "type": "video",
+          "path": "r2/hyperframes/assets/sand2.mp4",
+          "source_tool": "ffmpeg from IMG_8237.mov",
+          "scene_id": "r2-sand2"
+        },
+        {
+          "id": "r2-route",
+          "type": "video",
+          "path": "r2/hyperframes/assets/route.mp4",
+          "source_tool": "ffmpeg from IMG_8255.mov",
+          "scene_id": "r2-route"
+        },
+        {
+          "id": "r2-pol1",
+          "type": "video",
+          "path": "r2/hyperframes/assets/pol1.mp4",
+          "source_tool": "ffmpeg from IMG_8252.mov",
+          "scene_id": "r2-pol1"
+        },
+        {
+          "id": "r2-rows1",
+          "type": "video",
+          "path": "r2/hyperframes/assets/rows1.mp4",
+          "source_tool": "ffmpeg from IMG_8250.mov",
+          "scene_id": "r2-rows1"
+        },
+        {
+          "id": "r2-sun1",
+          "type": "video",
+          "path": "r2/hyperframes/assets/sun1.mp4",
+          "source_tool": "ffmpeg from IMG_8263.mov",
+          "scene_id": "r2-sun1"
+        },
+        {
+          "id": "r2-brand",
+          "type": "video",
+          "path": "r2/hyperframes/assets/brand.mp4",
+          "source_tool": "ffmpeg from IMG_8269.mov",
+          "scene_id": "r2-brand"
+        },
+        {
+          "id": "r2-wire",
+          "type": "video",
+          "path": "r2/hyperframes/assets/wire.mp4",
+          "source_tool": "ffmpeg from IMG_8277.mov",
+          "scene_id": "r2-wire"
+        },
+        {
+          "id": "r2-beam",
+          "type": "video",
+          "path": "r2/hyperframes/assets/beam.mp4",
+          "source_tool": "ffmpeg from IMG_8280.mov",
+          "scene_id": "r2-beam"
+        },
+        {
+          "id": "r2-grain",
+          "type": "video",
+          "path": "r2/hyperframes/assets/grain.mp4",
+          "source_tool": "ffmpeg from IMG_8289.mov",
+          "scene_id": "r2-grain"
+        },
+        {
+          "id": "r2-person",
+          "type": "video",
+          "path": "r2/hyperframes/assets/person.mp4",
+          "source_tool": "ffmpeg from IMG_8285.mov",
+          "scene_id": "r2-person"
+        },
+        {
+          "id": "r2-end",
+          "type": "video",
+          "path": "r2/hyperframes/assets/end.mp4",
+          "source_tool": "ffmpeg from IMG_8284.mov",
+          "scene_id": "r2-end"
+        },
+        {
+          "id": "r2-mix",
+          "type": "music",
+          "path": "r2/hyperframes/assets/mix.wav",
+          "source_tool": "score_making.py + workshop audio bed",
+          "scene_id": "r2-hook"
+        },
+        {
+          "id": "r3-sand1",
+          "type": "video",
+          "path": "r3/hyperframes/assets/sand1.mp4",
+          "source_tool": "ffmpeg from IMG_8235.mov",
+          "scene_id": "r3-sand1"
+        },
+        {
+          "id": "r3-route",
+          "type": "video",
+          "path": "r3/hyperframes/assets/route.mp4",
+          "source_tool": "ffmpeg from IMG_8255.mov",
+          "scene_id": "r3-route"
+        },
+        {
+          "id": "r3-pol1",
+          "type": "video",
+          "path": "r3/hyperframes/assets/pol1.mp4",
+          "source_tool": "ffmpeg from IMG_8252.mov",
+          "scene_id": "r3-pol1"
+        },
+        {
+          "id": "r3-hook",
+          "type": "video",
+          "path": "r3/hyperframes/assets/hook.mp4",
+          "source_tool": "ffmpeg from IMG_8271.mov",
+          "scene_id": "r3-hook"
+        },
+        {
+          "id": "r3-grain",
+          "type": "video",
+          "path": "r3/hyperframes/assets/grain.mp4",
+          "source_tool": "ffmpeg from IMG_8289.mov",
+          "scene_id": "r3-grain"
+        },
+        {
+          "id": "r3-mix",
+          "type": "music",
+          "path": "r3/hyperframes/assets/mix.wav",
+          "source_tool": "score_making.py + workshop audio bed",
+          "scene_id": "r3-hook"
+        }
+      ]
+    }
+  }
+}

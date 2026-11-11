@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>Aurora — How It's Made (r3)</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face { font-family: "IDBlack"; src: url("assets/InterDisplay-Black.otf"); font-weight: 900; }
+@font-face { font-family: "IDBold"; src: url("assets/InterDisplay-Bold.otf"); font-weight: 700; }
+@font-face { font-family: "ISemi"; src: url("assets/Inter-SemiBold.otf"); font-weight: 600; }
+@font-face { font-family: "Corm"; src: url("assets/cormorant-garamond-latin-400-italic.woff2") format("woff2"); font-style: italic; }
+:root { --ink: #120d09; --amber: #ffb54a; --glow: #ffd796; --cream: #fff5e6; }
+html, body { margin: 0; background: var(--ink); }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--ink); }
+.fill { position: absolute; inset: 0; background: var(--ink); }
+video.shot { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; transform-origin: 50% 45%; }
+.layer { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; box-sizing: border-box; }
+.scrim { background: linear-gradient(180deg, rgba(18,13,9,0.65) 0%, rgba(18,13,9,0.35) 22%, rgba(18,13,9,0) 40%, rgba(18,13,9,0) 50%, rgba(18,13,9,0.55) 68%, rgba(18,13,9,0.82) 100%); }
+.cap { position: absolute; left: 70px; top: 1000px; width: 940px; text-align: center; display: block; }
+.top { position: absolute; left: 20px; top: 330px; width: 1040px; padding: 70px 50px; box-sizing: border-box; text-align: center; display: block; background: radial-gradient(ellipse 60% 55% at 50% 50%, rgba(18,13,9,0.62) 0%, rgba(18,13,9,0.35) 55%, rgba(18,13,9,0) 100%); }
+.top .sub { color: #ffe2b0; }
+.big { display: block; font-family: "IDBlack"; font-weight: 900; font-size: 92px; line-height: 1.02; letter-spacing: -0.022em; color: #fff; text-shadow: 0 6px 30px rgba(0,0,0,0.65); }
+.huge { display: block; font-family: "IDBlack"; font-weight: 900; font-size: 150px; line-height: 0.95; letter-spacing: -0.03em; color: #fff; text-shadow: 0 8px 40px rgba(0,0,0,0.65); }
+.sub { display: block; margin-top: 18px; font-family: "IDBold"; font-weight: 700; font-size: 46px; color: var(--glow); text-shadow: 0 4px 20px rgba(0,0,0,0.7); }
+.serif { font-family: "Corm"; font-style: italic; font-weight: 400; letter-spacing: 0; color: var(--glow); }
+.step { position: absolute; left: 50%; top: 1330px; transform: translateX(-50%); padding: 18px 36px; border-radius: 999px; background: rgba(18,13,9,0.7); border: 2px solid rgba(255,215,150,0.55); white-space: nowrap; display: block; font-family: "IDBlack"; font-weight: 900; font-size: 44px; letter-spacing: 0.06em; color: var(--cream); }
+.step b { color: var(--amber); margin-right: 14px; }
+.bartrack { position: absolute; left: 140px; top: 330px; width: 800px; height: 10px; border-radius: 10px; background: rgba(255,255,255,0.25); display: block; }
+.barfill { position: absolute; left: 140px; top: 330px; width: 800px; height: 10px; border-radius: 10px; background: var(--amber); transform-origin: 0% 50%; box-shadow: 0 0 18px rgba(255,181,74,0.7); display: block; }
+.barlabel { position: absolute; left: 140px; top: 268px; font-size: 30px; text-shadow: 0 0 10px rgba(0,0,0,0.9), 0 2px 12px rgba(0,0,0,0.8); width: 800px; text-align: center; display: block; font-family: "ISemi"; font-weight: 600; font-size: 30px; letter-spacing: 0.3em; color: #fff; text-shadow: 0 2px 12px rgba(0,0,0,0.7); }
+#flash { background: #fff1d6; opacity: 0; }
+.e-brand { position: absolute; left: 60px; top: 380px; width: 960px; text-align: center; display: block; font-family: "ISemi"; font-weight: 600; font-size: 34px; letter-spacing: 0.5em; color: var(--glow); text-shadow: 0 2px 14px rgba(0,0,0,0.6); }
+.e-panel { position: absolute; left: 60px; top: 760px; width: 960px; height: 700px; border-radius: 40px; background: rgba(18,13,9,0.82); border: 2px solid rgba(255,215,150,0.35); display: block; }
+.e-name { position: absolute; left: 60px; top: 800px; width: 960px; text-align: center; display: block; }
+.e-name .serif { display: block; font-size: 120px; line-height: 0.9; }
+.e-name .nm { display: block; font-family: "IDBlack"; font-weight: 900; font-size: 54px; color: #fff; margin-top: 6px; }
+.e-specs { position: absolute; left: 60px; top: 1010px; width: 960px; text-align: center; display: block; font-family: "ISemi"; font-weight: 600; font-size: 30px; letter-spacing: 0.06em; color: var(--glow); }
+.e-price { position: absolute; left: 60px; top: 1060px; width: 960px; text-align: center; display: block; white-space: nowrap; }
+.from { font-family: "IDBold"; font-weight: 700; font-size: 44px; color: rgba(255,255,255,0.8); margin-right: 14px; }
+.now { font-family: "IDBlack"; font-weight: 900; font-size: 112px; color: #fff; letter-spacing: -0.02em; }
+.was { font-family: "IDBold"; font-weight: 700; font-size: 50px; color: rgba(255,255,255,0.55); text-decoration: line-through; margin-left: 18px; }
+.off { display: inline-block; margin-left: 18px; padding: 8px 18px; border-radius: 14px; background: var(--amber); color: var(--ink); font-family: "IDBlack"; font-weight: 900; font-size: 42px; vertical-align: 20px; }
+.e-cta { position: absolute; left: 190px; top: 1225px; width: 700px; height: 116px; border-radius: 999px; background: var(--amber); color: var(--ink); text-align: center; line-height: 116px; font-family: "IDBlack"; font-weight: 900; font-size: 52px; letter-spacing: 0.04em; display: block; box-shadow: 0 0 60px rgba(255,181,74,0.6); }
+.e-code { position: absolute; left: 60px; top: 1370px; width: 960px; text-align: center; display: block; font-family: "IDBold"; font-weight: 700; font-size: 34px; color: var(--cream); }
+#fadeout { background: var(--ink); opacity: 0; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-width="1080" data-height="1920" data-duration="8.0" data-fps="30">
+<div id="bg" class="clip fill" data-start="0" data-duration="8.0" data-track-index="0"></div>
+<video id="v_sand1" class="shot" src="assets/sand1.mp4" data-start="0.0" data-duration="1.5" data-media-start="0" data-track-index="1" muted playsinline></video>
+<video id="v_route" class="shot" src="assets/route.mp4" data-start="1.5" data-duration="1.5" data-media-start="0" data-track-index="2" muted playsinline></video>
+<video id="v_pol1" class="shot" src="assets/pol1.mp4" data-start="3.0" data-duration="1.5" data-media-start="0" data-track-index="1" muted playsinline></video>
+<video id="v_hook" class="shot" src="assets/hook.mp4" data-start="4.5" data-duration="1.5" data-media-start="0" data-track-index="2" muted playsinline></video>
+<video id="v_grain" class="shot" src="assets/grain.mp4" data-start="6.0" data-duration="2.0" data-media-start="0" data-track-index="1" muted playsinline></video>
+<div id="scrim" class="clip layer scrim" data-start="0" data-duration="8.0" data-track-index="10"></div>
+<div id="flash" class="clip layer" data-start="0" data-duration="8.0" data-track-index="11"></div>
+<div id="fadeout" class="clip layer" data-start="7.6" data-duration="0.4" data-track-index="50"></div>
+<audio id="music" src="assets/mix.wav" data-start="0" data-duration="8.0" data-track-index="60" data-volume="1"></audio>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+const tl = gsap.timeline({ paused: true });
+const pop = "back.out(2.2)";
+const snap = "power3.out";
+tl.fromTo("#v_sand1", { scale: 1.0 }, { scale: 1.06, duration: 1.5, ease: "none" }, 0.0);
+tl.fromTo("#v_route", { scale: 1.0 }, { scale: 1.06, duration: 1.5, ease: "none" }, 1.5);
+tl.fromTo("#v_pol1", { scale: 1.0 }, { scale: 1.06, duration: 1.5, ease: "none" }, 3.0);
+tl.fromTo("#v_hook", { scale: 1.0 }, { scale: 1.06, duration: 1.5, ease: "none" }, 4.5);
+tl.fromTo("#v_grain", { scale: 1.0 }, { scale: 1.06, duration: 2.0, ease: "none" }, 6.0);
+tl.fromTo("#flash", { opacity: 0 }, { opacity: 0.85, duration: 0.05, ease: "none", immediateRender: false }, 5.45);
+tl.to("#flash", { opacity: 0, duration: 0.45, ease: "power2.out" }, 5.5);
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

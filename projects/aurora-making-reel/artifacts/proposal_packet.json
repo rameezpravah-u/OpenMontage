@@ -1,0 +1,72 @@
+{
+  "version": "1.0",
+  "concept_options": [
+    {
+      "id": "c1",
+      "title": "From Plank to Glow (28s)",
+      "hook": "This light started as a plank of teak.",
+      "narrative_structure": "journey",
+      "visual_approach": "switch-on hook, 8 numbered steps with progress bar, glow reveal, person install, price card; real workshop audio + score",
+      "target_platform": "instagram",
+      "target_duration_seconds": 28,
+      "why_this_works": "process transparency + payoff"
+    },
+    {
+      "id": "c2",
+      "title": "Raw Teak In, This Out (15s ad)",
+      "hook": "Raw teak in. This out.",
+      "narrative_structure": "journey",
+      "visual_approach": "0.5s beat cuts with one-word kinetic labels, price card",
+      "target_platform": "instagram",
+      "target_duration_seconds": 15,
+      "why_this_works": "fast ad cut"
+    },
+    {
+      "id": "c3",
+      "title": "Satisfying loop (8s)",
+      "hook": "sanding sound",
+      "narrative_structure": "journey",
+      "visual_approach": "no text, ASMR sand\u2192route\u2192polish\u2192glow\u2192grain",
+      "target_platform": "instagram",
+      "target_duration_seconds": 8,
+      "why_this_works": "replays"
+    }
+  ],
+  "selected_concept": {
+    "concept_id": "c1",
+    "rationale": "User asked for all three"
+  },
+  "production_plan": {
+    "pipeline": "cinematic",
+    "render_runtime": "hyperframes",
+    "stages": [
+      {
+        "stage": "compose",
+        "tools": [
+          {
+            "tool_name": "hyperframes_compose",
+            "role": "render",
+            "available": true,
+            "estimated_cost_usd": 0
+          }
+        ],
+        "approach": "generated atelier HTML (gen_html.py) from timeline.json (build_clips.py)"
+      }
+    ]
+  },
+  "cost_estimate": {
+    "total_estimated_usd": 0.0,
+    "line_items": [
+      {
+        "tool": "hyperframes_compose",
+        "operation": "local render x3",
+        "estimated_usd": 0.0
+      }
+    ],
+    "budget_verdict": "within_budget"
+  },
+  "approval": {
+    "status": "approved",
+    "user_notes": "ALL THREE SHOULD BE MADE"
+  }
+}

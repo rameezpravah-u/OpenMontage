@@ -1,0 +1,295 @@
+{
+  "version": "1.0",
+  "project_id": "aurora-making-reel",
+  "pipeline_type": "cinematic",
+  "stage": "edit",
+  "status": "completed",
+  "timestamp": "2026-11-11T09:45:09.610961+00:00",
+  "checkpoint_policy": "guided",
+  "human_approval_required": false,
+  "human_approved": false,
+  "artifacts": {
+    "edit_decisions": {
+      "version": "1.0",
+      "render_runtime": "hyperframes",
+      "cuts": [
+        {
+          "id": "r1-hook",
+          "source": "r1: hook (IMG_8271)",
+          "in_seconds": 0.0,
+          "out_seconds": 2.0
+        },
+        {
+          "id": "r1-plane1",
+          "source": "r1: plane1 (IMG_8239)",
+          "in_seconds": 2.0,
+          "out_seconds": 3.0
+        },
+        {
+          "id": "r1-plane2",
+          "source": "r1: plane2 (IMG_8243)",
+          "in_seconds": 3.0,
+          "out_seconds": 3.5
+        },
+        {
+          "id": "r1-plane3",
+          "source": "r1: plane3 (IMG_8241)",
+          "in_seconds": 3.5,
+          "out_seconds": 4.0
+        },
+        {
+          "id": "r1-cut1",
+          "source": "r1: cut1 (IMG_8246)",
+          "in_seconds": 4.0,
+          "out_seconds": 5.0
+        },
+        {
+          "id": "r1-cut2",
+          "source": "r1: cut2 (IMG_8248)",
+          "in_seconds": 5.0,
+          "out_seconds": 5.5
+        },
+        {
+          "id": "r1-cut3",
+          "source": "r1: cut3 (IMG_8247)",
+          "in_seconds": 5.5,
+          "out_seconds": 6.0
+        },
+        {
+          "id": "r1-sand1",
+          "source": "r1: sand1 (IMG_8235)",
+          "in_seconds": 6.0,
+          "out_seconds": 6.5
+        },
+        {
+          "id": "r1-sand2",
+          "source": "r1: sand2 (IMG_8237)",
+          "in_seconds": 6.5,
+          "out_seconds": 7.0
+        },
+        {
+          "id": "r1-route",
+          "source": "r1: route (IMG_8255)",
+          "in_seconds": 7.0,
+          "out_seconds": 8.5
+        },
+        {
+          "id": "r1-pol1",
+          "source": "r1: pol1 (IMG_8252)",
+          "in_seconds": 8.5,
+          "out_seconds": 9.5
+        },
+        {
+          "id": "r1-pol2",
+          "source": "r1: pol2 (IMG_8254)",
+          "in_seconds": 9.5,
+          "out_seconds": 10.5
+        },
+        {
+          "id": "r1-rows1",
+          "source": "r1: rows1 (IMG_8250)",
+          "in_seconds": 10.5,
+          "out_seconds": 11.0
+        },
+        {
+          "id": "r1-rows2",
+          "source": "r1: rows2 (IMG_8249)",
+          "in_seconds": 11.0,
+          "out_seconds": 11.5
+        },
+        {
+          "id": "r1-sun1",
+          "source": "r1: sun1 (IMG_8263)",
+          "in_seconds": 11.5,
+          "out_seconds": 12.5
+        },
+        {
+          "id": "r1-sun2",
+          "source": "r1: sun2 (IMG_8267)",
+          "in_seconds": 12.5,
+          "out_seconds": 13.0
+        },
+        {
+          "id": "r1-brand",
+          "source": "r1: brand (IMG_8269)",
+          "in_seconds": 13.0,
+          "out_seconds": 14.0
+        },
+        {
+          "id": "r1-wire",
+          "source": "r1: wire (IMG_8277)",
+          "in_seconds": 14.0,
+          "out_seconds": 15.0
+        },
+        {
+          "id": "r1-beam",
+          "source": "r1: beam (IMG_8280)",
+          "in_seconds": 15.0,
+          "out_seconds": 16.5
+        },
+        {
+          "id": "r1-grain",
+          "source": "r1: grain (IMG_8289)",
+          "in_seconds": 16.5,
+          "out_seconds": 18.0
+        },
+        {
+          "id": "r1-hand",
+          "source": "r1: hand (IMG_8303)",
+          "in_seconds": 18.0,
+          "out_seconds": 19.5
+        },
+        {
+          "id": "r1-person",
+          "source": "r1: person (IMG_8285)",
+          "in_seconds": 19.5,
+          "out_seconds": 22.0
+        },
+        {
+          "id": "r1-updown",
+          "source": "r1: updown (IMG_8273)",
+          "in_seconds": 22.0,
+          "out_seconds": 23.5
+        },
+        {
+          "id": "r1-end",
+          "source": "r1: end (IMG_8284)",
+          "in_seconds": 23.5,
+          "out_seconds": 28.0
+        },
+        {
+          "id": "r2-hook",
+          "source": "r2: hook (IMG_8271)",
+          "in_seconds": 0.0,
+          "out_seconds": 1.5
+        },
+        {
+          "id": "r2-plane1",
+          "source": "r2: plane1 (IMG_8239)",
+          "in_seconds": 1.5,
+          "out_seconds": 2.0
+        },
+        {
+          "id": "r2-plane3",
+          "source": "r2: plane3 (IMG_8241)",
+          "in_seconds": 2.0,
+          "out_seconds": 2.5
+        },
+        {
+          "id": "r2-cut1",
+          "source": "r2: cut1 (IMG_8246)",
+          "in_seconds": 2.5,
+          "out_seconds": 3.0
+        },
+        {
+          "id": "r2-cut2",
+          "source": "r2: cut2 (IMG_8248)",
+          "in_seconds": 3.0,
+          "out_seconds": 3.5
+        },
+        {
+          "id": "r2-sand1",
+          "source": "r2: sand1 (IMG_8235)",
+          "in_seconds": 3.5,
+          "out_seconds": 4.0
+        },
+        {
+          "id": "r2-sand2",
+          "source": "r2: sand2 (IMG_8237)",
+          "in_seconds": 4.0,
+          "out_seconds": 4.5
+        },
+        {
+          "id": "r2-route",
+          "source": "r2: route (IMG_8255)",
+          "in_seconds": 4.5,
+          "out_seconds": 5.0
+        },
+        {
+          "id": "r2-pol1",
+          "source": "r2: pol1 (IMG_8252)",
+          "in_seconds": 5.0,
+          "out_seconds": 5.5
+        },
+        {
+          "id": "r2-rows1",
+          "source": "r2: rows1 (IMG_8250)",
+          "in_seconds": 5.5,
+          "out_seconds": 6.0
+        },
+        {
+          "id": "r2-sun1",
+          "source": "r2: sun1 (IMG_8263)",
+          "in_seconds": 6.0,
+          "out_seconds": 6.5
+        },
+        {
+          "id": "r2-brand",
+          "source": "r2: brand (IMG_8269)",
+          "in_seconds": 6.5,
+          "out_seconds": 7.0
+        },
+        {
+          "id": "r2-wire",
+          "source": "r2: wire (IMG_8277)",
+          "in_seconds": 7.0,
+          "out_seconds": 7.5
+        },
+        {
+          "id": "r2-beam",
+          "source": "r2: beam (IMG_8280)",
+          "in_seconds": 7.5,
+          "out_seconds": 8.0
+        },
+        {
+          "id": "r2-grain",
+          "source": "r2: grain (IMG_8289)",
+          "in_seconds": 8.0,
+          "out_seconds": 8.5
+        },
+        {
+          "id": "r2-person",
+          "source": "r2: person (IMG_8285)",
+          "in_seconds": 8.5,
+          "out_seconds": 11.0
+        },
+        {
+          "id": "r2-end",
+          "source": "r2: end (IMG_8284)",
+          "in_seconds": 11.0,
+          "out_seconds": 15.0
+        },
+        {
+          "id": "r3-sand1",
+          "source": "r3: sand1 (IMG_8235)",
+          "in_seconds": 0.0,
+          "out_seconds": 1.5
+        },
+        {
+          "id": "r3-route",
+          "source": "r3: route (IMG_8255)",
+          "in_seconds": 1.5,
+          "out_seconds": 3.0
+        },
+        {
+          "id": "r3-pol1",
+          "source": "r3: pol1 (IMG_8252)",
+          "in_seconds": 3.0,
+          "out_seconds": 4.5
+        },
+        {
+          "id": "r3-hook",
+          "source": "r3: hook (IMG_8271)",
+          "in_seconds": 4.5,
+          "out_seconds": 6.0
+        },
+        {
+          "id": "r3-grain",
+          "source": "r3: grain (IMG_8289)",
+          "in_seconds": 6.0,
+          "out_seconds": 8.0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "topic": "Aurora teak wall light \u2014 how it's made",
+  "research_date": "2026-11-11",
+  "landscape": {
+    "existing_content": [
+      {
+        "title": "Earlier Aurora ad",
+        "source": "this project",
+        "angle": "POV + uses",
+        "what_it_covers": "uses, price",
+        "what_it_misses": "craft, people"
+      },
+      {
+        "title": "Store listing",
+        "url": "https://nixwoods.com/products/nixwoods-aurora-linear-wall-light",
+        "source": "brand site",
+        "angle": "renders",
+        "what_it_covers": "rooms",
+        "what_it_misses": "making"
+      },
+      {
+        "title": "Workshop raw footage",
+        "url": "https://drive.google.com/drive/folders/1vIP9Y2Sg-1BsVoq1CpAKnxM41bXpZfpZ",
+        "source": "user drive",
+        "angle": "process",
+        "what_it_covers": "plank\u2192glow",
+        "what_it_misses": "edit"
+      }
+    ],
+    "saturated_angles": [
+      "static product glamour"
+    ],
+    "underserved_gaps": [
+      "process transparency / how-it's-made"
+    ]
+  },
+  "data_points": [
+    {
+      "claim": "30in down-only \u20b91,999 (was \u20b92,749); 48in up+down \u20b93,499",
+      "source_url": "https://nixwoods.com/products/nixwoods-aurora-linear-wall-light",
+      "credibility": "primary_source"
+    },
+    {
+      "claim": "Footage shows planing, mitre-saw cutting, sanding, routing, hand polishing, branding, wiring, install",
+      "source_url": "https://drive.google.com/drive/folders/1vIP9Y2Sg-1BsVoq1CpAKnxM41bXpZfpZ",
+      "credibility": "primary_source"
+    },
+    {
+      "claim": "1-2s hook window",
+      "source_url": "https://dev.to/fermainpariz/instagram-reels-strategy-2026-what-actually-works-data-backed-guide-11hn",
+      "credibility": "secondary_source"
+    }
+  ],
+  "audience_insights": {
+    "common_questions": [
+      "Is it real wood?",
+      "Who makes it?",
+      "Price?"
+    ],
+    "misconceptions": [
+      {
+        "myth": "Wood-look lights are laminate",
+        "reality": "Footage shows solid planks machined and polished"
+      }
+    ],
+    "knowledge_level": "general consumer"
+  },
+  "angles_discovered": [
+    {
+      "name": "Plank to glow",
+      "hook": "This light started as a plank of teak.",
+      "type": "narrative",
+      "why_now": "process content performs"
+    },
+    {
+      "name": "Raw teak in, this out",
+      "hook": "Raw teak in. This out.",
+      "type": "trending",
+      "why_now": "fast ad"
+    },
+    {
+      "name": "Satisfying loop",
+      "hook": "(no text)",
+      "type": "trending",
+      "why_now": "replays"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://nixwoods.com/products/nixwoods-aurora-linear-wall-light",
+      "title": "Aurora product JSON",
+      "used_for": "prices, variants (re-checked 2026-11-11)"
+    },
+    {
+      "url": "https://drive.google.com/drive/folders/1vIP9Y2Sg-1BsVoq1CpAKnxM41bXpZfpZ",
+      "title": "Raw workshop footage (61 clips)",
+      "used_for": "all visuals + workshop sound"
+    },
+    {
+      "url": "https://dev.to/fermainpariz/instagram-reels-strategy-2026-what-actually-works-data-backed-guide-11hn",
+      "title": "Reels strategy",
+      "used_for": "hook window"
+    },
+    {
+      "url": "https://oakgen.ai/blog/ai-beat-drops-viral-reels",
+      "title": "Beat drops",
+      "used_for": "cut on beat"
+    },
+    {
+      "url": "https://spliceapp.com/blog/mastering-travel-vlog-pacing-for-instagram-reels-in-2026/",
+      "title": "Pacing",
+      "used_for": "change every 2-4s"
+    }
+  ]
+}

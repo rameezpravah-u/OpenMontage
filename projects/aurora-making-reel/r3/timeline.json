@@ -1,0 +1,55 @@
+{
+  "duration": 8.0,
+  "segments": [
+    {
+      "id": "sand1",
+      "src": "IMG_8235",
+      "src_in": 0.2,
+      "start": 0.0,
+      "dur": 1.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "route",
+      "src": "IMG_8255",
+      "src_in": 1.2,
+      "start": 1.5,
+      "dur": 1.5,
+      "speed": 0.5,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "pol1",
+      "src": "IMG_8252",
+      "src_in": 0.5,
+      "start": 3.0,
+      "dur": 1.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    },
+    {
+      "id": "hook",
+      "src": "IMG_8271",
+      "src_in": 3.55,
+      "start": 4.5,
+      "dur": 1.5,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": "q"
+    },
+    {
+      "id": "grain",
+      "src": "IMG_8289",
+      "src_in": 0.5,
+      "start": 6.0,
+      "dur": 2.0,
+      "speed": 1.0,
+      "mode": "crop",
+      "flags": ""
+    }
+  ]
+}

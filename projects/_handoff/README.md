@@ -35,3 +35,17 @@ Generators: `projects/_handoff/scripts/score.py` (pendant), `score2.py` (cube), 
 - Wall-lights reel uses Veo AI room clips (with ✦ watermark) + crops of the existing "5 Wall Lights" montage.
 - Compact "remote dimmable" beat simulates dimming with an overlay (no real dimming footage existed).
 - Not included here: raw source downloads (`assets/source`) and HEVC masters, to keep the branch small. Sources are in the user's Google Drive.
+
+## Aurora — How It's Made (added 2026-11-11)
+Source: 61 raw workshop clips from Drive folder 1vIP9Y2Sg-1BsVoq1CpAKnxM41bXpZfpZ (public; download with
+`https://drive.usercontent.google.com/download?id=<ID>&export=download&confirm=t`; IDs in `projects/aurora-making-reel/assets/ids*.txt|missing.txt|extra*.txt`).
+| Reel | 9:16 / 4:5 |
+|---|---|
+| How it's made, 28s | `projects/aurora-making-reel/renders/aurora_how-its-made_28s_{9x16,4x5}.mp4` |
+| Raw teak → light ad, 15s | `projects/aurora-making-reel/renders/aurora_raw-teak-to-light_ad_15s_{9x16,4x5}.mp4` |
+| Satisfying loop, 8s (no text) | `projects/aurora-making-reel/renders/aurora_satisfying-loop_8s_{9x16,4x5}.mp4` |
+Rebuild: `build_clips.py all` (cuts/grades clips + workshop-sound bed, cut lists at top of file) →
+`REEL=r1 DUR=28 python score_making.py r1/music_raw.wav` (+ loudnorm + amix with sfx_bed, see history) →
+`gen_html.py all` (captions/end card in CAPS/END_CARD) → render `rN/hyperframes` with hyperframes_compose render_existing.
+Notes: IMG_8269/8270 logo is filmed upside-down (rotated 180° in edit). IMG_8272/8273/8280 looked cool-white and were
+warm-corrected to match "warm LED" on the product page. No location claim used (user didn't confirm Khatauli for Aurora).
