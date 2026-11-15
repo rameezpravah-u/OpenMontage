@@ -107,6 +107,21 @@ paged karaoke captions with sane line breaks.
 
 ---
 
+## 3b. Palette — taken from the app, not invented
+
+The iOS app is **entirely neutral**: black `#0B0B10`, white `#FFFDFF`, warm
+off-white `#F6F0EC`. Sampling its own chrome returns no saturated colour at all.
+
+The only two colours the product uses:
+
+| Token | Value | Where |
+|---|---|---|
+| correction green | `#21C165` | the ✓Applied tick, insertions in the diff |
+| error red | `#A04641` | strikethrough on a detected error |
+
+**There is no blue in the iPhone app.** An earlier version of this system used
+`#2B59FF`, sampled from the website's *Android* card — wrong product. Removed.
+
 ## 4. The craft decisions, made once
 
 These live in code and apply to every video, which is the point.
@@ -119,7 +134,7 @@ These live in code and apply to every video, which is the point.
 | Decision moments | **1×, never cut** | Including the loading spinner. Removing the wait makes it look fake; speeding it 2.4× keeps it honest and watchable. |
 | Zoom | 1.12–1.14 on each beat, ease out over 1.25s | Measured ceiling before phone UI clips. |
 | Captions | ~1.2s per page, 3–5 words | Readable at thumb distance; faster reads as a subtitle track. |
-| Caption style | white, 14px ink stroke, accent on active word | Survives any background without a box. |
+| Caption style | white, 14px ink stroke, correction-green on active word | Survives any background without a box. Green because it is the colour the product itself uses for an applied fix. |
 | Music | ducked 8:1 under VO via sidechain | Voice always wins. |
 | SFX | whoosh 0.16s *before* each beat, ding *on* it | Anticipation before payoff — the thing that makes a cut feel intentional. |
 

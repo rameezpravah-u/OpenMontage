@@ -25,9 +25,13 @@ import { Caption, createTikTokStyleCaptions, TikTokPage } from "@remotion/captio
 // Swap the props, get a different video. That is what makes 100/month work.
 // ---------------------------------------------------------------------------
 
-const CREAM = "#F2F1EB";
-const INK = "#0B0B10";
-const ACCENT = "#2B59FF";
+// Sampled from the iOS app itself. The product has NO blue anywhere — the
+// only colour it uses is the correction green on an applied fix, and a muted
+// red on a struck-through error. Everything else is black / white / warm off-white.
+const CREAM = "#F6F0EC";   // the app's own warm off-white
+const INK = "#0B0B10";     // app icon, headlines
+const ACCENT = "#21C165";  // the ✓Applied tick — "this got fixed"
+const ERROR = "#A04641";   // strikethrough on an error
 
 const SERIF = "'TB Playfair', Georgia, serif";
 const SANS = "'TB Inter', system-ui, sans-serif";

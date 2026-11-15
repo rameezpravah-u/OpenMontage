@@ -10,8 +10,10 @@
     "Faster than finding the typo yourself.",
     "Type Better. Free to start."
   ],
-  "bpm": 128, "music_style": "punchy", "zoom": 1.16,
+  "bpm": 128,
+  "music_style": "punchy",
+  "zoom": 1.16,
   "cta_seconds": 3.5,
-  "cta_line": "Start free — 5,000 AI words.",
+  "cta_line": "Start free — 2,000 AI words.",
   "store_line": "on the App Store"
 }

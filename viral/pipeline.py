@@ -137,7 +137,7 @@ def run(recording: Path, concept_path: Path, out_dir: Path, scale: float, keep_d
         "audio": track.name,
         "cta": {"durationInFrames": cta_frames,
                 "wordmark": concept.get("wordmark", "Type Better"),
-                "line": concept.get("cta_line", "Start free — 5,000 AI words."),
+                "line": concept.get("cta_line", "Start free — 2,000 AI words."),
                 "store": concept.get("store_line", "on the App Store"),
                 "icon": "app_icon_1024.png"},
         "fps": FPS,
