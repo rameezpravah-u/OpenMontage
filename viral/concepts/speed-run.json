@@ -1,0 +1,17 @@
+{
+  "slug": "speed-run",
+  "name": "Speed Run — how fast can you fix a broken sentence?",
+  "hook": "How fast can you fix\na broken sentence?",
+  "hook_sub": "Timer starts now.",
+  "hook_seconds": 2.0,
+  "script": [
+    "How fast can you fix a broken sentence? Timer starts now.",
+    "Type it wrong. Tap once. Done.",
+    "Faster than finding the typo yourself.",
+    "Type Better. Free to start."
+  ],
+  "bpm": 128, "music_style": "punchy", "zoom": 1.16,
+  "cta_seconds": 3.5,
+  "cta_line": "Start free — 5,000 AI words.",
+  "store_line": "on the App Store"
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "pov",
+  "name": "POV — you type like you talk",
+  "hook": "POV: you type\nlike you talk.",
+  "hook_seconds": 1.9,
+  "script": [
+    "POV: you type like you talk.",
+    "And something quietly fixes it before anyone sees.",
+    "Works in every app you already use.",
+    "Type Better. Free to start."
+  ],
+  "bpm": 120, "music_style": "calm", "zoom": 1.1,
+  "cta_seconds": 3.5,
+  "cta_line": "Start free — 5,000 AI words.",
+  "store_line": "on the App Store"
+}

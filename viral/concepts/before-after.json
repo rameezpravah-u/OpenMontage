@@ -1,0 +1,17 @@
+{
+  "slug": "before-after",
+  "name": "Before / After — same message, two senders",
+  "hook": "Same message.\nTwo senders.",
+  "hook_sub": "Guess which one got a reply.",
+  "hook_seconds": 2.4,
+  "script": [
+    "Same message, two senders. Guess which one got a reply.",
+    "The difference is one tap.",
+    "Grammar, tone, and the thing you actually meant to say.",
+    "Type Better. Free to start."
+  ],
+  "bpm": 116, "music_style": "punchy", "zoom": 1.13,
+  "cta_seconds": 4.0,
+  "cta_line": "Start free — 5,000 AI words.",
+  "store_line": "on the App Store"
+}

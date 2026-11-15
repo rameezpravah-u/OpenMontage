@@ -26,7 +26,17 @@ pipeline/
 tests/qa/output/
 
 # Project workspaces (generated assets, renders — all regenerable)
-projects/
+# Per-video project workspaces hold generated assets and stay out of git.
+# The viral engine is the exception: its .tsx/.md are hand-authored source,
+# not output, so they are tracked while its public/ renders/ artifacts/ are not.
+projects/*
+!projects/viral-engine/
+projects/viral-engine/*
+!projects/viral-engine/*.tsx
+!projects/viral-engine/*.md
+
+# Rendered videos from viral/pipeline.py
+out/
 
 # Corpus directories (downloaded stock clips, thumbnails, embeddings —
 # regenerable from source APIs via corpus_builder). Explicit rule even

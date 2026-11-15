@@ -1,0 +1,17 @@
+{
+  "slug": "typo-autopsy",
+  "name": "Typo Autopsy — can you find all three?",
+  "hook": "Three mistakes\nin one sentence.",
+  "hook_sub": "Can you find them all?",
+  "hook_seconds": 2.6,
+  "script": [
+    "Three mistakes in one sentence. Can you find them all?",
+    "Most people get two. It catches all three.",
+    "One tap, and every one of them is gone.",
+    "Type Better. Free to start."
+  ],
+  "bpm": 104, "music_style": "calm", "zoom": 1.18,
+  "cta_seconds": 4.0,
+  "cta_line": "Start free — 5,000 AI words.",
+  "store_line": "on the App Store"
+}

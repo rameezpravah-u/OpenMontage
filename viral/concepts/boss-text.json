@@ -1,0 +1,17 @@
+{
+  "slug": "boss-text",
+  "name": "The Boss Text — do not send this",
+  "hook": "You do NOT send\nthis to your boss.",
+  "hook_sub": "Let it rewrite you first.",
+  "hook_seconds": 2.3,
+  "script": [
+    "You do not send this to your boss. Let it rewrite you first.",
+    "One tap, and it sounds like you meant it.",
+    "Twenty two tones. Same message, better delivered.",
+    "Type Better. Free to start."
+  ],
+  "bpm": 112, "music_style": "punchy", "zoom": 1.14,
+  "cta_seconds": 4.0,
+  "cta_line": "Start free — 5,000 AI words.",
+  "store_line": "on the App Store"
+}

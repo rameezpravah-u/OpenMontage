@@ -1,0 +1,19 @@
+{
+  "slug": "mistake-reveal",
+  "name": "Mistake Reveal — watch it fix itself",
+  "hook": "I type like this.\nOn purpose.",
+  "hook_sub": "Watch what happens next.",
+  "hook_seconds": 2.2,
+  "script": [
+    "I type like this on purpose. Watch what happens next.",
+    "One tap. And the grammar just fixes itself.",
+    "It works inside every app you already use.",
+    "Type Better. Free to start, five thousand AI words."
+  ],
+  "bpm": 120,
+  "music_style": "punchy",
+  "zoom": 1.14,
+  "cta_seconds": 4.0,
+  "cta_line": "Start free — 5,000 AI words.",
+  "store_line": "on the App Store"
+}
