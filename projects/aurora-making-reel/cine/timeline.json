@@ -1,0 +1,77 @@
+{
+  "duration": 23.4,
+  "segments": [
+    {
+      "id": "router",
+      "src": "IMG_8255",
+      "src_in": 0.8,
+      "start": 0.0,
+      "dur": 3.4,
+      "speed": 0.5,
+      "mode": "crop"
+    },
+    {
+      "id": "polish",
+      "src": "IMG_8254",
+      "src_in": 0.2,
+      "start": 3.0,
+      "dur": 3.4,
+      "speed": 0.5,
+      "mode": "crop"
+    },
+    {
+      "id": "sun",
+      "src": "IMG_8263",
+      "src_in": 0.3,
+      "start": 6.0,
+      "dur": 3.4,
+      "speed": 0.5,
+      "mode": "crop"
+    },
+    {
+      "id": "rows",
+      "src": "IMG_8249",
+      "src_in": 0.0,
+      "start": 9.0,
+      "dur": 2.4,
+      "speed": 0.5,
+      "mode": "crop"
+    },
+    {
+      "id": "on",
+      "src": "IMG_8271",
+      "src_in": 3.55,
+      "start": 11.0,
+      "dur": 2.4,
+      "speed": 1.0,
+      "mode": "crop"
+    },
+    {
+      "id": "glide",
+      "src": "IMG_8289",
+      "src_in": 0.8,
+      "start": 13.0,
+      "dur": 3.4,
+      "speed": 0.5,
+      "mode": "crop"
+    },
+    {
+      "id": "reach",
+      "src": "IMG_8285",
+      "src_in": 3.0,
+      "start": 16.0,
+      "dur": 2.4,
+      "speed": 0.5,
+      "mode": "crop"
+    },
+    {
+      "id": "end",
+      "src": "IMG_8299",
+      "src_in": 0.5,
+      "start": 18.0,
+      "dur": 5.4,
+      "speed": 0.5,
+      "mode": "crop"
+    }
+  ]
+}

@@ -1,0 +1,1134 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 16 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/OpenMontage/projects/aurora-making-reel/cine/hyperframes/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 8,
+    "findings": [
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:35105/assets/router.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:35105/",
+        "line": 1609
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:35105/assets/polish.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:35105/",
+        "line": 1609
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:35105/assets/sun.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:35105/",
+        "line": 1609
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:35105/assets/rows.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:35105/",
+        "line": 1609
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:35105/assets/on.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:35105/",
+        "line": 1609
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:35105/assets/glide.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:35105/",
+        "line": 1609
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:35105/assets/reach.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:35105/",
+        "line": 1609
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:35105/assets/end.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:35105/",
+        "line": 1609
+      }
+    ]
+  },
+  "layout": {
+    "ok": false,
+    "errorCount": 7,
+    "warningCount": 6,
+    "infoCount": 5,
+    "findings": [
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 1.3,
+        "selector": "#l1",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 238.16,
+          "top": 1283.42,
+          "right": 841.84,
+          "bottom": 1389.42,
+          "width": 603.69,
+          "height": 106
+        },
+        "containerSelector": "#bars",
+        "text": "It begins with teak.",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "lifetime": {
+          "start": 0.8,
+          "end": 3
+        },
+        "dataAttributes": {
+          "data-start": "0.8",
+          "data-duration": "2.2",
+          "data-track-index": "5"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 238.16,
+          "y": 1283.42,
+          "width": 603.69,
+          "height": 106
+        },
+        "firstSeen": 1.3,
+        "lastSeen": 1.3,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.3
+        ]
+      },
+      {
+        "code": "canvas_covered",
+        "severity": "error",
+        "time": 1.3,
+        "selector": "#bg",
+        "message": "An opaque element covers the canvas above every other visible clip, so the frame shows only it.",
+        "rect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "fixHint": "Move the full-frame element below the content (earlier in the DOM or a lower z-index / track), or mark a deliberate full-frame card with data-layout-allow-occlusion.",
+        "dataAttributes": {
+          "data-start": "0",
+          "data-duration": "23.4",
+          "data-track-index": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "firstSeen": 1.3,
+        "lastSeen": 22.1,
+        "occurrences": 5,
+        "heldMs": 0,
+        "times": [
+          1.3,
+          3.9,
+          14.3,
+          19.5,
+          22.1
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 3.9,
+        "selector": "#l2",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 278.89,
+          "top": 1286.36,
+          "right": 801.09,
+          "bottom": 1392.36,
+          "width": 522.2,
+          "height": 106
+        },
+        "containerSelector": "#bars",
+        "text": "Shaped by hand.",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "lifetime": {
+          "start": 3.6,
+          "end": 5.800000000000001
+        },
+        "dataAttributes": {
+          "data-start": "3.6",
+          "data-duration": "2.2",
+          "data-track-index": "6"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 278.89,
+          "y": 1286.36,
+          "width": 522.2,
+          "height": 106
+        },
+        "firstSeen": 3.9,
+        "lastSeen": 3.9,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.9
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 14.3,
+        "selector": "#l4",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 238.91,
+          "top": 1283,
+          "right": 841.09,
+          "bottom": 1389,
+          "width": 602.19,
+          "height": 106
+        },
+        "containerSelector": "#bars",
+        "text": "Until it holds light.",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "lifetime": {
+          "start": 12.2,
+          "end": 14.799999999999999
+        },
+        "dataAttributes": {
+          "data-start": "12.2",
+          "data-duration": "2.6",
+          "data-track-index": "6"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 238.91,
+          "y": 1283,
+          "width": 602.19,
+          "height": 106
+        },
+        "firstSeen": 14.3,
+        "lastSeen": 14.3,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          14.3
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 19.5,
+        "selector": "#eKick",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 399.02,
+          "top": 300,
+          "right": 680.97,
+          "bottom": 334,
+          "width": 281.95,
+          "height": 34
+        },
+        "containerSelector": "#bars",
+        "text": "NIXWOODS",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "lifetime": {
+          "start": 18,
+          "end": 23.4
+        },
+        "dataAttributes": {
+          "data-start": "18.0",
+          "data-duration": "5.4",
+          "data-track-index": "8"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 399.02,
+          "y": 300,
+          "width": 281.95,
+          "height": 34
+        },
+        "firstSeen": 19.5,
+        "lastSeen": 22.1,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          19.5,
+          22.1
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 19.5,
+        "selector": "#eName",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 271.06,
+          "top": 331.54,
+          "right": 808.92,
+          "bottom": 545.54,
+          "width": 537.86,
+          "height": 214
+        },
+        "containerSelector": "#bars",
+        "text": "Aurora",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "lifetime": {
+          "start": 18,
+          "end": 23.4
+        },
+        "dataAttributes": {
+          "data-start": "18.0",
+          "data-duration": "5.4",
+          "data-track-index": "9"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 271.06,
+          "y": 331.54,
+          "width": 537.86,
+          "height": 214
+        },
+        "firstSeen": 19.5,
+        "lastSeen": 22.1,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          19.5,
+          22.1
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "error",
+        "time": 19.5,
+        "selector": "#eSub",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 345.61,
+          "top": 560,
+          "right": 734.38,
+          "bottom": 628,
+          "width": 388.77,
+          "height": 68
+        },
+        "containerSelector": "#bars",
+        "text": "solid teak wall light",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "lifetime": {
+          "start": 18,
+          "end": 23.4
+        },
+        "dataAttributes": {
+          "data-start": "18.0",
+          "data-duration": "5.4",
+          "data-track-index": "10"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 345.61,
+          "y": 560,
+          "width": 388.77,
+          "height": 68
+        },
+        "firstSeen": 19.5,
+        "lastSeen": 22.1,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          19.5,
+          22.1
+        ]
+      },
+      {
+        "selector": "#l1",
+        "dataAttributes": {
+          "data-start": "0.8",
+          "data-duration": "2.2",
+          "data-track-index": "5"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 238.16,
+          "y": 1283.42,
+          "width": 603.68,
+          "height": 106
+        },
+        "time": 1.3,
+        "rect": {
+          "left": 238.16,
+          "top": 1283.42,
+          "right": 841.84,
+          "bottom": 1389.42,
+          "width": 603.68,
+          "height": 106
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "It begins with teak.",
+        "message": "<div> \"It begins with teak.\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.3,
+        "lastSeen": 1.3,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.3
+        ]
+      },
+      {
+        "selector": "#l2",
+        "dataAttributes": {
+          "data-start": "3.6",
+          "data-duration": "2.2",
+          "data-track-index": "6"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 278.89,
+          "y": 1286.36,
+          "width": 522.2,
+          "height": 106
+        },
+        "time": 3.9,
+        "rect": {
+          "left": 278.89,
+          "top": 1286.36,
+          "right": 801.09,
+          "bottom": 1392.36,
+          "width": 522.2,
+          "height": 106
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Shaped by hand.",
+        "message": "<div> \"Shaped by hand.\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 3.9,
+        "lastSeen": 3.9,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          3.9
+        ]
+      },
+      {
+        "selector": "#l4",
+        "dataAttributes": {
+          "data-start": "12.2",
+          "data-duration": "2.6",
+          "data-track-index": "6"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 238.91,
+          "y": 1283,
+          "width": 602.18,
+          "height": 106
+        },
+        "time": 14.3,
+        "rect": {
+          "left": 238.91,
+          "top": 1283,
+          "right": 841.09,
+          "bottom": 1389,
+          "width": 602.18,
+          "height": 106
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Until it holds light.",
+        "message": "<div> \"Until it holds light.\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 14.3,
+        "lastSeen": 14.3,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          14.3
+        ]
+      },
+      {
+        "selector": "#ePrice",
+        "dataAttributes": {
+          "data-start": "18.0",
+          "data-duration": "5.4",
+          "data-track-index": "11"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 285.33,
+          "y": 1234,
+          "width": 509.34,
+          "height": 126
+        },
+        "time": 22.1,
+        "rect": {
+          "left": 285.33,
+          "top": 1234,
+          "right": 794.67,
+          "bottom": 1360,
+          "width": 509.34,
+          "height": 126
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "from ₹1,999 ₹2,749",
+        "message": "<div> \"from ₹1,999 ₹2,749\" is outside the safe area: TikTok (right and bottom edges), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.1,
+        "lastSeen": 22.1,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.1
+        ]
+      },
+      {
+        "selector": "#eCta",
+        "dataAttributes": {
+          "data-start": "18.0",
+          "data-duration": "5.4",
+          "data-track-index": "12"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 416.98,
+          "y": 1412,
+          "width": 250.02,
+          "height": 41
+        },
+        "time": 22.1,
+        "rect": {
+          "left": 416.98,
+          "top": 1412,
+          "right": 667,
+          "bottom": 1453,
+          "width": 250.02,
+          "height": 41
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "SHOP NOW",
+        "message": "<div> \"SHOP NOW\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.1,
+        "lastSeen": 22.1,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.1
+        ]
+      },
+      {
+        "selector": "#eSmall",
+        "dataAttributes": {
+          "data-start": "18.0",
+          "data-duration": "5.4",
+          "data-track-index": "13"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 72,
+          "y": 1505,
+          "width": 936,
+          "height": 34
+        },
+        "time": 22.1,
+        "rect": {
+          "left": 72,
+          "top": 1505,
+          "right": 1008,
+          "bottom": 1539,
+          "width": 936,
+          "height": 34
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "30″ & 48″ · up + down glow · extra ₹100 off with",
+        "message": "<div> \"30″ & 48″ · up + down glow · extra ₹100 off with\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.1,
+        "lastSeen": 22.1,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.1
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 22.1,
+        "selector": "span.from",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 285.33,
+          "top": 1281,
+          "right": 374.88,
+          "bottom": 1346,
+          "width": 89.55,
+          "height": 65
+        },
+        "containerSelector": "#bars",
+        "text": "from",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "lifetime": {
+          "start": 18,
+          "end": 23.4
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 285.33,
+          "y": 1281,
+          "width": 89.55,
+          "height": 65
+        },
+        "firstSeen": 22.1,
+        "lastSeen": 22.1,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.1
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 22.1,
+        "selector": "span.now",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 388.88,
+          "top": 1234,
+          "right": 654.14,
+          "bottom": 1360,
+          "width": 265.27,
+          "height": 126
+        },
+        "containerSelector": "#bars",
+        "text": "₹1,999",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "lifetime": {
+          "start": 18,
+          "end": 23.4
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 388.88,
+          "y": 1234,
+          "width": 265.27,
+          "height": 126
+        },
+        "firstSeen": 22.1,
+        "lastSeen": 22.1,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.1
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 22.1,
+        "selector": "span.was",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 672.14,
+          "top": 1285,
+          "right": 794.67,
+          "bottom": 1345,
+          "width": 122.53,
+          "height": 60
+        },
+        "containerSelector": "#bars",
+        "text": "₹2,749",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "lifetime": {
+          "start": 18,
+          "end": 23.4
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 672.14,
+          "y": 1285,
+          "width": 122.53,
+          "height": 60
+        },
+        "firstSeen": 22.1,
+        "lastSeen": 22.1,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.1
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 22.1,
+        "selector": "#eCta",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 416.98,
+          "top": 1412,
+          "right": 667,
+          "bottom": 1453,
+          "width": 250.02,
+          "height": 41
+        },
+        "containerSelector": "#bars",
+        "text": "SHOP NOW",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "lifetime": {
+          "start": 18,
+          "end": 23.4
+        },
+        "dataAttributes": {
+          "data-start": "18.0",
+          "data-duration": "5.4",
+          "data-track-index": "12"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 416.98,
+          "y": 1412,
+          "width": 250.02,
+          "height": 41
+        },
+        "firstSeen": 22.1,
+        "lastSeen": 22.1,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.1
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 22.1,
+        "selector": "#eSmall",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 72,
+          "top": 1505,
+          "right": 1008,
+          "bottom": 1539,
+          "width": 936,
+          "height": 34
+        },
+        "containerSelector": "#bars",
+        "text": "30″ & 48″ · up + down glow · extra ₹100 off with FLY100",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "lifetime": {
+          "start": 18,
+          "end": 23.4
+        },
+        "dataAttributes": {
+          "data-start": "18.0",
+          "data-duration": "5.4",
+          "data-track-index": "13"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 72,
+          "y": 1505,
+          "width": 936,
+          "height": 34
+        },
+        "firstSeen": 22.1,
+        "lastSeen": 22.1,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.1
+        ]
+      }
+    ],
+    "duration": 23.4,
+    "samples": [
+      1.3,
+      3.9,
+      6.5,
+      9.1,
+      11.7,
+      14.3,
+      16.9,
+      19.5,
+      22.1
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 18,
+    "truncated": false,
+    "faceCheck": {
+      "ran": true,
+      "candidates": 0,
+      "faces": 0
+    }
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.72:1; WCAG AA requires 3:1.",
+        "text": "solid teak wall light",
+        "fg": "rgb(246,236,220)",
+        "bg": "rgb(159,142,116)",
+        "ratio": 2.72,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(71,68,64)",
+        "large": true,
+        "selector": "#eSub",
+        "dataAttributes": {
+          "data-start": "18.0",
+          "data-duration": "5.4",
+          "data-track-index": "10"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 560,
+          "width": 1080,
+          "height": 68
+        },
+        "time": 22.1,
+        "times": [
+          22.1
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      1.3,
+      6.5,
+      11.7,
+      16.9,
+      22.1
+    ],
+    "checked": 9,
+    "passed": 8
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "The film's last line \"30″ & 48″ · up + down glow · extra ₹100 off with FLY100\" (10 words) is on screen 2.37 s (±0.01 s), under the 2.63 s a closing line needs: hold it about 0.5 s + 0.3 s a word and at least 2 s before the film ends; see references/motion.md.",
+        "text": "30″ & 48″ · up + down glow · extra ₹100 off with FLY100",
+        "selector": "#eSmall",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 72,
+          "y": 1505,
+          "width": 936,
+          "height": 34
+        },
+        "time": 21.035,
+        "words": 10,
+        "seconds": 2.369,
+        "floorSeconds": 2.625,
+        "measured": [
+          {
+            "time": 20.662,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 20.786,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 20.911,
+            "opacity": 0.27,
+            "heightPx": 34
+          },
+          {
+            "time": 21.035,
+            "opacity": 0.56,
+            "heightPx": 34
+          },
+          {
+            "time": 21.16,
+            "opacity": 0.73,
+            "heightPx": 34
+          },
+          {
+            "time": 21.284,
+            "opacity": 0.89,
+            "heightPx": 34
+          },
+          {
+            "time": 21.409,
+            "opacity": 0.98,
+            "heightPx": 34
+          },
+          {
+            "time": 22.902,
+            "opacity": 1,
+            "heightPx": 34
+          },
+          {
+            "time": 23.027,
+            "opacity": 1,
+            "heightPx": 34
+          },
+          {
+            "time": 23.151,
+            "opacity": 1,
+            "heightPx": 34
+          },
+          {
+            "time": 23.276,
+            "opacity": 1,
+            "heightPx": 34
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.12400000000000233,
+    "samples": 188
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": {
+      "triggeringAsset": "assets/router.mp4",
+      "output": {
+        "colorSpace": "BT.2020",
+        "codec": "HEVC Main10"
+      }
+    },
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

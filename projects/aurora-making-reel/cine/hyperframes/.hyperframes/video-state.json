@@ -1,0 +1,326 @@
+{
+  "version": 1,
+  "historyId": "3fc9767e-fbc6-4739-9e47-3eed0766fb99",
+  "currentRevision": "125e36d1-e722-4f26-9e3d-78f7fe97421c",
+  "pendingChanges": false,
+  "files": {
+    "assets/Inter-SemiBold.otf": {
+      "hash": "bd68706b7bf8b3c580ae57685a2116bb1704b3a9998309ccfec7cd486f8a593e",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/bd/bd68706b7bf8b3c580ae57685a2116bb1704b3a9998309ccfec7cd486f8a593e"
+    },
+    "assets/InterDisplay-Bold.otf": {
+      "hash": "4253eed76d9014a469d7449934e54250497ee007f4d58dab4ddefe9f759b1970",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/42/4253eed76d9014a469d7449934e54250497ee007f4d58dab4ddefe9f759b1970"
+    },
+    "assets/cormorant-garamond-latin-400-italic.woff2": {
+      "hash": "effe3ef07d4e0d249d837344e70bdf50fc94ccc44870b02103dad9a75d4e003f",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/ef/effe3ef07d4e0d249d837344e70bdf50fc94ccc44870b02103dad9a75d4e003f"
+    },
+    "assets/cormorant-garamond-latin-500-normal.woff2": {
+      "hash": "991c8aba7707066e8d0f351d53a4eedee3b5f00d1db335d9a2ee39903b4b0c8c",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/99/991c8aba7707066e8d0f351d53a4eedee3b5f00d1db335d9a2ee39903b4b0c8c"
+    },
+    "assets/gsap.min.js": {
+      "hash": "c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/c1/c174bfce53a729418d57a8ad8625e7247c793a22fef8e2851e3cfa3de9cd8280"
+    },
+    "index.html": {
+      "hash": "8502fbda837c657e997d98e174cc0e60f8e7292befd92839b567a79c73c823dc",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/85/8502fbda837c657e997d98e174cc0e60f8e7292befd92839b567a79c73c823dc"
+    },
+    "assets/end.mp4": {
+      "hash": "193c773e7b93e460fa733da31c37d6338bdb16496e67f6377913fe0fa5d80a0b",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/19/193c773e7b93e460fa733da31c37d6338bdb16496e67f6377913fe0fa5d80a0b"
+    },
+    "assets/glide.mp4": {
+      "hash": "87af430bd4ebbb97d554afef4aeb30b77b9507f527eae0d7f6ff0963056348ba",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/87/87af430bd4ebbb97d554afef4aeb30b77b9507f527eae0d7f6ff0963056348ba"
+    },
+    "assets/mix.wav": {
+      "hash": "488903c753506a5c35769a56a5d95795b1d379b7b8da36ccae82a254304aad37",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/48/488903c753506a5c35769a56a5d95795b1d379b7b8da36ccae82a254304aad37"
+    },
+    "assets/on.mp4": {
+      "hash": "0fcc5c461dced1722c9a5a566e06207b8654c94367437dd5f631ffd4a9036165",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/0f/0fcc5c461dced1722c9a5a566e06207b8654c94367437dd5f631ffd4a9036165"
+    },
+    "assets/polish.mp4": {
+      "hash": "ead032edd543b63df8e310cab3b3035618d74e067e7dc68e39411ca673220fc5",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/ea/ead032edd543b63df8e310cab3b3035618d74e067e7dc68e39411ca673220fc5"
+    },
+    "assets/reach.mp4": {
+      "hash": "23287358860b5001be96126a2640419e13629512cc78b7c3eadc5a44a9c49f80",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/23/23287358860b5001be96126a2640419e13629512cc78b7c3eadc5a44a9c49f80"
+    },
+    "assets/router.mp4": {
+      "hash": "f5eb5d971aef15501c624dff54c9bc3713141427a5b1376619fb69038f2b6196",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/f5/f5eb5d971aef15501c624dff54c9bc3713141427a5b1376619fb69038f2b6196"
+    },
+    "assets/rows.mp4": {
+      "hash": "b6daa886283b2064aa949b8c752969c0059a7f3d335b851bbbb50f7965bdcf09",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/b6/b6daa886283b2064aa949b8c752969c0059a7f3d335b851bbbb50f7965bdcf09"
+    },
+    "assets/sun.mp4": {
+      "hash": "7c5c08146411b714176d00dbbfcb9b4a8cdc6281ea863fbb8e141a96832226fc",
+      "content": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/7c/7c5c08146411b714176d00dbbfcb9b4a8cdc6281ea863fbb8e141a96832226fc"
+    }
+  },
+  "revisions": {
+    "a18df64e-c13b-437d-ae17-9853d3e18308": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795154928208,
+      "endedAt": 1795154928214,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/06/067fd622ff39fd8ffdb4109a4b72a288e9b3055e9aadd2da384022b0d98cbddf",
+          "after": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/33/338aee715b4ddb316513cd38c84d3e1dfc33eae90ea819ae1cdb4f40e69c40bf"
+        }
+      }
+    },
+    "b8ee8b53-c3b0-4ba5-b8d7-85153deda2d5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795155505913,
+      "endedAt": 1795155505922,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/33/338aee715b4ddb316513cd38c84d3e1dfc33eae90ea819ae1cdb4f40e69c40bf",
+          "after": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/eb/ebe8a2677bd0030404f96faf2951bcc5fcbf9ffcae45b167c52c665e6713fb7d"
+        }
+      }
+    },
+    "125e36d1-e722-4f26-9e3d-78f7fe97421c": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795156032392,
+      "endedAt": 1795156032398,
+      "files": {
+        "index.html": {
+          "before": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/eb/ebe8a2677bd0030404f96faf2951bcc5fcbf9ffcae45b167c52c665e6713fb7d",
+          "after": "/root/.cache/hyperframes/history/3fc9767e-fbc6-4739-9e47-3eed0766fb99/blobs/85/8502fbda837c657e997d98e174cc0e60f8e7292befd92839b567a79c73c823dc"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "125e36d1-e722-4f26-9e3d-78f7fe97421c",
+      "id": "a87faeb7-9af9-4525-8673-8ef335c32083"
+    },
+    "revisions": {
+      "a18df64e-c13b-437d-ae17-9853d3e18308": [
+        {
+          "id": "e93c37bf-ff19-4cef-8dc4-c405004e2a30",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1795154945917,
+          "contentHash": "2d371815cdc73d4874c436bef0b20288bc98cc4705a54dcab97ead7bc59ff050",
+          "revision": "a18df64e-c13b-437d-ae17-9853d3e18308",
+          "inputFingerprint": "a23b96e4930097939d2d3aff925be50c1a14f86430c68706ec2578323896fe38",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "c4f4d003-7a94-4dcc-adf8-a48ca0dd0d0f"
+        }
+      ],
+      "b8ee8b53-c3b0-4ba5-b8d7-85153deda2d5": [
+        {
+          "id": "5aee4fac-743c-430f-9e36-97b1b7fa3698",
+          "scope": "project",
+          "report": "/home/user/OpenMontage/projects/aurora-making-reel/cine/hyperframes/.hyperframes/artifacts/checks/5aee4fac-743c-430f-9e36-97b1b7fa3698.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1795155519528,
+          "contentHash": "f371ac434efbcb33b6791e14b2ec3adf29f80fcacce1c0bf24f533c184ab12a3",
+          "revision": "b8ee8b53-c3b0-4ba5-b8d7-85153deda2d5",
+          "inputFingerprint": "3a4519f2e1732d6c40b8468652d29d8c5786c00341437a04e94836f11ee1c99c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "125e36d1-e722-4f26-9e3d-78f7fe97421c": [
+        {
+          "id": "a87faeb7-9af9-4525-8673-8ef335c32083",
+          "scope": "project",
+          "report": "/home/user/OpenMontage/projects/aurora-making-reel/cine/hyperframes/.hyperframes/artifacts/checks/a87faeb7-9af9-4525-8673-8ef335c32083.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1795156045755,
+          "contentHash": "576de2b5bb6f5a80080076f4b992eed9d8ffa9538ffe7519a3d950e40692aa64",
+          "revision": "125e36d1-e722-4f26-9e3d-78f7fe97421c",
+          "inputFingerprint": "6289ec7e95dacb6958a51d51d1df1130043311cea4fde26fa5e19b18419ecaa2",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "71d6c34d-56c9-47a9-b20c-c31a17538d3a",
+        "scope": "project",
+        "report": "/home/user/OpenMontage/projects/aurora-making-reel/cine/hyperframes/.hyperframes/artifacts/checks/71d6c34d-56c9-47a9-b20c-c31a17538d3a.json",
+        "metadata": {
+          "ok": false,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "cache": true,
+            "contrast": true,
+            "craft": true,
+            "strict": false,
+            "snapshots": false,
+            "safeZones": [
+              "tiktok",
+              "reels",
+              "shorts"
+            ],
+            "browserGpuMode": "auto",
+            "includeUnmounted": false
+          }
+        },
+        "createdAt": 1795154883858,
+        "contentHash": "b6f1a239db917e59be21e5122b733e32a00f42965529ca7f1e36043d5f36c525",
+        "revision": null,
+        "inputFingerprint": "b1fef17d29f827bae3a82ce50256d6fadd48709fef35537f1b64c6a98a66bbb6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "id": "02e183e2-1e15-447d-a149-26102c4b3ae1",
+        "scope": "project",
+        "report": "/home/user/OpenMontage/projects/aurora-making-reel/cine/hyperframes/.hyperframes/artifacts/checks/02e183e2-1e15-447d-a149-26102c4b3ae1.json",
+        "metadata": {
+          "ok": false,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "cache": true,
+            "contrast": true,
+            "craft": true,
+            "strict": false,
+            "snapshots": false,
+            "safeZones": [
+              "tiktok",
+              "reels",
+              "shorts"
+            ],
+            "browserGpuMode": "auto",
+            "includeUnmounted": false
+          }
+        },
+        "createdAt": 1795154910597,
+        "contentHash": "7401af681d62e2557769ce450e2cd5e69a9500f5dabfbe6608fbdc993075b58a",
+        "revision": null,
+        "inputFingerprint": "b1fef17d29f827bae3a82ce50256d6fadd48709fef35537f1b64c6a98a66bbb6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "c4f4d003-7a94-4dcc-adf8-a48ca0dd0d0f",
+      "completedAt": 1795156536041,
+      "output": "/home/user/OpenMontage/projects/aurora-making-reel/cine/final.mp4",
+      "status": "completed",
+      "revision": "125e36d1-e722-4f26-9e3d-78f7fe97421c"
+    },
+    "retainedRevisions": [
+      "125e36d1-e722-4f26-9e3d-78f7fe97421c",
+      "b8ee8b53-c3b0-4ba5-b8d7-85153deda2d5"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

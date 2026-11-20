@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>Aurora — Slow Light</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face { font-family: "CormI"; src: url("assets/cormorant-garamond-latin-400-italic.woff2") format("woff2"); font-style: italic; }
+@font-face { font-family: "Corm"; src: url("assets/cormorant-garamond-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+@font-face { font-family: "ISemi"; src: url("assets/Inter-SemiBold.otf"); font-weight: 600; }
+:root { --ink: #0e0a07; --cream: #f6ecdc; --glow: #f1c98a; }
+html, body { margin: 0; background: var(--ink); }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--ink); }
+.fill { position: absolute; inset: 0; background: var(--ink); }
+video.shot { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; transform-origin: 50% 50%; }
+.layer { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; box-sizing: border-box; }
+.bar { position: absolute; left: 0; width: 1080px; height: 150px; background: #000; display: block; }
+#barTop { top: 0; }
+#barBot { top: 1770px; }
+#lowshade { background: linear-gradient(180deg, rgba(14,10,7,0) 0px, rgba(14,10,7,0.62) 150px, rgba(14,10,7,0.4) 420px, rgba(14,10,7,0) 720px); }
+.line { position: absolute; left: 70px; top: 300px; width: 940px; text-align: center; display: block; font-family: "CormI"; font-style: italic; font-size: 96px; line-height: 1.05; color: var(--cream); letter-spacing: 0.005em; text-shadow: 0 2px 26px rgba(0,0,0,0.75); }
+#bloom { background: radial-gradient(ellipse 70% 40% at 50% 46%, rgba(255,214,150,0.75), rgba(255,214,150,0) 70%); opacity: 0; mix-blend-mode: screen; }
+#black { background: #000; opacity: 1; }
+/* end card — quiet, editorial */
+#endShade { background: linear-gradient(180deg, rgba(14,10,7,0.7) 0%, rgba(14,10,7,0.55) 40%, rgba(14,10,7,0.05) 50%, rgba(14,10,7,0) 60%, rgba(14,10,7,0.45) 66%, rgba(14,10,7,0.6) 80%); opacity: 0; }
+.e-kick { position: absolute; left: 0; top: 300px; width: 1080px; text-align: center; display: block; font-family: "ISemi"; font-weight: 600; font-size: 28px; letter-spacing: 0.55em; color: var(--glow); }
+.e-name { position: absolute; left: 0; top: 350px; width: 1080px; text-align: center; display: block; font-family: "Corm"; font-weight: 500; font-size: 176px; line-height: 1; letter-spacing: 0.04em; color: var(--cream); text-shadow: 0 4px 40px rgba(0,0,0,0.45); }
+.e-sub { position: absolute; left: 0; top: 530px; text-shadow: 0 2px 18px rgba(0,0,0,0.8); width: 1080px; text-align: center; display: block; font-family: "CormI"; font-style: italic; font-size: 56px; color: var(--cream); }
+.e-price { position: absolute; left: 0; top: 620px; width: 1080px; text-align: center; display: block; white-space: nowrap; font-family: "Corm"; font-weight: 500; color: var(--cream); }
+.e-price .from { font-family: "CormI"; font-style: italic; font-size: 54px; margin-right: 14px; }
+.e-price .now { font-size: 104px; letter-spacing: 0.01em; }
+.e-price .was { font-size: 50px; opacity: 0.6; text-decoration: line-through; margin-left: 18px; }
+.e-cta { position: absolute; left: 340px; top: 770px; width: 400px; height: 92px; border-radius: 999px; border: 2px solid var(--cream); text-align: center; line-height: 92px; display: block; font-family: "ISemi"; font-weight: 600; font-size: 34px; letter-spacing: 0.22em; color: var(--cream); background: rgba(14,10,7,0.25); }
+.e-small { position: absolute; left: 0; top: 1200px; text-shadow: 0 2px 12px rgba(0,0,0,0.8); width: 1080px; text-align: center; display: block; font-family: "ISemi"; font-weight: 600; font-size: 28px; letter-spacing: 0.12em; color: var(--glow); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-width="1080" data-height="1920" data-duration="23.4" data-fps="30">
+<div id="bg" class="clip fill" data-start="0" data-duration="23.4" data-track-index="0"></div>
+
+<video id="v1" class="shot" style="z-index:1" src="assets/router.mp4" data-start="0"    data-duration="3.4" data-media-start="0" data-track-index="1" muted playsinline></video>
+<video id="v2" class="shot" style="z-index:2" src="assets/polish.mp4" data-start="3.0"  data-duration="3.4" data-media-start="0" data-track-index="2" muted playsinline></video>
+<video id="v3" class="shot" style="z-index:3" src="assets/sun.mp4"    data-start="6.0"  data-duration="3.4" data-media-start="0" data-track-index="1" muted playsinline></video>
+<video id="v4" class="shot" style="z-index:4" src="assets/rows.mp4"   data-start="9.0"  data-duration="2.4" data-media-start="0" data-track-index="2" muted playsinline></video>
+<video id="v5" class="shot" style="z-index:5" src="assets/on.mp4"     data-start="11.0" data-duration="2.4" data-media-start="0" data-track-index="1" muted playsinline></video>
+<video id="v6" class="shot" style="z-index:6" src="assets/glide.mp4"  data-start="13.0" data-duration="3.4" data-media-start="0" data-track-index="2" muted playsinline></video>
+<video id="v7" class="shot" style="z-index:7" src="assets/reach.mp4"  data-start="16.0" data-duration="2.4" data-media-start="0" data-track-index="1" muted playsinline></video>
+<video id="v8" class="shot" style="z-index:8" src="assets/end.mp4"    data-start="18.0" data-duration="5.4" data-media-start="0" data-track-index="2" muted playsinline></video>
+
+<div id="lowshade" class="clip layer" style="z-index:20" data-start="0" data-duration="18.0" data-track-index="3"></div>
+<div id="bloom" class="clip layer" style="z-index:21" data-start="11.8" data-duration="1.8" data-track-index="4"></div>
+
+<div id="l1" class="clip line" style="z-index:30" data-start="1.0"  data-duration="2.0" data-track-index="5">It begins with teak.</div>
+<div id="l2" class="clip line" style="z-index:30" data-start="3.6"  data-duration="2.2" data-track-index="6">Shaped by hand.</div>
+<div id="l3" class="clip line" style="z-index:30" data-start="6.6"  data-duration="2.2" data-track-index="5">Left in the sun.</div>
+<div id="l4" class="clip line" style="z-index:30" data-start="12.2" data-duration="2.6" data-track-index="6">Until it holds light.</div>
+
+<div id="endShade" class="clip layer" style="z-index:25" data-start="18.0" data-duration="5.4" data-track-index="7"></div>
+<div id="eKick"  class="clip e-kick"  style="z-index:31" data-start="18.0" data-duration="5.4" data-track-index="8">NIXWOODS</div>
+<div id="eName"  class="clip e-name"  style="z-index:31" data-start="18.0" data-duration="5.4" data-track-index="9">Aurora</div>
+<div id="eSub"   class="clip e-sub"   style="z-index:31" data-start="18.0" data-duration="5.4" data-track-index="10">solid teak wall light</div>
+<div id="ePrice" class="clip e-price" style="z-index:31" data-start="18.0" data-duration="5.4" data-track-index="11"><span class="from">from</span><span class="now">₹1,999</span><span class="was">₹2,749</span></div>
+<div id="eCta"   class="clip e-cta"   style="z-index:31" data-start="18.0" data-duration="5.4" data-track-index="12">SHOP NOW</div>
+<div id="eSmall" class="clip e-small" style="z-index:31" data-start="18.0" data-duration="5.4" data-track-index="13">30″ · 48″  ·  extra ₹100 off · FLY100</div>
+
+<div id="barTop" class="clip bar" style="z-index:40" data-start="0" data-duration="23.4" data-track-index="14"></div>
+<div id="barBot" class="clip bar" style="z-index:40" data-start="0" data-duration="23.4" data-track-index="17"></div>
+<div id="black" class="clip layer" style="z-index:50" data-start="0" data-duration="0.9" data-track-index="15"></div>
+
+<audio id="music" src="assets/mix.wav" data-start="0" data-duration="23.4" data-track-index="16" data-volume="1"></audio>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+const tl = gsap.timeline({ paused: true });
+const glide = "sine.inOut";
+
+// fade up from black
+tl.fromTo("#black", { opacity: 1 }, { opacity: 0, duration: 0.9, ease: "power1.out" }, 0);
+
+// slow drifting pushes + 0.4s cross-dissolves
+const shots = [["#v1",0,3.4,1.0,1.07],["#v2",3.0,3.4,1.08,1.0],["#v3",6.0,3.4,1.0,1.07],["#v4",9.0,2.4,1.06,1.0],
+               ["#v5",11.0,2.4,1.0,1.04],["#v6",13.0,3.4,1.07,1.0],["#v7",16.0,2.4,1.0,1.06],["#v8",18.0,5.4,1.05,1.0]];
+shots.forEach(([id,t0,d,a,b],i) => {
+  tl.fromTo(id, { scale: a }, { scale: b, duration: d, ease: glide }, t0);
+  if (i > 0 && id !== "#v5") tl.fromTo(id, { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "none" }, t0);
+});
+
+// light-on bloom (the bar switches on at 12.0s)
+tl.fromTo("#bloom", { opacity: 0 }, { opacity: 0.8, duration: 0.25, ease: "power2.out" }, 11.95);
+tl.to("#bloom", { opacity: 0, duration: 1.4, ease: "power1.inOut" }, 12.25);
+
+// captions: slow rise and fade
+[["#l1",1.0,2.0],["#l2",3.6,2.2],["#l3",6.6,2.2],["#l4",12.2,2.6]].forEach(([id,t0,d]) => {
+  tl.fromTo(id, { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, t0);
+  tl.to(id, { opacity: 0, duration: 0.6, ease: "power1.in" }, t0 + d - 0.6);
+});
+
+// end card
+tl.fromTo("#endShade", { opacity: 0 }, { opacity: 1, duration: 1.0, ease: glide }, 18.2);
+tl.fromTo("#eKick", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "power1.out" }, 18.6);
+tl.fromTo("#eName", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 1.0, ease: "power2.out" }, 18.8);
+tl.fromTo("#eSub", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "power1.out" }, 19.3);
+tl.fromTo("#ePrice", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.8, ease: "power2.out" }, 19.9);
+tl.fromTo("#eCta", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power1.out" }, 20.4);
+tl.fromTo("#eSmall", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power1.out" }, 20.8);
+
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

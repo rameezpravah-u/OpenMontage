@@ -1,0 +1,432 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 17 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/home/user/OpenMontage/projects/aurora-making-reel/cine/hyperframes/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into separate .html files under compositions/ and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 8,
+    "findings": [
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:45431/assets/router.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:45431/",
+        "line": 1611
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:45431/assets/polish.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:45431/",
+        "line": 1611
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:45431/assets/sun.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:45431/",
+        "line": 1611
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:45431/assets/rows.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:45431/",
+        "line": 1611
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:45431/assets/on.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:45431/",
+        "line": 1611
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:45431/assets/glide.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:45431/",
+        "line": 1611
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:45431/assets/reach.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:45431/",
+        "line": 1611
+      },
+      {
+        "code": "media_proxy_fallback",
+        "severity": "info",
+        "message": "[hyperframes] runtime_media_proxy_fallback: \"http://127.0.0.1:45431/assets/end.mp4\" uses a codec (h264) this browser can't decode; auto-swapped to an authoring proxy for this preview only. Render output is unaffected.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-composition-id": "main",
+          "data-width": "1080",
+          "data-height": "1920",
+          "data-duration": "23.4",
+          "data-fps": "30",
+          "data-start": "0"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920
+        },
+        "time": 0,
+        "url": "http://127.0.0.1:45431/",
+        "line": 1611
+      }
+    ]
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "selector": "#eSmall",
+        "dataAttributes": {
+          "data-start": "18.0",
+          "data-duration": "5.4",
+          "data-track-index": "13"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 72,
+          "y": 1200,
+          "width": 936,
+          "height": 34
+        },
+        "time": 22.1,
+        "rect": {
+          "left": 72,
+          "top": 1200,
+          "right": 1008,
+          "bottom": 1234,
+          "width": 936,
+          "height": 34
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "30″ & 48″ · up + down glow · extra ₹100 off with",
+        "message": "<div> \"30″ & 48″ · up + down glow · extra ₹100 off with\" is outside the safe area: TikTok (left and right edges), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.1,
+        "lastSeen": 22.1,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.1
+        ]
+      }
+    ],
+    "duration": 23.4,
+    "samples": [
+      1.3,
+      3.9,
+      6.5,
+      9.1,
+      11.7,
+      14.3,
+      16.9,
+      19.5,
+      22.1
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 1,
+    "truncated": false,
+    "faceCheck": {
+      "ran": true,
+      "candidates": 0,
+      "faces": 0
+    }
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1.3,
+      6.5,
+      11.7,
+      16.9,
+      22.1
+    ],
+    "checked": 9,
+    "passed": 9
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "The film's last line \"30″ & 48″ · up + down glow · extra ₹100 off with FLY100\" (10 words) is on screen 2.37 s (±0.01 s), under the 2.63 s a closing line needs: hold it about 0.5 s + 0.3 s a word and at least 2 s before the film ends; see references/motion.md.",
+        "text": "30″ & 48″ · up + down glow · extra ₹100 off with FLY100",
+        "selector": "#eSmall",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 72,
+          "y": 1200,
+          "width": 936,
+          "height": 34
+        },
+        "time": 21.035,
+        "words": 10,
+        "seconds": 2.369,
+        "floorSeconds": 2.625,
+        "measured": [
+          {
+            "time": 20.662,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 20.786,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 20.911,
+            "opacity": 0.27,
+            "heightPx": 34
+          },
+          {
+            "time": 21.035,
+            "opacity": 0.56,
+            "heightPx": 34
+          },
+          {
+            "time": 21.16,
+            "opacity": 0.73,
+            "heightPx": 34
+          },
+          {
+            "time": 21.284,
+            "opacity": 0.89,
+            "heightPx": 34
+          },
+          {
+            "time": 21.409,
+            "opacity": 0.98,
+            "heightPx": 34
+          },
+          {
+            "time": 22.902,
+            "opacity": 1,
+            "heightPx": 34
+          },
+          {
+            "time": 23.027,
+            "opacity": 1,
+            "heightPx": 34
+          },
+          {
+            "time": 23.151,
+            "opacity": 1,
+            "heightPx": 34
+          },
+          {
+            "time": 23.276,
+            "opacity": 1,
+            "heightPx": 34
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.12400000000000233,
+    "samples": 188
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": {
+      "triggeringAsset": "assets/router.mp4",
+      "output": {
+        "colorSpace": "BT.2020",
+        "codec": "HEVC Main10"
+      }
+    },
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

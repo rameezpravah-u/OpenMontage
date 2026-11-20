@@ -49,3 +49,11 @@ Rebuild: `build_clips.py all` (cuts/grades clips + workshop-sound bed, cut lists
 `gen_html.py all` (captions/end card in CAPS/END_CARD) → render `rN/hyperframes` with hyperframes_compose render_existing.
 Notes: IMG_8269/8270 logo is filmed upside-down (rotated 180° in edit). IMG_8272/8273/8280 looked cool-white and were
 warm-corrected to match "warm LED" on the product page. No location claim used (user didn't confirm Khatauli for Aurora).
+
+## Aurora — cinematic Meta ad "Slow Light" (added 2026-11-20)
+`projects/aurora-making-reel/renders/aurora_cinematic_slow-light_23s_{9x16,4x5}.mp4` (+ `cover_cinematic.jpg`).
+Slow-motion 60fps selects (router, hand polish, sun, rows, switch-on, glow glide, hand reach, glow end), filmic grade
+(+grain, vignette), cross-dissolves, letterbox bars, serif captions ("It begins with teak. / Shaped by hand. / Left in the sun. /
+Until it holds light."), quiet end card (Aurora · from ₹1,999 ~~₹2,749~~ · SHOP NOW · FLY100).
+Rebuild: `python cine_build.py` → `python score_cine.py cine/music_raw.wav` (+loudnorm, amix with cine/sfx_bed.wav at 0.7) →
+edit `cine/hyperframes/index.html` → render_existing.
