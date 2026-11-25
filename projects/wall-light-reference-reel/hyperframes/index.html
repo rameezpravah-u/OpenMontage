@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>Aurora — Warm Up Your Walls</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face { font-family: "CormI"; src: url("assets/cormorant-garamond-latin-400-italic.woff2") format("woff2"); font-style: italic; }
+@font-face { font-family: "Corm"; src: url("assets/cormorant-garamond-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+@font-face { font-family: "ISemi"; src: url("assets/Inter-SemiBold.otf"); font-weight: 600; }
+@font-face { font-family: "IBold"; src: url("assets/InterDisplay-Bold.otf"); font-weight: 700; }
+:root { --ink: #2a1a10; --cream: #f6ecdc; --amber: #e8a65a; --brown: #3b2616; }
+html, body { margin: 0; background: #120b06; }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #120b06; }
+.fill { position: absolute; inset: 0; background: #120b06; }
+video.shot { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; transform-origin: 50% 45%; }
+.layer { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+
+/* feature label: highlight-bar wipe, like the reference */
+.tag { position: absolute; left: 96px; top: 270px; height: 84px; display: block; }
+.tag .bar { position: absolute; left: 0; top: 0; height: 84px; background: var(--cream); border-radius: 6px; transform-origin: 0 50%; box-shadow: 0 10px 30px rgba(0,0,0,0.28); }
+.tag .txt { position: absolute; left: 30px; top: 0; line-height: 84px; white-space: nowrap; font-family: "IBold"; font-weight: 700; font-size: 44px; letter-spacing: 0.02em; color: var(--ink); }
+
+/* persistent product card (reference's bottom band, lifted above the IG UI) */
+#card { position: absolute; left: 60px; top: 1010px; width: 960px; height: 290px; border-radius: 30px; background: rgba(246,236,220,0.96); box-shadow: 0 24px 60px rgba(0,0,0,0.35); }
+#cName { position: absolute; left: 100px; top: 1040px; display: block; white-space: nowrap; font-family: "Corm"; font-weight: 500; font-size: 64px; line-height: 1.0; color: var(--ink); }
+#cName i { font-family: "CormI"; font-style: italic; font-weight: 400; }
+#cPill { position: absolute; left: 100px; top: 1126px; height: 64px; padding: 0 28px; border-radius: 999px; background: var(--brown); display: block; white-space: nowrap; line-height: 64px; font-family: "ISemi"; font-weight: 600; font-size: 28px; letter-spacing: 0.1em; color: var(--cream); }
+#cShip { position: absolute; left: 100px; top: 1226px; display: block; white-space: nowrap; font-family: "ISemi"; font-weight: 600; font-size: 28px; letter-spacing: 0.04em; color: #5a3c25; }
+#badge { position: absolute; left: 736px; top: 1046px; width: 214px; height: 214px; border-radius: 50%; background: var(--amber); box-shadow: 0 14px 36px rgba(0,0,0,0.35); display: block; text-align: center; color: var(--ink); }
+#badge .f { position: absolute; left: 0; top: 52px; width: 214px; font-family: "CormI"; font-style: italic; font-size: 36px; }
+#badge .p { position: absolute; left: 0; top: 88px; width: 214px; font-family: "IBold"; font-weight: 700; font-size: 54px; letter-spacing: -0.01em; }
+
+/* brand card */
+#brand { background: radial-gradient(ellipse 80% 45% at 50% 40%, #6b4527 0%, #3b2616 55%, #23150b 100%); opacity: 0; }
+#logo { position: absolute; left: 290px; top: 380px; width: 500px; height: auto; display: block; }
+.b-name { position: absolute; left: 0; top: 800px; width: 1080px; text-align: center; display: block; font-family: "CormI"; font-style: italic; font-size: 64px; color: var(--cream); }
+.b-price { position: absolute; left: 0; top: 890px; width: 1080px; text-align: center; display: block; white-space: nowrap; color: var(--cream); }
+.b-price .f { font-family: "CormI"; font-style: italic; font-size: 52px; margin-right: 14px; }
+.b-price .p { font-family: "Corm"; font-weight: 500; font-size: 104px; }
+.b-cta { position: absolute; left: 300px; top: 1040px; width: 480px; height: 96px; border-radius: 999px; background: var(--amber); display: block; text-align: center; line-height: 96px; font-family: "IBold"; font-weight: 700; font-size: 36px; letter-spacing: 0.16em; color: var(--ink); }
+.b-small { position: absolute; left: 0; top: 1170px; width: 1080px; text-align: center; display: block; font-family: "ISemi"; font-weight: 600; font-size: 28px; letter-spacing: 0.1em; color: #e9cfa8; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-width="1080" data-height="1920" data-duration="12.4" data-fps="30">
+<div id="bg" class="clip fill" data-start="0" data-duration="12.4" data-track-index="0"></div>
+
+<video id="v1" class="shot" src="assets/hero.mp4"  data-start="0"   data-duration="2.2" data-media-start="0" data-track-index="1" muted playsinline></video>
+<video id="v2" class="shot" src="assets/teak.mp4"  data-start="2.2" data-duration="2.2" data-media-start="0" data-track-index="2" muted playsinline></video>
+<video id="v3" class="shot" src="assets/beam.mp4"  data-start="4.4" data-duration="2.2" data-media-start="0" data-track-index="1" muted playsinline></video>
+<video id="v4" class="shot" src="assets/glide.mp4" data-start="6.6" data-duration="2.5" data-media-start="0" data-track-index="2" muted playsinline></video>
+
+<div id="t1" class="clip tag" style="z-index:30" data-start="0.35" data-duration="1.8" data-track-index="5"><div class="bar" style="width:560px"></div><div class="txt">Warm Up Your Walls</div></div>
+<div id="t2" class="clip tag" style="z-index:30" data-start="2.45" data-duration="1.9" data-track-index="6"><div class="bar" style="width:300px"></div><div class="txt">Solid Teak</div></div>
+<div id="t3" class="clip tag" style="z-index:30" data-start="4.65" data-duration="1.9" data-track-index="5"><div class="bar" style="width:420px"></div><div class="txt">Up + Down Glow</div></div>
+<div id="t4" class="clip tag" style="z-index:30" data-start="6.85" data-duration="1.9" data-track-index="6"><div class="bar" style="width:330px"></div><div class="txt">30″ or 48″</div></div>
+
+<div id="card"  class="clip" style="z-index:20" data-start="0" data-duration="9.1" data-track-index="7"></div>
+<div id="cName" class="clip" style="z-index:21" data-start="0" data-duration="9.1" data-track-index="8">Aurora <i>Teak</i> Wall Light</div>
+<div id="cPill" class="clip" style="z-index:21" data-start="0" data-duration="9.1" data-track-index="9">HANDCRAFTED SERIES · SHOP NOW</div>
+<div id="cShip" class="clip" style="z-index:21" data-start="0" data-duration="9.1" data-track-index="10">Free shipping on prepaid orders</div>
+<div id="badge" class="clip" style="z-index:22" data-start="0" data-duration="9.1" data-track-index="11"><span class="f">from</span><span class="p">₹1,999</span></div>
+
+<div id="brand"  class="clip layer"   style="z-index:40" data-start="8.8" data-duration="3.6" data-track-index="12"></div>
+<img id="logo"   class="clip" src="assets/logo.png" style="z-index:41" data-start="8.8" data-duration="3.6" data-track-index="13" />
+<div id="bName"  class="clip b-name"  style="z-index:41" data-start="8.8" data-duration="3.6" data-track-index="14">Aurora Teak Wall Light</div>
+<div id="bPrice" class="clip b-price" style="z-index:41" data-start="8.8" data-duration="3.6" data-track-index="15"><span class="f">from</span><span class="p">₹1,999</span></div>
+<div id="bCta"   class="clip b-cta"   style="z-index:41" data-start="8.8" data-duration="3.6" data-track-index="16">SHOP NOW</div>
+<div id="bSmall" class="clip b-small" style="z-index:41" data-start="8.8" data-duration="3.6" data-track-index="17">nixwoods.com · Free shipping on prepaid orders</div>
+
+<audio id="music" src="assets/mix.wav" data-start="0" data-duration="12.4" data-track-index="18" data-volume="1"></audio>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+const tl = gsap.timeline({ paused: true });
+
+// slow push-ins per shot (reference: hero push, macro drift, wide drift)
+[["#v1",0,2.2,1.0,1.09],["#v2",2.2,2.2,1.08,1.0],["#v3",4.4,2.2,1.0,1.06],["#v4",6.6,2.5,1.06,1.0]].forEach(([id,t0,d,a,b]) =>
+  tl.fromTo(id, { scale: a }, { scale: b, duration: d, ease: "sine.inOut" }, t0));
+
+// feature labels: bar wipes in from the left, text follows, both out together
+[["#t1",0.35,1.8],["#t2",2.45,1.9],["#t3",4.65,1.9],["#t4",6.85,1.9]].forEach(([id,t0,d]) => {
+  tl.fromTo(id + " .bar", { scaleX: 0 }, { scaleX: 1, duration: 0.32, ease: "power3.out" }, t0);
+  tl.fromTo(id + " .txt", { opacity: 0, x: -14 }, { opacity: 1, x: 0, duration: 0.28, ease: "power2.out" }, t0 + 0.14);
+  tl.to(id, { opacity: 0, duration: 0.22, ease: "power1.in" }, t0 + d - 0.22);
+});
+
+// product card rises in, badge pops, all hold until the brand card
+tl.fromTo(["#card","#cName","#cPill","#cShip"], { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out", stagger: 0.05 }, 0.1);
+tl.fromTo("#badge", { opacity: 0, scale: 0.6, rotation: -12 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.45, ease: "back.out(1.8)" }, 0.45);
+tl.to("#badge", { scale: 1.06, duration: 0.14, yoyo: true, repeat: 1, ease: "sine.inOut" }, 4.4);
+tl.to(["#card","#cName","#cPill","#cShip","#badge"], { opacity: 0, duration: 0.3, ease: "power1.in" }, 8.8);
+
+// brand card
+tl.fromTo("#brand", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power1.out" }, 8.8);
+tl.fromTo("#logo", { opacity: 0, scale: 0.92 }, { opacity: 1, scale: 1, duration: 0.6, ease: "power2.out" }, 8.95);
+tl.fromTo("#bName", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 9.3);
+tl.fromTo("#bPrice", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: "power2.out" }, 9.5);
+tl.fromTo("#bCta", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(1.6)" }, 9.75);
+tl.fromTo("#bSmall", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 9.95);
+
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

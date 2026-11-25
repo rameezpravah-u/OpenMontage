@@ -57,3 +57,11 @@ Slow-motion 60fps selects (router, hand polish, sun, rows, switch-on, glow glide
 Until it holds light."), quiet end card (Aurora · from ₹1,999 ~~₹2,749~~ · SHOP NOW · FLY100).
 Rebuild: `python cine_build.py` → `python score_cine.py cine/music_raw.wav` (+loudnorm, amix with cine/sfx_bed.wav at 0.7) →
 edit `cine/hyperframes/index.html` → render_existing.
+
+## Aurora "Warm Up Your Walls" (reference-style reel, concept A) — 12.4s
+- Structure modelled on an Instagram raffia-lamp reel: hero push-in → teak-grain macro → up/down glow → long glide → NixWoods brand card.
+- Real footage only (Aurora workshop clips 8284, 8289, 8273, 8299), warm amber grade; wood shot graded lighter for legible grain.
+- Persistent product card: "Aurora Teak Wall Light", HANDCRAFTED SERIES · SHOP NOW, badge "from ₹1,999", "Free shipping on prepaid orders" (no sale claim).
+- Logo: NixWoods-logo-FULL-LOCKUP.jpg from Drive, keyed to cream (`projects/wall-light-reference-reel/brand/`).
+- Renders: `projects/wall-light-reference-reel/renders/aurora_warm-up-your-walls_12s_{9x16,4x5}.mp4`, `cover.jpg`.
+- Music: original synthesized bed (`score_a.py`), not yet auditioned by ear.
