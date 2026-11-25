@@ -24,11 +24,15 @@ WOOD = "colortemperature=temperature=4700:mix=0.65,eq=contrast=1.1:saturation=1.
 # stretch of each clip — the 8272/8273/8280/8293 up-down clips strobe and are not used).
 # Crops push the bar/grain into the upper half so the product card never covers the product.
 SHOTS = [
-    ("hero",  "IMG_8298", 0.07, 2.3, 0.5, "iw/1.3:ih/1.3:(iw-ow)/2:ih*0.23"),   # bar end, grain + wall glow
+    ("full",  "IMG_8284", 0.20, 2.3, 0.5, ("wide", "2500:760:120:420", 535, "1600:400:600:400")),   # WHOLE Aurora on the wall
     ("teak",  "IMG_8289", 4.23, 2.3, 0.5, "panel"),                             # flame-figure grain, square panel high in frame
     ("beam",  "IMG_8295", 1.17, 2.3, 0.5, "iw/1.45:ih/1.45:(iw-ow)/2:ih*0.31"),  # up + down wash on the wall
-    ("glide", "IMG_8299", 1.35, 2.5, 0.5, "iw/1.3:ih/1.3:(iw-ow)/2:ih*0.23"),   # long glide along the lit bar
+    ("arm",   "IMG_8285", 1.18, 2.5, 0.5, ("wide", "2500:840:0:500", 520, "1400:400:900:300")),     # whole bar + arm for scale (30"/48")
 ]
+# kept for reference, no longer in the cut: ("hero","IMG_8298",...), ("glide","IMG_8299",...)
+DEFLICKER = "deflicker=size=9:mode=am"
+# 8284/8285 were shot with a warmer camera white balance; neutralise them to match the other shots (wall R/B ~1.2)
+WB = {"full": 7600, "arm": 6600}   # 8284/8285 have mild LED shimmer (jitter ~3.5-4.5) -> smoothed
 
 
 def run(cmd):
@@ -41,6 +45,8 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     for name, src, t0, dur, speed, crop in SHOTS:
         grade = WOOD if name == "teak" else NATURAL
+        if name in WB:
+            grade = f"colortemperature=temperature={WB[name]}:mix=0.8,eq=contrast=1.06:saturation=1.05,unsharp=7:7:0.8"
         pre = f"setpts=PTS/{speed}"
         geo = (f"crop={crop}," if crop else "") + \
               "scale=1080:1920:force_original_aspect_ratio=increase:flags=lanczos,crop=1080:1920"
@@ -52,6 +58,15 @@ def main():
                   ""
                   "[b]crop=1450:1450:1366:0,scale=1080:1080:flags=lanczos[fg];"
                   "[bg][fg]overlay=0:82,fps=30,format=yuv420p[v]")
+        if isinstance(crop, tuple) and crop[0] == "wide":
+            # full-product landscape shot: wide panel (feathered top/bottom) over a blurred strip of the same wall
+            _, fgc, top, bgc = crop
+            vf = None
+            fc = (f"[0:v]{DEFLICKER},{pre},{grade},split[a][b];"
+                  f"[a]crop={bgc},scale=12:12:flags=area,scale=1080:1920:flags=bicubic,gblur=sigma=80,eq=brightness=0.05[bg];"  # smooth wall-tone gradient (no streaks)
+                  f"[b]crop={fgc},scale=1080:-2:flags=lanczos,format=yuva420p,"
+                  "geq=lum='p(X,Y)':cb='p(X,Y)':cr='p(X,Y)':a='255*min(1,min(Y,H-1-Y)/36)'[fg];"
+                  f"[bg][fg]overlay=0:{top},fps=30,format=yuv420p[v]")
         run(["ffmpeg", "-v", "error", "-y", "-ss", str(t0), "-t", f"{dur*speed+0.1:.3f}",
              "-i", str(SRC / f"{src}.mov"), *(["-vf", vf] if vf else ["-filter_complex", fc, "-map", "[v]"]), "-an", "-c:v", "libx264", "-crf", "16",
              "-preset", "medium", "-t", f"{dur:.3f}", str(OUT / f"{name}.mp4")])

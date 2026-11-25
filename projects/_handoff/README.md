@@ -60,7 +60,8 @@ edit `cine/hyperframes/index.html` → render_existing.
 
 ## Aurora "Warm Up Your Walls" (reference-style reel, concept A) — 12.4s
 - Structure modelled on an Instagram raffia-lamp reel: hero push-in → teak-grain macro → up/down glow → long glide → NixWoods brand card.
-- Real footage only (Aurora clips 8298, 8289, 8295, 8299 — steadiest windows picked with `qa/flicker_scan.py`; the 8272/8273/8280/8293 up-down clips strobe and are excluded). Natural true-to-product grade (warm-white light, cream wall, real teak).
+- Shots: FULL Aurora on the wall (8284) → teak grain (8289) → up/down glow (8295) → full bar + arm for scale (8285) → brand card.
+- Real footage only (steadiest windows of 8284, 8289, 8295, 8285 — steadiest windows picked with `qa/flicker_scan.py`; the 8272/8273/8280/8293 up-down clips strobe and are excluded). Natural true-to-product grade (warm-white light, cream wall, real teak).
 - QA: `python projects/wall-light-reference-reel/qa/test_reel.py` — flicker, colour, product-occlusion, 4:5 safety, format/loudness, hyperframes check (21/21 pass; report in `qa/report.txt`).
 - Persistent product card: "Aurora Teak Wall Light", HANDCRAFTED SERIES · SHOP NOW, badge "from ₹1,999", "Free shipping on prepaid orders" (no sale claim).
 - Logo: NixWoods-logo-FULL-LOCKUP.jpg from Drive, keyed to cream (`projects/wall-light-reference-reel/brand/`).

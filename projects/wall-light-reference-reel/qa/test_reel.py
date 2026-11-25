@@ -20,8 +20,8 @@ FINAL = ROOT / "renders" / "aurora_warm-up-your-walls_12s_9x16.mp4"
 FINAL45 = ROOT / "renders" / "aurora_warm-up-your-walls_12s_4x5.mp4"
 ASSETS = ROOT / "hyperframes" / "assets"
 # shot: (start, end, asset, push-in scales)  — must match index.html
-SHOTS = {"hero": (0.0, 2.2, (1.0, 1.09)), "teak": (2.2, 4.4, (1.08, 1.0)),
-         "beam": (4.4, 6.6, (1.0, 1.06)), "glide": (6.6, 8.8, (1.06, 1.0))}
+SHOTS = {"full": (0.0, 2.2, (1.0, 1.09)), "teak": (2.2, 4.4, (1.08, 1.0)),
+         "beam": (4.4, 6.6, (1.0, 1.06)), "arm": (6.6, 8.8, (1.06, 1.0))}
 LABEL = (270, 354)       # .tag top..bottom
 CARD = (1108, 1355)      # badge top (1108) .. #card bottom (1355)
 ORIGIN_Y = 0.45 * 1920   # transform-origin of video.shot
@@ -57,7 +57,7 @@ for name in SHOTS:
 
 # 3. product occlusion — locate the dark wood band in each shot asset (first + last frame), map through push-in
 def wood_rows(img):
-    """Rows belonging to the product: clearly dark bands (< 0.6 x lit wall) at least 40px tall.
+    """Rows belonging to the product: clearly dark bands (< 0.6 x lit wall) at least 24px tall (full-length bar is ~44px).
     (v1 used 0.72 and no run-length filter; it mistook the naturally dimmer lower wall for wood.)"""
     lum = img.mean(1)
     dark = lum < 0.6 * np.percentile(lum, 80)
@@ -66,7 +66,7 @@ def wood_rows(img):
         if dark[y]:
             e = y
             while e < len(dark) and dark[e]: e += 1
-            if e - y >= 40: rows.extend(range(y, e))
+            if e - y >= 24: rows.extend(range(y, e))
             y = e
         else:
             y += 1
@@ -83,7 +83,7 @@ def dark_px_in(img, s, z0, z1, x0=60, x1=1020):
     return (band < 0.6 * wall).mean() if band.size else 0.0
 
 for name, (a, b, scales) in SHOTS.items():
-    worst = []
+    worst = []; band = None
     n = int(round((b - a) * 30)) - 2
     for idx, s in ((0, scales[0]), (n, scales[1])):
         g = frames(ASSETS / f"{name}.mp4", f"select=eq(n\\,{idx}),format=gray", 1080, 1920)[0].astype(float)
@@ -92,14 +92,18 @@ for name, (a, b, scales) in SHOTS.items():
         rows = wood_rows(g)
         if len(rows): band = (int(through_scale(rows.min(), s)), int(through_scale(rows.max(), s)))
     frac, zone = max(worst)
+    if band is None:
+        check(f"occlusion/{name}", False, "product not detected in frame"); continue
     check(f"occlusion/{name}", frac < 0.03, f"wood band y≈{band[0]}-{band[1]}; {frac:.1%} of the {zone} area is over wood (limit 3%)")
 
-# 4. 4:5 crop keeps product + card (crop window y 285..1635)
+# 4. 4:5 crop keeps product + card (crop window y 285..1635). Pixel-based so diagonal bars count too.
 for name in SHOTS:
     g = frames(ASSETS / f"{name}.mp4", "select=eq(n\\,30),format=gray", 1080, 1920)[0].astype(float)
-    rows = wood_rows(g)
-    inside = ((rows >= 285) & (rows <= 1635)).mean() if len(rows) else 0
-    check(f"4x5/{name}", inside > 0.8 and CARD[1] <= 1635, f"{inside:.0%} of product rows inside 4:5 window")
+    ys, _ = np.where(g < 0.6 * np.percentile(g, 80))
+    if len(ys) < 2000:
+        check(f"4x5/{name}", False, "product not detected in frame"); continue
+    inside = ((ys >= 285) & (ys <= 1635)).mean()
+    check(f"4x5/{name}", inside > 0.9 and CARD[1] <= 1635, f"{inside:.0%} of product pixels inside 4:5 window")
 
 # 5. format
 p = json.loads(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration:stream=codec_type,codec_name,width,height",
