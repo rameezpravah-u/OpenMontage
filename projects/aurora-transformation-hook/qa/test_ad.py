@@ -14,8 +14,16 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 OM = ROOT.parents[1]
-FINAL = ROOT / "renders" / "aurora_transformation-hook_15s_9x16.mp4"
-FINAL45 = ROOT / "renders" / "aurora_transformation-hook_15s_4x5.mp4"
+import os
+VARIANT = os.environ.get("VARIANT")          # e.g. v1_tube-light-upgrade -> test that hook variant instead of the main ad
+if VARIANT:
+    FINAL = ROOT / "renders" / "variants" / f"aurora_hook-{VARIANT}_15s_9x16.mp4"
+    FINAL45 = ROOT / "renders" / "variants" / f"aurora_hook-{VARIANT}_15s_4x5.mp4"
+    WS = ROOT / "variants" / VARIANT / "hyperframes"
+else:
+    FINAL = ROOT / "renders" / "aurora_transformation-hook_15s_9x16.mp4"
+    FINAL45 = ROOT / "renders" / "aurora_transformation-hook_15s_4x5.mp4"
+    WS = ROOT / "hyperframes"
 SHOTS = {"hook": (0.0, 2.4), "cut": (2.4, 3.6), "plane": (3.6, 4.8), "route": (4.8, 6.0), "sand": (6.0, 7.2),
          "wire": (7.2, 8.4), "lighton": (9.25, 10.2), "end": (12.0, 14.6)}  # end measured after its text has animated in
 results = []
@@ -51,11 +59,23 @@ def wood_frac(img, y0, y1, x0, x1, wall_ref):
     box = img[y0:y1, x0:x1]
     return (box < 0.45 * wall_ref).mean()
 
-g = grab(FINAL, 1.8)                       # hook: bottom half (after) — product panel ~y 1260-1570
-wall = np.percentile(g[960:], 80)
-prod_rows = np.where((g[960:] < 0.45 * wall).mean(1) > 0.3)[0] + 960
-check("occlusion/hook-after", len(prod_rows) > 0 and prod_rows.min() > 1140,
-      f"product rows y≈{prod_rows.min() if len(prod_rows) else '-'}-{prod_rows.max() if len(prod_rows) else '-'}; 'into THIS' card ends at 1140")
+if not VARIANT:
+    g = grab(FINAL, 1.8)                       # hook: bottom half (after) — product panel ~y 1260-1570
+    wall = np.percentile(g[960:], 80)
+    prod_rows = np.where((g[960:] < 0.45 * wall).mean(1) > 0.3)[0] + 960
+    check("occlusion/hook-after", len(prod_rows) > 0 and prod_rows.min() > 1140,
+          f"product rows y≈{prod_rows.min() if len(prod_rows) else '-'}-{prod_rows.max() if len(prod_rows) else '-'}; 'into THIS' card ends at 1140")
+else:
+    # variant hook: product (dark/contrasty pixels) must sit inside its panel band, cards outside it
+    cfg = json.loads((ROOT / "variants" / "variants.json").read_text())[VARIANT]
+    p0, p1 = cfg["panel_y"]; ct, cb = cfg["card_top_y"], cfg["card_bot_y"]
+    hv = grab(WS / "assets" / "hook_v.mp4", 1.2)
+    edge = np.abs(np.diff(hv, axis=1)).mean(1) + np.abs(np.diff(hv, axis=0, append=hv[-1:])).mean(1)  # x+y edges per row: product busy, wall flat
+    busy = np.where(edge > 4 * np.median(edge))[0]
+    inside = ((busy >= p0) & (busy <= p1)).mean() if len(busy) else 0
+    geom_ok = ct[1] <= p0 and p1 <= cb[0]
+    check("occlusion/hook", len(busy) > 0 and inside > 0.9 and geom_ok,
+          f"product rows y≈{busy.min() if len(busy) else '-'}-{busy.max() if len(busy) else '-'} ({inside:.0%} inside panel {p0}-{p1}); cards {ct} / {cb}")
 # locate the product on the clean end clip (no text), then compare with the text positions in index.html
 g = grab(ROOT / "hyperframes" / "assets" / "end.mp4", 2.0)
 wall = np.percentile(g, 80)
@@ -68,7 +88,7 @@ check("occlusion/end", len(rows) > 0 and max(hits.values()) == 0,
 # hook: top = raw wood (warm, textured), bottom = lit wall (bright) in the first second
 f = grab(FINAL, 0.5, 270, 480, "rgb24")
 top, bot = f[:240], f[240:]
-check("hook/split", top.mean() < bot.mean() and top.std() > 25,
+if not VARIANT: check("hook/split", top.mean() < bot.mean() and top.std() > 25,
       f"top mean {top.mean():.0f} std {top.std():.0f} (raw wood), bottom mean {bot.mean():.0f} (lit wall)")
 
 # format
@@ -87,12 +107,12 @@ check("format/4x5", len(r45) > 0, f"1080x1350 export; product visible at y≈{r4
 
 sys.path.insert(0, str(OM))
 from tools.video.hyperframes_compose import HyperFramesCompose  # noqa: E402
-r = HyperFramesCompose().execute({"operation": "check", "workspace_path": str(ROOT / "hyperframes")})
+r = HyperFramesCompose().execute({"operation": "check", "workspace_path": str(WS)})
 errs = [f["code"] for v in (r.data or {}).get("report", {}).values() if isinstance(v, dict) and "findings" in v
         for f in v["findings"] if f["severity"] == "error"]
 check("hyperframes/check", not errs, "no errors" if not errs else ", ".join(errs))
 
 failed = [n for n, ok, _ in results if not ok]
 print(f"\n{len(results) - len(failed)}/{len(results)} passed" + (f" — FAILED: {', '.join(failed)}" if failed else ""))
-(ROOT / "qa" / "report.txt").write_text("\n".join(f"[{'PASS' if ok else 'FAIL'}] {n}: {d}" for n, ok, d in results) + "\n")
+(ROOT / "qa" / (f"report_{VARIANT}.txt" if VARIANT else "report.txt")).write_text("\n".join(f"[{'PASS' if ok else 'FAIL'}] {n}: {d}" for n, ok, d in results) + "\n")
 sys.exit(1 if failed else 0)

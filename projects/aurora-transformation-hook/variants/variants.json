@@ -1,0 +1,70 @@
+{
+  "v1_tube-light-upgrade": {
+    "hook_ref": "#50",
+    "top": "Still using a tube light?",
+    "bottom": "Here's the upgrade.",
+    "panel_y": [
+      600,
+      980
+    ],
+    "card_top_y": [
+      330,
+      520
+    ],
+    "card_bot_y": [
+      1170,
+      1300
+    ]
+  },
+  "v2_stop-buying": {
+    "hook_ref": "#2",
+    "top": "Stop buying wall lights",
+    "bottom": "until you watch this.",
+    "panel_y": [
+      600,
+      1110
+    ],
+    "card_top_y": [
+      330,
+      520
+    ],
+    "card_bot_y": [
+      1170,
+      1300
+    ]
+  },
+  "v3_what-1999-gets-you": {
+    "hook_ref": "#15",
+    "top": "Here's what ₹1,999",
+    "bottom": "actually gets you ↓",
+    "panel_y": [
+      600,
+      1000
+    ],
+    "card_top_y": [
+      330,
+      520
+    ],
+    "card_bot_y": [
+      1170,
+      1300
+    ]
+  },
+  "v4_whats-inside": {
+    "hook_ref": "#30",
+    "top": "What's actually inside",
+    "bottom": "a NixWoods wall light?",
+    "panel_y": [
+      560,
+      1150
+    ],
+    "card_top_y": [
+      330,
+      520
+    ],
+    "card_bot_y": [
+      1170,
+      1300
+    ]
+  }
+}
