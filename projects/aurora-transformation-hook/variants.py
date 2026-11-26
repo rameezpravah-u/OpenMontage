@@ -52,7 +52,10 @@ CSS = """
 .hc span { background: #fff; padding: 4px 24px; border-radius: 18px; -webkit-box-decoration-break: clone; box-decoration-break: clone;
            box-shadow: 0 12px 34px rgba(0,0,0,0.3); }
 .hc b { background: #000; color: #fff; padding: 0 14px; border-radius: 12px; }
-#hTop { top: 330px; } #hBot { top: 1180px; }
+/* override the main ad's #hTop/#hBot (id rules: 740px wide, 80px, fixed height) */
+#hTop.hc, #hBot.hc { left: 60px; width: 960px; height: auto; line-height: 1.32; font-size: 62px; text-align: center; background: none; box-shadow: none; border-radius: 0; }
+#hTop.hc { top: 330px; } #hBot.hc { top: 1180px; }
+.hc b { white-space: nowrap; }
 """
 
 

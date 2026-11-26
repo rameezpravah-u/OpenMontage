@@ -1,8 +1,8 @@
 #!/bin/bash
-# Render, export and QA every hook variant.  Usage: bash render_variants.sh
+# Render + export hook variants.  Usage: bash render_variants.sh [variant_dir/ ...]  (default: all)
 cd "$(dirname "$0")/../.." || exit 1
-for ws in projects/aurora-transformation-hook/variants/v*/; do
-  v=$(basename "$ws"); out=projects/aurora-transformation-hook/renders/variants
+for ws in ${@:-projects/aurora-transformation-hook/variants/v*/}; do
+  ws="${ws%/}/"; v=$(basename "$ws"); out=projects/aurora-transformation-hook/renders/variants
   mkdir -p "$out"
   python3 -c "
 from tools.video.hyperframes_compose import HyperFramesCompose
