@@ -67,3 +67,9 @@ edit `cine/hyperframes/index.html` → render_existing.
 - Logo: NixWoods-logo-FULL-LOCKUP.jpg from Drive, keyed to cream (`projects/wall-light-reference-reel/brand/`).
 - Renders: `projects/wall-light-reference-reel/renders/aurora_warm-up-your-walls_12s_{9x16,4x5}.mp4`, `cover.jpg`.
 - Music: original synthesized bed (`score_a.py`), not yet auditioned by ear.
+
+## Aurora "We turned THIS into THIS" — transformation-hook Meta ad, 14.6s
+- Hook #1 from the "4 Meta Ads that convert" reference (Transformation): split-screen raw teak / lit Aurora → "Here's how" 5 steps (cut, plane, route, sand, fit LED, real workshop sound) → real switch-on (8271, clean pre-strobe window only) → whole Aurora + "Made by hand in Khatauli", from ₹1,999, SHOP NOW, Free shipping on prepaid orders.
+- Renders: `projects/aurora-transformation-hook/renders/aurora_transformation-hook_15s_{9x16,4x5}.mp4`, `cover.jpg`.
+- QA: `python projects/aurora-transformation-hook/qa/test_ad.py` (17/17).
+- Talking-head scripts for all 4 hooks: `projects/aurora-transformation-hook/hook_scripts.md`.

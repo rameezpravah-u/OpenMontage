@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>Aurora — We turned THIS into THIS</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face { font-family: "CormI"; src: url("assets/cormorant-garamond-latin-400-italic.woff2") format("woff2"); font-style: italic; }
+@font-face { font-family: "Corm"; src: url("assets/cormorant-garamond-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+@font-face { font-family: "ISemi"; src: url("assets/Inter-SemiBold.otf"); font-weight: 600; }
+@font-face { font-family: "IBold"; src: url("assets/InterDisplay-Bold.otf"); font-weight: 700; }
+:root { --ink: #1d140d; --cream: #f6ecdc; --amber: #e8a65a; --brown: #3b2616; }
+html, body { margin: 0; background: #111; }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #111; }
+.fill { position: absolute; inset: 0; background: #111; }
+video.shot { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; transform-origin: 50% 45%; }
+.layer { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+
+/* reference-style white cards, bold black type */
+.card { position: absolute; display: block; white-space: nowrap; background: #fff; color: #000; border-radius: 22px;
+        font-family: "IBold"; font-weight: 700; box-shadow: 0 12px 34px rgba(0,0,0,0.35); }
+#hTop { left: 170px; top: 760px; width: 740px; height: 130px; line-height: 130px; text-align: center; font-size: 80px; }
+#hBot { left: 170px; top: 1010px; width: 740px; height: 130px; line-height: 130px; text-align: center; font-size: 80px; }
+#hTop b, #hBot b { background: #000; color: #fff; padding: 2px 18px; border-radius: 12px; }
+#divider { position: absolute; left: 0; top: 957px; width: 1080px; height: 6px; background: var(--cream); display: block; }
+
+#how { left: 190px; top: 330px; width: 700px; height: 120px; line-height: 120px; text-align: center; font-size: 64px; }
+.step { position: absolute; left: 100px; top: 300px; height: 96px; padding: 0 34px 0 22px; display: block; white-space: nowrap;
+        background: #fff; color: #000; border-radius: 18px; box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+        font-family: "IBold"; font-weight: 700; font-size: 52px; line-height: 96px; }
+.step .n { display: inline-block; width: 70px; height: 70px; margin-right: 18px; border-radius: 50%; background: #000; color: #fff;
+           font-size: 40px; line-height: 70px; text-align: center; vertical-align: 6px; }
+#bloom { background: radial-gradient(ellipse 70% 40% at 50% 45%, rgba(255,226,170,0.85), rgba(255,226,170,0) 70%); opacity: 0; mix-blend-mode: screen; }
+
+/* end card on the light wall: dark type */
+#eLogo { position: absolute; left: 420px; top: 250px; width: 240px; height: auto; display: block; }
+.e-name { position: absolute; left: 90px; top: 420px; width: 900px; text-align: center; display: block; font-family: "Corm"; font-weight: 500; font-size: 72px; color: var(--ink); }
+.e-name i { font-family: "CormI"; font-style: italic; font-weight: 400; }
+.e-hand { position: absolute; left: 90px; top: 880px; width: 900px; text-align: center; display: block; font-family: "CormI"; font-style: italic; font-size: 52px; color: #4a3322; }
+.e-price { position: absolute; left: 0; top: 940px; width: 1080px; text-align: center; display: block; white-space: nowrap; color: var(--ink); }
+.e-price .f { font-family: "CormI"; font-style: italic; font-size: 52px; margin-right: 14px; }
+.e-price .p { font-family: "IBold"; font-weight: 700; font-size: 88px; letter-spacing: -0.01em; }
+.e-cta { position: absolute; left: 300px; top: 1060px; width: 480px; height: 96px; border-radius: 999px; background: #000; display: block; text-align: center; line-height: 96px; font-family: "IBold"; font-weight: 700; font-size: 38px; letter-spacing: 0.14em; color: #fff; }
+.e-small { position: absolute; left: 90px; top: 1185px; width: 900px; text-align: center; display: block; font-family: "ISemi"; font-weight: 600; font-size: 30px; letter-spacing: 0.04em; color: #3b2a1d; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-width="1080" data-height="1920" data-duration="14.6" data-fps="30">
+<div id="bg" class="clip fill" data-start="0" data-duration="14.6" data-track-index="0"></div>
+
+<video id="v0" class="shot" src="assets/hook.mp4"    data-start="0"    data-duration="2.4" data-media-start="0" data-track-index="1" muted playsinline></video>
+<video id="v1" class="shot" src="assets/cut.mp4"     data-start="2.4"  data-duration="1.2" data-media-start="0" data-track-index="2" muted playsinline></video>
+<video id="v2" class="shot" src="assets/plane.mp4"   data-start="3.6"  data-duration="1.2" data-media-start="0" data-track-index="1" muted playsinline></video>
+<video id="v3" class="shot" src="assets/route.mp4"   data-start="4.8"  data-duration="1.2" data-media-start="0" data-track-index="2" muted playsinline></video>
+<video id="v4" class="shot" src="assets/sand.mp4"    data-start="6.0"  data-duration="1.2" data-media-start="0" data-track-index="1" muted playsinline></video>
+<video id="v5" class="shot" src="assets/wire.mp4"    data-start="7.2"  data-duration="1.2" data-media-start="0" data-track-index="2" muted playsinline></video>
+<video id="v6" class="shot" src="assets/lighton.mp4" data-start="8.4"  data-duration="1.8" data-media-start="0" data-track-index="1" muted playsinline></video>
+<video id="v7" class="shot" src="assets/end.mp4"     data-start="10.2" data-duration="4.4" data-media-start="0" data-track-index="2" muted playsinline></video>
+
+<div id="divider" class="clip" style="z-index:10" data-start="0" data-duration="2.4" data-track-index="3"></div>
+<div id="hTop" class="clip card" style="z-index:30" data-start="0.15" data-duration="2.2" data-track-index="4">We turned <b>THIS</b></div>
+<div id="hBot" class="clip card" style="z-index:30" data-start="0.75" data-duration="1.6" data-track-index="5">into <b>THIS</b></div>
+
+<div id="how" class="clip card" style="z-index:30" data-start="2.4" data-duration="0.9" data-track-index="6">Here's how ↓</div>
+<div id="s1" class="clip step" style="z-index:31" data-start="3.0"  data-duration="0.6"  data-track-index="7"><span class="n">1</span>Cut</div>
+<div id="s2" class="clip step" style="z-index:31" data-start="3.6"  data-duration="1.2"  data-track-index="8"><span class="n">2</span>Plane</div>
+<div id="s3" class="clip step" style="z-index:31" data-start="4.8"  data-duration="1.2"  data-track-index="7"><span class="n">3</span>Route the slot</div>
+<div id="s4" class="clip step" style="z-index:31" data-start="6.0"  data-duration="1.2"  data-track-index="8"><span class="n">4</span>Sand by hand</div>
+<div id="s5" class="clip step" style="z-index:31" data-start="7.2"  data-duration="1.2"  data-track-index="7"><span class="n">5</span>Fit the LED</div>
+<div id="s6" class="clip step" style="z-index:31" data-start="8.4"  data-duration="1.75" data-track-index="8"><span class="n">6</span>Switch on</div>
+<div id="bloom" class="clip layer" style="z-index:20" data-start="8.95" data-duration="1.25" data-track-index="9"></div>
+
+<img id="eLogo" class="clip" src="assets/logo_ink.png" style="z-index:40" data-start="10.2" data-duration="4.4" data-track-index="10" />
+<div id="eName"  class="clip e-name"  style="z-index:40" data-start="10.2" data-duration="4.4" data-track-index="11">Aurora <i>Teak</i> Wall Light</div>
+<div id="eHand"  class="clip e-hand"  style="z-index:40" data-start="10.2" data-duration="4.4" data-track-index="12">Made by hand in Khatauli</div>
+<div id="ePrice" class="clip e-price" style="z-index:40" data-start="10.2" data-duration="4.4" data-track-index="13"><span class="f">from</span><span class="p">₹1,999</span></div>
+<div id="eCta"   class="clip e-cta"   style="z-index:40" data-start="10.2" data-duration="4.4" data-track-index="14">SHOP NOW</div>
+<div id="eSmall" class="clip e-small" style="z-index:40" data-start="10.2" data-duration="4.4" data-track-index="15">30″ · 48″ · Free shipping on prepaid orders</div>
+
+<audio id="music" src="assets/mix.wav" data-start="0" data-duration="14.6" data-track-index="16" data-volume="1"></audio>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+const tl = gsap.timeline({ paused: true });
+
+// hook: punch-in cards (THIS / THIS), tiny push on the split
+tl.fromTo("#v0", { scale: 1.0 }, { scale: 1.04, duration: 2.4, ease: "sine.inOut" }, 0);
+tl.fromTo("#hTop", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(2)" }, 0.15);
+tl.fromTo("#hBot", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.25, ease: "back.out(2)" }, 0.75);
+tl.to(["#hTop", "#hBot"], { opacity: 0, duration: 0.15 }, 2.25);
+
+// how-it's-made: quick push-ins, step cards snap in
+[["#v1",2.4],["#v2",3.6],["#v3",4.8],["#v4",6.0],["#v5",7.2]].forEach(([id,t0]) =>
+  tl.fromTo(id, { scale: 1.08 }, { scale: 1.0, duration: 1.2, ease: "power1.out" }, t0));
+tl.fromTo("#how", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.2, ease: "power2.out" }, 2.4);
+tl.to("#how", { opacity: 0, duration: 0.15 }, 3.15);
+[["#s1",3.0,0.6],["#s2",3.6,1.2],["#s3",4.8,1.2],["#s4",6.0,1.2],["#s5",7.2,1.2],["#s6",8.4,1.75]].forEach(([id,t0,d]) => {
+  tl.fromTo(id, { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.18, ease: "power3.out" }, t0);
+  tl.to(id, { opacity: 0, duration: 0.12 }, t0 + d - 0.12);
+});
+
+// switch on: slow push + bloom on the real light-on frame
+tl.fromTo("#v6", { scale: 1.0 }, { scale: 1.07, duration: 1.8, ease: "sine.inOut" }, 8.4);
+tl.fromTo("#bloom", { opacity: 0 }, { opacity: 0.75, duration: 0.18, ease: "power2.out" }, 8.98);
+tl.to("#bloom", { opacity: 0, duration: 1.0, ease: "power1.inOut" }, 9.2);
+
+// end: whole Aurora, offer
+tl.fromTo("#v7", { opacity: 0, scale: 1.05 }, { opacity: 1, scale: 1.0, duration: 0.5, ease: "power1.out" }, 10.2);
+tl.fromTo("#eLogo",  { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 10.4);
+tl.fromTo("#eName",  { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, 10.55);
+tl.fromTo("#eHand",  { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 10.9);
+tl.fromTo("#ePrice", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: "power2.out" }, 11.1);
+tl.fromTo("#eCta",   { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(1.6)" }, 11.35);
+tl.fromTo("#eSmall", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power1.out" }, 11.55);
+
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>

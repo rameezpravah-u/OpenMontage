@@ -1,0 +1,61 @@
+{
+  "duration": 14.6,
+  "shots": [
+    {
+      "id": "hook",
+      "start": 0.0,
+      "dur": 2.4,
+      "src": "IMG_8263",
+      "src_in": 0.75
+    },
+    {
+      "id": "cut",
+      "start": 2.4,
+      "dur": 1.2,
+      "src": "IMG_8246",
+      "src_in": 1.73
+    },
+    {
+      "id": "plane",
+      "start": 3.6,
+      "dur": 1.2,
+      "src": "IMG_8239",
+      "src_in": 0.97
+    },
+    {
+      "id": "route",
+      "start": 4.8,
+      "dur": 1.2,
+      "src": "IMG_8255",
+      "src_in": 1.87
+    },
+    {
+      "id": "sand",
+      "start": 6.0,
+      "dur": 1.2,
+      "src": "IMG_8235",
+      "src_in": 0.13
+    },
+    {
+      "id": "wire",
+      "start": 7.2,
+      "dur": 1.2,
+      "src": "IMG_8250",
+      "src_in": 0.73
+    },
+    {
+      "id": "lighton",
+      "start": 8.4,
+      "dur": 1.8,
+      "src": "IMG_8271",
+      "src_in": 4.43
+    },
+    {
+      "id": "end",
+      "start": 10.2,
+      "dur": 4.4,
+      "src": "IMG_8284",
+      "src_in": 0.1
+    }
+  ]
+}
