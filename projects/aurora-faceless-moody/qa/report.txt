@@ -1,0 +1,21 @@
+[PASS] flicker/end_glow: max jitter 0.08 (limit 2.5)
+[PASS] flicker/glide: max jitter 0.13 (limit 2.5)
+[PASS] flicker/wash: max jitter 0.34 (limit 2.5)
+[PASS] flicker/full: max jitter 1.14 (limit 2.5)
+[PASS] colour/end_glow: light R/B 1.28 (warm-white 1.0-1.35; orange >1.4)
+[PASS] colour/glide: light R/B 1.30 (warm-white 1.0-1.35; orange >1.4)
+[PASS] colour/wash: light R/B 1.29 (warm-white 1.0-1.35; orange >1.4)
+[PASS] colour/full: light R/B 1.23 (warm-white 1.0-1.35; orange >1.4)
+[PASS] moody/dim: mean luma per shot [71, 72, 64, 70] (limit 120; daylight ads ~150-190)
+[PASS] grain/end_glow: bar mean 35, texture 3.42 (needs >18 and >1.2: not crushed)
+[PASS] grain/glide: bar mean 28, texture 3.83 (needs >18 and >1.2: not crushed)
+[PASS] grain/wash: bar mean 21, texture 3.67 (needs >18 and >1.2: not crushed)
+[PASS] occlusion/end_glow: bar rows y≈(758, 1018); 0px rows under text [(300, 530)]
+[PASS] occlusion/glide: bar rows y≈(666, 790); 0px rows under text [(300, 530)]
+[PASS] occlusion/wash: bar rows y≈(950, 1305); 0px rows under text [(300, 530)]
+[PASS] occlusion/full: bar rows y≈(821, 861); 0px rows under text [(290, 490), (995, 1130)]
+[PASS] format/9x16: h264 1080x1920 11.10s
+[PASS] format/audio: audio stream present
+[PASS] format/loudness: -13.6 LUFS (target -14)
+[PASS] format/4x5: 1080x1350
+[PASS] hyperframes/check: no errors

@@ -81,3 +81,9 @@ Same body as the transformation ad; only the first 2.4s changes. All QA 16/16 (`
 - V3 #15 "Here's what ₹1,999 / actually gets you ↓" — `..._v3_what-1999-gets-you_...`
 - V4 #30 "What's actually inside / a NixWoods wall light?" — `..._v4_whats-inside_...`
 - Bad/Good/Great audit (from the "Meta ads. Fast." reference): `projects/aurora-transformation-hook/ad_audit_bad-good-great.md` — proof + offer need owner facts.
+
+## Aurora faceless moody reel ("Still using a tube light? Here's the upgrade.") — 11s
+- Style of the "50 hooks" reference: dim ambient footage, one static gold serif line, slow dissolves, ambient score (no drums).
+- Shots (steady windows): 8298 bar-end glow → 8299 glide → 8295 up/down wash → 8284 whole Aurora; end text: Aurora · solid teak wall light · from ₹1,999 · (nixwoods.com).
+- Moody grade keeps the light warm-white (R/B ≤1.3) and the teak grain visible (QA checks both).
+- Renders: `projects/aurora-faceless-moody/renders/aurora_faceless-moody_11s_{9x16,4x5}.mp4`, `cover.jpg`. QA: `python projects/aurora-faceless-moody/qa/test_moody.py` (21/21).

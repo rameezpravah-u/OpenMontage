@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<title>Aurora — after dark</title>
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face { font-family: "CormI"; src: url("assets/cormorant-garamond-latin-400-italic.woff2") format("woff2"); font-style: italic; }
+@font-face { font-family: "Corm"; src: url("assets/cormorant-garamond-latin-500-normal.woff2") format("woff2"); font-weight: 500; }
+:root { --gold: #f1d59b; }
+html, body { margin: 0; background: #0b0806; }
+#root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #0b0806; }
+.fill { position: absolute; inset: 0; background: #0b0806; }
+video.shot { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; transform-origin: 50% 50%; }
+.t { position: absolute; left: 90px; width: 900px; text-align: center; display: block; white-space: nowrap; color: var(--gold);
+     text-shadow: 0 2px 14px rgba(0,0,0,0.9), 0 0 3px rgba(0,0,0,0.75), 0 0 1px rgba(0,0,0,0.9); }
+.big { font-family: "Corm"; font-weight: 500; font-size: 68px; line-height: 1.05; }
+.it  { font-family: "CormI"; font-style: italic; font-size: 56px; line-height: 1.1; }
+.sm  { font-family: "Corm"; font-weight: 500; font-size: 32px; letter-spacing: 0.04em; color: #f3e2bd; }
+#a1 { top: 322px; } #a2 { top: 405px; } #a3 { top: 478px; }
+#b1 { top: 300px; font-size: 104px; letter-spacing: 0.06em; } #b2 { top: 420px; }
+#b3 { top: 1010px; } #b4 { top: 1086px; }
+.scrim { position: absolute; left: 0; width: 1080px; display: block; }
+#scA { top: 230px; height: 400px; background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(8,5,3,0.62), rgba(8,5,3,0) 72%); }
+#scB { top: 900px; height: 360px; background: radial-gradient(ellipse 75% 50% at 50% 50%, rgba(8,5,3,0.42), rgba(8,5,3,0) 80%); }
+#black { background: #000; opacity: 1; position: absolute; inset: 0; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-width="1080" data-height="1920" data-duration="11" data-fps="30">
+<div id="bg" class="clip fill" data-start="0" data-duration="11" data-track-index="0"></div>
+
+<video id="v1" class="shot" style="z-index:1" src="assets/end_glow.mp4" data-start="0"   data-duration="3.0" data-media-start="0" data-track-index="1" muted playsinline></video>
+<video id="v2" class="shot" style="z-index:2" src="assets/glide.mp4"    data-start="2.6" data-duration="3.0" data-media-start="0" data-track-index="2" muted playsinline></video>
+<video id="v3" class="shot" style="z-index:3" src="assets/wash.mp4"     data-start="5.2" data-duration="3.0" data-media-start="0" data-track-index="1" muted playsinline></video>
+<video id="v4" class="shot" style="z-index:4" src="assets/full.mp4"     data-start="7.8" data-duration="3.2" data-media-start="0" data-track-index="2" muted playsinline></video>
+
+<div id="scA" class="clip scrim" style="z-index:15" data-start="0.5" data-duration="7.1" data-track-index="12"></div>
+<div id="a1" class="clip t big" style="z-index:20" data-start="0.5" data-duration="7.1" data-track-index="3">Still using a tube light?</div>
+<div id="a2" class="clip t it"  style="z-index:20" data-start="0.5" data-duration="7.1" data-track-index="4">Here's the upgrade.</div>
+<div id="a3" class="clip t sm"  style="z-index:20" data-start="0.5" data-duration="7.1" data-track-index="5">(solid teak · warm light, up &amp; down)</div>
+
+<div id="scB" class="clip scrim" style="z-index:15" data-start="8.3" data-duration="2.7" data-track-index="13"></div>
+<div id="b1" class="clip t big" style="z-index:20" data-start="7.9" data-duration="3.1" data-track-index="6">Aurora</div>
+<div id="b2" class="clip t it"  style="z-index:20" data-start="7.9" data-duration="3.1" data-track-index="7">solid teak wall light</div>
+<div id="b3" class="clip t it"  style="z-index:20" data-start="7.9" data-duration="3.1" data-track-index="8">from ₹1,999</div>
+<div id="b4" class="clip t sm"  style="z-index:20" data-start="7.9" data-duration="3.1" data-track-index="9">(nixwoods.com)</div>
+
+<div id="black" class="clip" style="z-index:30" data-start="0" data-duration="0.8" data-track-index="10"></div>
+<audio id="music" src="assets/mix.wav" data-start="0" data-duration="11" data-track-index="11" data-volume="1"></audio>
+</div>
+<script>
+window.__timelines = window.__timelines || {};
+const tl = gsap.timeline({ paused: true });
+const slow = "sine.inOut";
+tl.fromTo("#black", { opacity: 1 }, { opacity: 0, duration: 0.8, ease: "power1.out" }, 0);
+// slow drifts + 0.4s dissolves
+[["#v1",0,3.0,1.0,1.05],["#v2",2.6,3.0,1.05,1.0],["#v3",5.2,3.0,1.0,1.05],["#v4",7.8,3.2,1.04,1.0]].forEach(([id,t0,d,a,b],i) => {
+  tl.fromTo(id, { scale: a }, { scale: b, duration: d, ease: slow }, t0);
+  if (i) tl.fromTo(id, { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "none" }, t0);
+});
+// one static line (reference style): slow fade in, hold, fade
+tl.fromTo("#scA", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "power1.out" }, 0.4);
+tl.to("#scA", { opacity: 0, duration: 0.5 }, 7.1);
+tl.fromTo("#scB", { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power1.out" }, 8.4);
+tl.fromTo(["#a1","#a2","#a3"], { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "power1.out", stagger: 0.25 }, 0.5);
+tl.to(["#a1","#a2","#a3"], { opacity: 0, duration: 0.5, ease: "power1.in" }, 7.1);
+tl.fromTo(["#b1","#b2"], { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "power1.out", stagger: 0.2 }, 7.9);
+tl.fromTo(["#b3","#b4"], { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power1.out", stagger: 0.2 }, 8.5);
+window.__timelines["main"] = tl;
+</script>
+</body>
+</html>
