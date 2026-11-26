@@ -22,7 +22,7 @@ VARIANTS = {
            "[b]crop=2500:760:120:420,scale=1080:-2:flags=lanczos,format=yuva420p,"
            "geq=lum='p(X,Y)':cb='p(X,Y)':cr='p(X,Y)':a='255*min(1,min(Y,H-1-Y)/36)'[fg];[bg][fg]overlay=0:620"),
     "v2_stop-buying": dict(
-        hook="#2", top='<b>Stop buying</b> wall lights', bot="until you watch this.", panel=(600, 1110),
+        hook="#2", top='<b>Stop buying</b> wall lights', bot="until you watch this.", panel=(520, 1150),  # grain measured at y 513-995
         clip=["-ss", "4.23", "-t", "1.3", "-i", "IMG_8289.mov"],
         fc="[0:v]colortemperature=temperature=4700:mix=0.65,eq=contrast=1.1:saturation=1.15:gamma=0.97,unsharp=9:9:1.2,"
            "setpts=PTS/0.5,split[a][b];"
@@ -38,11 +38,11 @@ VARIANTS = {
            "[b]crop=2500:840:0:500,scale=1080:-2:flags=lanczos,format=yuva420p,"
            "geq=lum='p(X,Y)':cb='p(X,Y)':cr='p(X,Y)':a='255*min(1,min(Y,H-1-Y)/36)'[fg];[bg][fg]overlay=0:610"),
     "v4_whats-inside": dict(
-        hook="#30", top='What\'s actually <b>inside</b>', bot="a NixWoods wall light?", panel=(560, 1150),
+        hook="#30", top='What\'s actually <b>inside</b>', bot="a NixWoods wall light?", panel=(560, 1110),
         clip=["-ss", "0.1", "-t", "1.3", "-i", "IMG_8249.mov"],
         fc="[0:v]deflicker=size=11:mode=am,eq=contrast=1.06:saturation=1.08,unsharp=5:5:0.6,setpts=PTS/0.5,split[a][b];"
            "[a]scale=1:2:flags=area,scale=1080:1920:flags=bicubic,gblur=sigma=80,eq=brightness=0.06[bg];"
-           "[b]crop=iw:ih*0.32:0:ih*0.34,scale=1080:-2:flags=lanczos,format=yuva420p,"
+           "[b]crop=iw:ih*0.28:0:ih*0.36,scale=1080:-2:flags=lanczos,format=yuva420p,"
            "geq=lum='p(X,Y)':cb='p(X,Y)':cr='p(X,Y)':a='255*min(1,min(Y,H-1-Y)/36)'[fg];[bg][fg]overlay=0:560"),
 }
 

@@ -73,3 +73,11 @@ edit `cine/hyperframes/index.html` → render_existing.
 - Renders: `projects/aurora-transformation-hook/renders/aurora_transformation-hook_15s_{9x16,4x5}.mp4`, `cover.jpg`.
 - QA: `python projects/aurora-transformation-hook/qa/test_ad.py` (17/17).
 - Talking-head scripts for all 4 hooks: `projects/aurora-transformation-hook/hook_scripts.md`.
+
+## Aurora hook A/B variants (from the "50 hooks" reference) — 14.6s each
+Same body as the transformation ad; only the first 2.4s changes. All QA 16/16 (`VARIANT=<name> python qa/test_ad.py`).
+- V1 #50 "Still using a tube light? / Here's the upgrade." — `renders/variants/aurora_hook-v1_tube-light-upgrade_15s_{9x16,4x5}.mp4`
+- V2 #2 "Stop buying wall lights / until you watch this." — `..._v2_stop-buying_...`
+- V3 #15 "Here's what ₹1,999 / actually gets you ↓" — `..._v3_what-1999-gets-you_...`
+- V4 #30 "What's actually inside / a NixWoods wall light?" — `..._v4_whats-inside_...`
+- Bad/Good/Great audit (from the "Meta ads. Fast." reference): `projects/aurora-transformation-hook/ad_audit_bad-good-great.md` — proof + offer need owner facts.

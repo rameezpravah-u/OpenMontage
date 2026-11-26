@@ -21,8 +21,8 @@
     "top": "Stop buying wall lights",
     "bottom": "until you watch this.",
     "panel_y": [
-      600,
-      1110
+      520,
+      1150
     ],
     "card_top_y": [
       330,
@@ -56,7 +56,7 @@
     "bottom": "a NixWoods wall light?",
     "panel_y": [
       560,
-      1150
+      1110
     ],
     "card_top_y": [
       330,
